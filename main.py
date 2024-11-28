@@ -1,36 +1,17 @@
 from station import Station
-from train_line import TrainLine
+from train_line import Direction, TrainLine
+from generate_json import read_train_line
 
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
 import math
+import json
+
 
 stations: dict[Station] = {}
 
-def read_train_line(filepath: str, stations: dict[Station], name: str, color_id: int) -> TrainLine:
-    """
-    Read a txt file containing station names in order
-    """
-    #read txt, and get station names, and connect them
-    station_name_list = []
-    with open(filepath, newline ='') as stations_file:
-        for line in stations_file.readlines():
-            station_name_list.append(line.strip())
 
-    train_line = TrainLine(name, color_id)
-    for i, station_name in enumerate(station_name_list):
-        if station_name in stations.keys():
-            new_station = stations[station_name]
-        else:
-            new_station = Station(station_name)
-            stations[station_name] = new_station
-        if i != len(station_name_list) - 1:
-            new_station.add_connection(station_name_list[i+1], train_line.line_id)
-        if i != 0:
-            new_station.add_connection(station_name_list[i-1], train_line.line_id)
-        train_line.add_station(new_station)
-    return train_line
 
 def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.MultiDiGraph:
     graph = nx.MultiDiGraph()
@@ -61,6 +42,27 @@ def draw_lines(G: nx.MultiDiGraph, pos, ax):
         ax.add_patch(FancyArrowPatch(start,end,connectionstyle="arc3,rad=0",color = data["color"],linewidth = 1))
 
 
+mapped_stations: dict[Station] = {}
+
+
+
+
+
+def map_stations(line_group: list[TrainLine], mapped_stations: dict[Station], direction: Direction):
+    #get longest line
+    sorted_lines = line_group.sort(reverse = True, key = lambda line: line.length)
+
+    for line in sorted_lines:
+        for i,station in line.stations:
+            if station not in mapped_stations.keys():
+                pass
+    #draw it out in desired direciton
+    #do the smaller lines
+    
+
+
+
+
 if __name__ == "__main__":
     train_lines = []
     train_lines.append(read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", 0))
@@ -78,3 +80,6 @@ if __name__ == "__main__":
     # nx.draw_networkx_edges(G,pos)
     draw_lines(G,pos,ax)
     plt.show()
+
+    # with open("sample_network.json", "w") as outfile:
+    #     outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))

@@ -1,15 +1,18 @@
 from __future__ import annotations
 import random
+from pydantic import BaseModel, Field
+from typing import Optional
 
 
+class Station(BaseModel):
+    name: str
+    connections: list[tuple[str,int]] = Field(default_factory=list) #list of (name, line_id), so connections to stations and via which line
+    map_x: Optional[int] = random.randint(1,100)
+    map_y: Optional[int] = random.randint(1,100)
+    map_angle: Optional[float] = 0
 
-class Station:
-    def __init__(self, name: str, connections: list[str] = None):
-        self.name = name
-        self.connections: list[tuple[str,int]] = connections #list of (name, line_id), so connections to stations and via which line
-        self.map_x = random.randint(1,100)
-        self.map_y = random.randint(1,100)
-        self.map_angle = 0
+    def __init__(self, **data):
+        super().__init__(**data)
     
     def add_connection(self, station_name: str, line_id: int):
         """

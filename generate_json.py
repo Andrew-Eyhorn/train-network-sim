@@ -13,12 +13,12 @@ def read_train_line(filepath: str, stations: dict[Station], name: str, color: st
         for line in stations_file.readlines():
             station_name_list.append(line.strip())
 
-    train_line = TrainLine(name, color, direction)
+    train_line = TrainLine(name = name, line_color = color, direction = direction)
     for i, station_name in enumerate(station_name_list):
         if station_name in stations.keys():
             new_station = stations[station_name]
         else:
-            new_station = Station(station_name)
+            new_station = Station(name = station_name)
             stations[station_name] = new_station
         if i != len(station_name_list) - 1:
             new_station.add_connection(station_name_list[i+1], train_line.line_id)
@@ -37,18 +37,35 @@ if __name__ == "__main__":
     #read existing json
 
     try:
-        with open("data/network_data.json") as f:
-            d = json.load(f)
-            data["loop_lines"],data["linear_lines"] = d["loop_lines"], d["linear_lines"]
+        with open("data/temp.json") as f:
+            data = json.load(f)
+            read_data = {}
+            read_data["loop_lines"] = [TrainLine.model_validate(line) for line in data["loop_lines"]]
+            read_data["linear_lines"] = [TrainLine.model_validate(line) for line in data["linear_lines"]]
+            data = read_data
     except:
         pass
-    #read new txt
-    new_line = read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", "blue", Direction.EAST)
+
+   
+    # #read new txt
+    # new_line = read_train_line("data/lilydale_line_stations.txt", stations, "Lilydale", "lightblue", Direction.EAST)
+    # new_line = read_train_line("data/alamein_line_stations.txt", stations, "Alamein", "lightpurple", Direction.EAST)
+    # new_line = read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", "blue", Direction.EAST)
+    # new_line = read_train_line("data/glen_waverly_line_stations.txt", stations, "Glen Waverly", "purple", Direction.EAST)
+
+
+    #TODO - need to fix line_id not all being 0
     data["linear_lines"].append(new_line)
     #custom changes
     station: Station = stations["Flinders Street"]
     station.add_connection("Richmond", new_line.line_id)
     #save json
     with open("data/temp.json", 'w', encoding='utf-8') as f:
-        json.dump(data["linear_lines"][0].__dict__,f)
-    
+        json_data = {"loop_lines": [], "linear_lines": []}
+        json_data["loop_lines"] = [line.model_dump() for line in data["loop_lines"]]
+        json_data["linear_lines"] = [line.model_dump() for line in data["linear_lines"]]
+        json.dump(json_data, f, indent=4)
+
+
+
+#TODO - make data json serialisable, then work on drawing loop, then drwaing sations

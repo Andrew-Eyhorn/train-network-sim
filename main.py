@@ -1,15 +1,12 @@
 from station import Station
 from train_line import Direction, TrainLine
-from generate_json import read_train_line
+from generate_json import read_json_network
 
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
 import math
-import json
 
-
-stations: dict[Station] = {}
 
 
 
@@ -21,9 +18,9 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
                 
     for i,line in enumerate(train_lines):
         for station in line.stations:
-            for connection in stations[station.name].connections:
+            for connection in stations[station].connections:
                 if connection[1] == i:
-                    graph.add_edge(station.name, connection[0], color=line.line_color, key=i)
+                    graph.add_edge(station, connection[0], color=line.line_color, key=i)
     return graph
 
 
@@ -64,11 +61,9 @@ def map_stations(line_group: list[TrainLine], mapped_stations: dict[Station], di
 
 
 if __name__ == "__main__":
-    train_lines = []
-    train_lines.append(read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", 0))
-    train_lines.append(read_train_line("data/lilydale_line_stations.txt", stations, "Lilydale", 1))
-    train_lines.append(read_train_line("data/glen_waverly_line_stations.txt", stations, "Glen_Waverly", 2))
-    train_lines.append(read_train_line("data/alamein_line_stations.txt", stations, "Alamein", 3))
+    data = read_json_network("data/network_data.json")
+    stations = data["stations"]
+    train_lines = data["linear_lines"]
     
     G = generate_graph(stations, train_lines)
     #display graph

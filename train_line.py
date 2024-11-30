@@ -22,18 +22,19 @@ class TrainLine(BaseModel):
     line_id: int = Field(init = False, default= 0)
     length: int = Field(init = False, default= 0)
     direction: Direction
-    stations: list[Station] = Field(default_factory=list)
+    stations: list[str] = Field(default_factory=list)
 
 
 
 
     def __init__(self, **data):
         super().__init__(**data)
-        self.line_id = self._line_number
-        self._line_number += 1
+        if 'line_id' not in data or data['line_id'] is None:
+            self.line_id = self._line_number
+            self._line_number += 1
     
     def add_station(self, station: Station):
-        self.stations.append(station)
+        self.stations.append(station.name)
         self.length += 1
     
     def __str__(self):

@@ -1018,7 +1018,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Kooyong",
@@ -1034,7 +1034,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Tooronga",
@@ -1050,7 +1050,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Gardiner",
@@ -1066,7 +1066,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Glen Iris",
@@ -1082,7 +1082,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Darling",
@@ -1098,7 +1098,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "East Malvern",
@@ -1114,7 +1114,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Holmesglen",
@@ -1130,7 +1130,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Jordanville",
@@ -1146,7 +1146,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Mount Waverley",
@@ -1162,7 +1162,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Syndal",
@@ -1178,7 +1178,7 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         },
         {
             "name": "Glen Waverley",
@@ -1190,11 +1190,27 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0
+            "map_angle": 0.0
         }
     ],
     "line_count": 4,
-    "loop_lines": [],
+    "loop_lines": [
+        {
+            "centre_pos": [
+                0,
+                0
+            ],
+            "stations": [
+                "Richmond",
+                "Parliament",
+                "Melbourne Central",
+                "Flagstaff",
+                "Southern Cross",
+                "Flinders Street",
+                "Richmond"
+            ]
+        }
+    ],
     "linear_lines": [
         {
             "name": "Lilydale",

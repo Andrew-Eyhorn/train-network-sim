@@ -1,5 +1,5 @@
 from station import Station
-from train_line import Direction, TrainLine
+from train_line import Direction, TrainLine, LoopLine
 from generate_json import read_json_network
 
 import networkx as nx
@@ -57,7 +57,8 @@ def map_stations(line_group: list[TrainLine], mapped_stations: dict[Station], di
     #do the smaller lines
     
 
-
+def calculate_loop_station_pos(loop: LoopLine, mapped_stations: dict[Station]):
+    pass#what angle to say for each city loop station
 
 
 if __name__ == "__main__":

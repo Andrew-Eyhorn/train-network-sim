@@ -1,4 +1,4 @@
-from train_line import TrainLine, Direction
+from train_line import TrainLine, Direction, LoopLine
 from station import Station
 
 import json
@@ -34,9 +34,16 @@ def get_all_stations(train_lines: list[TrainLine], stations: dict[Station]):
             if station.name not in stations.keys():
                 stations[station.name] = station
 
+def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
+    stations_list = []
+    with open(filepath, newline ='') as stations_file:
+        for line in stations_file.readlines():
+            stations_list.append(line.strip())
+    new_loop = LoopLine(centre_pos = centre, stations = stations_list)
+    data["loop_lines"].append(new_loop)
 data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
 # data = {"line_count": 0, "loop_lines": [], "linear_lines": []}
-filepath = "data/temp.json"
+
 
 def read_json_network(filepath: str) -> dict:
     """
@@ -51,14 +58,14 @@ def read_json_network(filepath: str) -> dict:
                 read_data["stations"][station.name] = station
             read_data["line_count"] = data["line_count"]
             TrainLine._line_number = read_data["line_count"]
-            read_data["loop_lines"] = [TrainLine.model_validate(line) for line in data["loop_lines"]]
+            read_data["loop_lines"] = [LoopLine.model_validate(line) for line in data["loop_lines"]]
             read_data["linear_lines"] = [TrainLine.model_validate(line) for line in data["linear_lines"]]
             return read_data
 if __name__ == "__main__":
     #read existing json
-
+    filepath = "data/network_data.json"
     try:
-        read_json_network(filepath)
+        data = read_json_network(filepath)
     except:
         pass
     
@@ -70,14 +77,15 @@ if __name__ == "__main__":
     # new_line = read_train_line("data/glen_waverly_line_stations.txt", stations, "Glen Waverly", "darkblue", Direction.EAST)
 
 
-    data["linear_lines"].append(new_line)
+    # data["loop_lines"].append(new_line)
 
-    data["line_count"] += 1
-    #custom changes
-    station1: Station = stations["Flinders Street"]
-    station2: Station = stations["Richmond"]
-    station1.add_connection(station2.name, new_line.line_id)
-    station2.add_connection(station1.name, new_line.line_id)
+    # data["line_count"] += 1
+    # #custom changes
+    # station1: Station = stations["Flinders Street"]
+    # station2: Station = stations["Richmond"]
+    # station1.add_connection(station2.name, new_line.line_id)
+    # station2.add_connection(station1.name, new_line.line_id)
+    read_loop_line("data/city_loop.txt", (0,0), data)
     #save json
     with open(filepath, 'w', encoding='utf-8') as f:
         json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": [], "linear_lines": []}

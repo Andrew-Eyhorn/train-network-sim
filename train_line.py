@@ -45,21 +45,14 @@ class TrainLine(BaseModel):
     
 
 
-# class LoopLine(TrainLine):
-
-#     def __init__(self, name, color_id, direction):
-#         super().__init__(name, color_id, direction)
-
+class LoopLine(BaseModel):
+    centre_pos: tuple[int,int]
+    stations: list[str]
 
 
 
-# class TrainLIneEncoder(json.JSONEncoder):
-#     def default(self, obj):
-#         if isinstance(obj, TrainLine):
-#             return {
-#                 "__type__": "TrainLine",
-                
-#             }
+
+
 
 
 

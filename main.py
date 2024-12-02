@@ -13,8 +13,9 @@ import math
 def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.MultiDiGraph:
     graph = nx.MultiDiGraph()
     for station_name in stations.keys():
-        size = len(stations[station_name].connections) * 50
-        graph.add_node(station_name, size = size)
+        station: Station = stations[station_name]
+        size = len(station.connections) * 50
+        graph.add_node(station_name, size = size, x = station.map_x, y= station.map_y)
                 
     for i,line in enumerate(train_lines):
         for station in line.stations:
@@ -57,22 +58,34 @@ def map_stations(line_group: list[TrainLine], mapped_stations: dict[Station], di
     #do the smaller lines
     
 
-def calculate_loop_station_pos(loop: LoopLine, mapped_stations: dict[Station]):
-    pass#what angle to say for each city loop station
+def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_stations: dict[Station], distance: int):
+    n = len(loop.stations) - 1
+    angle = 2 * math.pi / n
+    r = distance * math.sin(angle/2) / math.sin(angle) 
+    for i in range(n):
+        station: Station = stations[loop.stations[i]]
+        t = i * angle
+        x = r * math.cos(t) + loop.centre_pos[0]
+        y = r * math.sin(t) + loop.centre_pos[1]
+        station.map_x = x
+        station.map_y = y
+        mapped_stations[station.name] = station
 
 
 if __name__ == "__main__":
     data = read_json_network("data/network_data.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
+    loops = data["loop_lines"]
     
+    calculate_loop_station_pos(loops[0], stations, mapped_stations,  20)
     G = generate_graph(stations, train_lines)
     #display graph
     pos = nx.spring_layout(G)
     fig,ax = plt.subplots(figsize=(18,9))
     node_sizes = nx.get_node_attributes(G, "size")
     nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
-    nx.draw_networkx_labels(G,pos,ax=ax)
+    nx.draw_networkx_labels(G, ax=ax)
     # nx.draw_networkx_edges(G,pos)
     draw_lines(G,pos,ax)
     plt.show()

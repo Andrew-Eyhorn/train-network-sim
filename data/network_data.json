@@ -38,7 +38,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "Southern Cross",
@@ -78,7 +79,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "Flagstaff",
@@ -118,7 +120,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "Melbourne Central",
@@ -158,7 +161,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "Parliament",
@@ -198,7 +202,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "Richmond",
@@ -254,7 +259,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": true
         },
         {
             "name": "East Richmond",
@@ -294,7 +300,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Burnley",
@@ -334,7 +341,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Hawthorn",
@@ -366,7 +374,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Glenferrie",
@@ -398,7 +407,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Auburn",
@@ -430,7 +440,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Camberwell",
@@ -462,7 +473,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "East Camberwell",
@@ -486,7 +498,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Canterbury",
@@ -510,7 +523,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Chatham",
@@ -534,7 +548,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Union",
@@ -558,7 +573,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Box Hill",
@@ -582,7 +598,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Laburnum",
@@ -606,7 +623,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Blackburn",
@@ -630,7 +648,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Nunawading",
@@ -654,7 +673,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Mitcham",
@@ -678,7 +698,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Heatherdale",
@@ -702,7 +723,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Ringwood",
@@ -726,7 +748,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Ringwood East",
@@ -742,7 +765,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Croydon",
@@ -758,7 +782,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Mooroolbark",
@@ -774,7 +799,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Lilydale",
@@ -786,7 +812,8 @@
             ],
             "map_x": 66,
             "map_y": 83,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Heathmont",
@@ -802,7 +829,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Bayswater",
@@ -818,7 +846,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Boronia",
@@ -834,7 +863,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Ferntree Gully",
@@ -850,7 +880,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Upper Ferntree Gully",
@@ -866,7 +897,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Upwey",
@@ -882,7 +914,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Tecoma",
@@ -898,7 +931,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Belgrave",
@@ -910,7 +944,8 @@
             ],
             "map_x": 51,
             "map_y": 27,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Riversdale",
@@ -926,7 +961,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Wilison",
@@ -942,7 +978,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Hartwell",
@@ -958,7 +995,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Burwood",
@@ -974,7 +1012,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Ashburton",
@@ -990,7 +1029,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Alamein",
@@ -1002,7 +1042,8 @@
             ],
             "map_x": 92,
             "map_y": 75,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Heyington",
@@ -1018,7 +1059,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Kooyong",
@@ -1034,7 +1076,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Tooronga",
@@ -1050,7 +1093,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Gardiner",
@@ -1066,7 +1110,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Glen Iris",
@@ -1082,7 +1127,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Darling",
@@ -1098,7 +1144,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "East Malvern",
@@ -1114,7 +1161,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Holmesglen",
@@ -1130,7 +1178,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Jordanville",
@@ -1146,7 +1195,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Mount Waverley",
@@ -1162,7 +1212,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Syndal",
@@ -1178,7 +1229,8 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         },
         {
             "name": "Glen Waverley",
@@ -1190,11 +1242,27 @@
             ],
             "map_x": 85,
             "map_y": 90,
-            "map_angle": 0.0
+            "map_angle": 0.0,
+            "is_loop_station": false
         }
     ],
     "line_count": 4,
     "loop_lines": [
+        {
+            "centre_pos": [
+                0,
+                0
+            ],
+            "stations": [
+                "Richmond",
+                "Parliament",
+                "Melbourne Central",
+                "Flagstaff",
+                "Southern Cross",
+                "Flinders Street",
+                "Richmond"
+            ]
+        },
         {
             "centre_pos": [
                 0,

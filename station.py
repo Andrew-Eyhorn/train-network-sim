@@ -10,6 +10,7 @@ class Station(BaseModel):
     map_x: Optional[int] = random.randint(1,100)
     map_y: Optional[int] = random.randint(1,100)
     map_angle: Optional[float] = 0
+    is_loop_station: Optional[bool] = False
 
     def __init__(self, **data):
         super().__init__(**data)

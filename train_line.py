@@ -6,13 +6,13 @@ from pydantic import BaseModel, Field
 
 class Direction(float, Enum):
     EAST = 0
-    SOUTH_EAST = math.pi / 4
-    SOUTH = math.pi / 2
+    SOUTH_EAST = math.pi * -1/4
+    SOUTH = math.pi * -1/2
     SOUTH_WEST = math.pi * 3/4
     WEST = math.pi
-    NORTH_WEST = math.pi * -3/4
-    NORTH = math.pi*-1/2
-    NORTH_EAST = math.pi * -1/4
+    NORTH_WEST = math.pi * 3/4
+    NORTH = math.pi * 1/2
+    NORTH_EAST = math.pi * 1/4
 
 
 class TrainLine(BaseModel):

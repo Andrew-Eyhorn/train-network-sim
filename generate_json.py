@@ -40,6 +40,9 @@ def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
         for line in stations_file.readlines():
             stations_list.append(line.strip())
     new_loop = LoopLine(centre_pos = centre, stations = stations_list)
+    for i in range(len(stations_list) - 1):
+        data["stations"][stations_list[i]].is_loop_station = True
+
     data["loop_lines"].append(new_loop)
 data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
 # data = {"line_count": 0, "loop_lines": [], "linear_lines": []}
@@ -54,6 +57,7 @@ def read_json_network(filepath: str) -> dict:
             data = json.load(f)
             read_data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
             for station in data["stations"]:
+                # station["is_loop_station"] = False
                 station: Station = Station.model_validate(station)
                 read_data["stations"][station.name] = station
             read_data["line_count"] = data["line_count"]

@@ -6,7 +6,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
 import math
-
+import json
 
 
 
@@ -14,7 +14,7 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
     graph = nx.MultiDiGraph()
     for station_name in stations.keys():
         station: Station = stations[station_name]
-        size = len(station.connections) * 125
+        size = len(station.connections) * 50
         graph.add_node(station_name, size = size, pos = (station.map_x, station.map_y))
                 
     for i,line in enumerate(train_lines):
@@ -93,21 +93,27 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
         for i in range(len(line.stations)):
             station: Station = stations[line.stations[i]]
             if station.name not in mapped_stations.keys():
-                if direction is None:
-                    if i == 0:
-                        direction = get_offset_angle(line.direction)
-                        vector = get_vector(direction)
-                        station.map_angle = direction
-                        station.update_map_coords((0,0))
-                        mapped_stations[station.name] = station
-                    else:
-                        prev_station: Station = stations[line.stations[i-1]]
-                        offset_angle = get_offset_angle(i)
-                        prev_angle = prev_station.map_angle
-                        v = get_vector(offset_angle*-1)
-                        direction = prev_angle - offset_angle
-                        vector = rotate_vector(v, prev_angle)
+                if i == 0: #if this is the first station to be mapped
+                    direction = get_offset_angle(line.direction)
+                    vector = get_vector(direction)
+                    x,y = 0,0
+                    station.map_angle = direction
+                    station.update_map_coords((x,y))
+                    mapped_stations[station.name] = station
                 else:
+                    if direction is None:
+                        prev_station: Station = stations[line.stations[i-1]]
+                        if prev_station.is_loop_station:
+                            direction = line.direction
+                            vector = get_vector(direction)
+                        else:
+                            offset_angle = get_offset_angle(i)
+                            prev_angle = 0
+                            prev_angle = prev_station.map_angle
+                            v = get_vector(offset_angle*-1)
+                            direction = prev_angle - offset_angle
+                            vector = rotate_vector(v, prev_angle)
+
                     prev_station: Station = stations[line.stations[i-1]]
                     p_x, p_y = prev_station.map_x, prev_station.map_y
                     x = p_x + spacing * vector[0]
@@ -143,7 +149,9 @@ if __name__ == "__main__":
     G = generate_graph(stations, train_lines)
     #display graph
     pos = nx.get_node_attributes(G, 'pos')
-    fig,ax = plt.subplots(figsize=(18,9))
+
+    px = 1/plt.rcParams['figure.dpi']
+    fig,ax = plt.subplots(figsize=(1000*px,1000*px))
     node_sizes = nx.get_node_attributes(G, "size")
     nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
     nx.draw_networkx_labels(G, pos, ax=ax)
@@ -151,5 +159,5 @@ if __name__ == "__main__":
     draw_lines(G,pos,ax)
     plt.show()
 
-    # with open("sample_network.json", "w") as outfile:
-    #     outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
+    with open("sample_network.json", "w") as outfile:
+        outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))

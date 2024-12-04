@@ -40,7 +40,7 @@ class Station(BaseModel):
         """
         self.map_angle = angle
     def __str__(self):
-        return f"{self.name} station, connects to: {self.connections}"
+        return f"{self.name} station. Location: ({self.map_x, self.map_y}). Angle: {self.map_angle}"
     
     def __repr__(self):
         return self.__str__()

@@ -67,7 +67,7 @@ def read_json_network(filepath: str) -> dict:
             return read_data
 if __name__ == "__main__":
     #read existing json
-    filepath = "data/network_data.json"
+    filepath = "data/temp.json"
     try:
         data = read_json_network(filepath)
     except:
@@ -79,17 +79,33 @@ if __name__ == "__main__":
     # new_line = read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", "cyan", Direction.EAST)
     # new_line = read_train_line("data/alamein_line_stations.txt", stations, "Alamein", "blue", Direction.EAST)
     # new_line = read_train_line("data/glen_waverly_line_stations.txt", stations, "Glen Waverly", "darkblue", Direction.EAST)
+    # new_line = read_train_line("data/pakenham_line_stations.txt", stations, "Pakenham", "purple", Direction.SOUTH_EAST)
+    # new_line = read_train_line("data/cranbourne_line_stations.txt", stations, "Cranbourne", "lightpurple", Direction.SOUTH_EAST)
+    # new_line = read_train_line("data/frankston_line_stations.txt", stations, "Frankston", "darkpink", Direction.SOUTH)
+    # new_line = read_train_line("data/sandringham_line_stations.txt", stations, "Sandringham", "pink", Direction.SOUTH)
+    # new_line = read_train_line("data/williamstown_line_stations.txt", stations, "Williamstown", "green", Direction.SOUTH_WEST)
+    # new_line = read_train_line("data/werribee_line_stations.txt", stations, "Werribee", "lightgreen", Direction.SOUTH_WEST)
+    # new_line = read_train_line("data/sunbury_line_stations.txt", stations, "Sunbury", "darkyellow", Direction.NORTH_WEST)
+    # new_line = read_train_line("data/craigieburn_line_stations.txt", stations, "Craigieburn", "orange", Direction.NORTH)
+    # new_line = read_train_line("data/upfield_line_stations.txt", stations, "Upflied", "darkorange", Direction.NORTH)
+    # new_line = read_train_line("data/hurstbridge_line_stations.txt", stations, "Hurstbridge", "darkred", Direction.NORTH_EAST)
+    # new_line = read_train_line("data/mernda_line_stations.txt", stations, "Mernda", "red", Direction.NORTH_EAST)
 
 
-    # data["loop_lines"].append(new_line)
 
-    # data["line_count"] += 1
-    # #custom changes
-    # station1: Station = stations["Flinders Street"]
-    # station2: Station = stations["Richmond"]
-    # station1.add_connection(station2.name, new_line.line_id)
-    # station2.add_connection(station1.name, new_line.line_id)
-    read_loop_line("data/city_loop.txt", (0,0), data)
+    new_line = read_train_line("data/mernda_line_stations.txt", stations, "Mernda", "red", Direction.NORTH_EAST)
+    
+    data["linear_lines"].append(new_line)
+    
+    data["line_count"] += 1
+    #custom changes
+    # station1: Station = stations["North Melbourne"]
+    # station2: Station = stations["Southern Cross"]
+    station1: Station = stations["Flinders Street"]
+    station2: Station = stations["Jolimont"]
+    station1.add_connection(station2.name, new_line.line_id)
+    station2.add_connection(station1.name, new_line.line_id)
+    # read_loop_line("data/city_loop.txt", (0,0), data)
     #save json
     with open(filepath, 'w', encoding='utf-8') as f:
         json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": [], "linear_lines": []}
@@ -99,5 +115,4 @@ if __name__ == "__main__":
         json.dump(json_data, f, indent=4)
 
 
-
-#TODO - make data json serialisable, then work on drawing loop, then drwaing sations
+    #TODO - Change everything to single connection per line, then debug and figure out wtf is going on with the angles lol

@@ -15,7 +15,7 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
     for station_name in stations.keys():
         station: Station = stations[station_name]
         size = len(station.connections) * 50
-        graph.add_node(station_name, size = size, pos = (station.map_x, station.map_y))
+        graph.add_node(station_name, size = size, pos = (station.map_x, station.map_y), map_angle = station.map_angle)
                 
     for i,line in enumerate(train_lines):
         for station in line.stations:
@@ -26,7 +26,7 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
 
 
 def draw_lines(G: nx.MultiDiGraph, pos, ax):
-    offsets = [0.05, 0.1, 0.15, 0.2]
+    offsets = [0.05 * x for x in range(1, 21)]
     for i, (u,v, key, data) in enumerate(G.edges(keys=True, data=True)):
         x1,y1 = pos[u]
         x2,y2 = pos[v]
@@ -110,7 +110,7 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                             offset_angle = get_offset_angle(i)
                             prev_angle = 0
                             prev_angle = prev_station.map_angle
-                            v = get_vector(offset_angle*-1)
+                            v = get_vector(offset_angle)
                             direction = prev_angle - offset_angle
                             vector = rotate_vector(v, prev_angle)
 
@@ -138,20 +138,20 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
-    data = read_json_network("data/network_data.json")
+    data = read_json_network("data/temp.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
     loops = data["loop_lines"]
     mapped_stations: dict[Station] = {}
 
-    calculate_loop_station_pos(loops[0], stations, mapped_stations,  5)
-    map_stations(train_lines, stations, mapped_stations, 5)
+    calculate_loop_station_pos(loops[0], stations, mapped_stations,  100)
+    map_stations(train_lines, stations, mapped_stations, 30)
     G = generate_graph(stations, train_lines)
     #display graph
     pos = nx.get_node_attributes(G, 'pos')
 
     px = 1/plt.rcParams['figure.dpi']
-    fig,ax = plt.subplots(figsize=(1000*px,1000*px))
+    fig,ax = plt.subplots(figsize=(10000*px,10000*px))
     node_sizes = nx.get_node_attributes(G, "size")
     nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
     nx.draw_networkx_labels(G, pos, ax=ax)

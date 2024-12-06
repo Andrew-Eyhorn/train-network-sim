@@ -1262,21 +1262,6 @@
                 "Flinders Street",
                 "Richmond"
             ]
-        },
-        {
-            "centre_pos": [
-                0,
-                0
-            ],
-            "stations": [
-                "Richmond",
-                "Parliament",
-                "Melbourne Central",
-                "Flagstaff",
-                "Southern Cross",
-                "Flinders Street",
-                "Richmond"
-            ]
         }
     ],
     "linear_lines": [

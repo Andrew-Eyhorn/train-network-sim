@@ -10,18 +10,34 @@ import json
 
 
 
-def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.MultiDiGraph:
-    graph = nx.MultiDiGraph()
+def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.MultiGraph:
+    
+    graph = nx.MultiGraph()
     for station_name in stations.keys():
         station: Station = stations[station_name]
         size = len(station.connections) * 50
         graph.add_node(station_name, size = size, pos = (station.map_x, station.map_y), map_angle = station.map_angle)
                 
-    for i,line in enumerate(train_lines):
-        for station in line.stations:
-            for connection in stations[station].connections:
-                if connection[1] == i:
-                    graph.add_edge(station, connection[0], color=line.line_color, key=i)
+    def get_edge_offset(id: int):
+        if id % 2 == 0:
+            return id / 2
+        else:
+            return -1 * (id + 1) / 2
+    #For each station, we map its connections to 0,1, .... and add 1 if its even
+    for station in stations.values():
+        line_set = set()
+        for connection in station.connections:
+            line_set.add(connection[1])
+        sorted_connections = list(line_set)
+        sorted_connections.sort()
+        is_even = (len(sorted_connections) % 2 == 0)
+
+        normalised_id: dict = {}
+        for i in range(len(sorted_connections)):
+            normalised_id[sorted_connections[i]] = i + is_even
+
+        for connection in station.connections:
+            graph.add_edge(station.name, connection[0], color=train_lines[connection[1]].line_color, key=connection[1], offset = get_edge_offset(normalised_id[connection[1]]))
     return graph
 
 
@@ -49,7 +65,7 @@ def draw_lines(G: nx.MultiDiGraph, pos, ax):
 def get_offset_angle(station_number: int) -> float:
     """
     Gives how much we should offset off the current line based on nubmer of stations passed(more stations, smaller offset)
-    station_number must be >= 1
+    station_number must be >= 0
     """
     max_angle = math.pi/2
     station_number = min(station_number, 20)
@@ -69,6 +85,7 @@ def get_vector(angle: float) -> tuple[float,float]:
     elif math.isclose(angle, Direction.SOUTH):
         return (0,-1)
     else:
+        # angle = math.pi - angle
         x = 1 / math.sqrt(math.tan(angle) ** 2 + 1)
         y = math.tan(angle) / math.sqrt(math.tan(angle) ** 2 + 1)
         return (x,y)
@@ -77,6 +94,10 @@ def rotate_vector(vector: tuple[float,float], angle: float) -> tuple[float,float
     """
     rotates a coord on the plane by angle radians
     """
+    # if angle < 0:
+    #     angle = math.pi - angle
+    # else:
+    #     angle = angle - math.pi
     x,y = vector
     x_new = x * math.cos(angle) + y * math.sin(angle)
     y_new = -1 * x * math.sin(angle) + y * math.cos(angle)
@@ -113,6 +134,7 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                             v = get_vector(offset_angle)
                             direction = prev_angle - offset_angle
                             vector = rotate_vector(v, prev_angle)
+                            # vector = get_vector(direction)
 
                     prev_station: Station = stations[line.stations[i-1]]
                     p_x, p_y = prev_station.map_x, prev_station.map_y
@@ -138,6 +160,7 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
+    # data = read_json_network("data/network_data.json")
     data = read_json_network("data/temp.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
@@ -148,16 +171,16 @@ if __name__ == "__main__":
     map_stations(train_lines, stations, mapped_stations, 30)
     G = generate_graph(stations, train_lines)
     #display graph
-    pos = nx.get_node_attributes(G, 'pos')
+    # pos = nx.get_node_attributes(G, 'pos')
 
-    px = 1/plt.rcParams['figure.dpi']
-    fig,ax = plt.subplots(figsize=(10000*px,10000*px))
-    node_sizes = nx.get_node_attributes(G, "size")
-    nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
-    nx.draw_networkx_labels(G, pos, ax=ax)
-    # nx.draw_networkx_edges(G,pos)
-    draw_lines(G,pos,ax)
-    plt.show()
+    # px = 1/plt.rcParams['figure.dpi']
+    # fig,ax = plt.subplots(figsize=(10000*px,10000*px))
+    # node_sizes = nx.get_node_attributes(G, "size")
+    # nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
+    # nx.draw_networkx_labels(G, pos, ax=ax)
+    # # nx.draw_networkx_edges(G,pos)
+    # draw_lines(G,pos,ax)
+    # plt.show()
 
     with open("sample_network.json", "w") as outfile:
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))

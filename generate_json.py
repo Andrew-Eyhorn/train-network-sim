@@ -115,4 +115,10 @@ if __name__ == "__main__":
         json.dump(json_data, f, indent=4)
 
 
-    #TODO - Change everything to single connection per line, then debug and figure out wtf is going on with the angles lol
+
+
+
+
+#TODO - Change station conenctions to be "line id" : [connections] pairs
+#     - Change line station list to be pairs of ["station name": str, "stops" : boolean] for wehather it stops or not
+#     - When reading lines, now do 2nd passthrough of all lines, to try and detect non-stopping stations, and insert them at correct ps with "false"

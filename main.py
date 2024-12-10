@@ -67,6 +67,7 @@ def get_offset_angle(station_number: int) -> float:
     Gives how much we should offset off the current line based on nubmer of stations passed(more stations, smaller offset)
     station_number must be >= 0
     """
+    # max_angle = math.pi/4
     max_angle = math.pi/2
     station_number = min(station_number, 20)
     reducer = station_number // 5 + 1
@@ -85,23 +86,16 @@ def get_vector(angle: float) -> tuple[float,float]:
     elif math.isclose(angle, Direction.SOUTH):
         return (0,-1)
     else:
-        # angle = math.pi - angle
-        x = 1 / math.sqrt(math.tan(angle) ** 2 + 1)
-        y = math.tan(angle) / math.sqrt(math.tan(angle) ** 2 + 1)
-        return (x,y)
+        return (math.cos(angle), math.sin(angle))
 
-def rotate_vector(vector: tuple[float,float], angle: float) -> tuple[float,float]:
-    """
-    rotates a coord on the plane by angle radians
-    """
-    # if angle < 0:
-    #     angle = math.pi - angle
-    # else:
-    #     angle = angle - math.pi
-    x,y = vector
-    x_new = x * math.cos(angle) + y * math.sin(angle)
-    y_new = -1 * x * math.sin(angle) + y * math.cos(angle)
-    return (x_new, y_new)
+# def rotate_vector(vector: tuple[float,float], angle: float) -> tuple[float,float]:
+#     """
+#     rotates a coord on the plane by angle radians
+#     """
+#     x,y = vector
+#     x_new = x * math.cos(angle) + y * math.sin(angle)
+#     y_new = -1 * x * math.sin(angle) + y * math.cos(angle)
+#     return (x_new, y_new)
 
 def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_stations: dict[Station], spacing: int):
     #get longest line
@@ -124,17 +118,16 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                 else:
                     if direction is None:
                         prev_station: Station = stations[line.stations[i-1]]
-                        if prev_station.is_loop_station:
+                        prev_angle = prev_station.map_angle
+                        if prev_station.is_loop_station or not math.isclose(line.direction, prev_angle):
                             direction = line.direction
                             vector = get_vector(direction)
                         else:
                             offset_angle = get_offset_angle(i)
-                            prev_angle = 0
-                            prev_angle = prev_station.map_angle
-                            v = get_vector(offset_angle)
+                            if line.direction - prev_angle > 0:
+                                offset_angle *= -1
                             direction = prev_angle - offset_angle
-                            vector = rotate_vector(v, prev_angle)
-                            # vector = get_vector(direction)
+                            vector = get_vector(direction)
 
                     prev_station: Station = stations[line.stations[i-1]]
                     p_x, p_y = prev_station.map_x, prev_station.map_y
@@ -182,5 +175,5 @@ if __name__ == "__main__":
     # draw_lines(G,pos,ax)
     # plt.show()
 
-    with open("sample_network.json", "w") as outfile:
+    with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))

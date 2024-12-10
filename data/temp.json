@@ -4540,13 +4540,12 @@
                 0
             ],
             "stations": [
-                "Richmond",
                 "Parliament",
                 "Melbourne Central",
                 "Flagstaff",
                 "Southern Cross",
                 "Flinders Street",
-                "Richmond"
+                "Parliament"
             ]
         }
     ],
@@ -4821,7 +4820,7 @@
             "line_color": "gold",
             "line_id": 8,
             "length": 18,
-            "direction": 2.356194490192345,
+            "direction": 3.141592653589793,
             "stations": [
                 "Flinders Street",
                 "Southern Cross",
@@ -4848,7 +4847,7 @@
             "line_color": "lightgreen",
             "line_id": 9,
             "length": 17,
-            "direction": 2.356194490192345,
+            "direction": -2.356194490192345,
             "stations": [
                 "Flinders Street",
                 "Southern Cross",
@@ -4874,7 +4873,7 @@
             "line_color": "green",
             "line_id": 10,
             "length": 12,
-            "direction": 2.356194490192345,
+            "direction": -1.5707963267948966,
             "stations": [
                 "Flinders Street",
                 "Southern Cross",

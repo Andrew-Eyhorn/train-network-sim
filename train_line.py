@@ -8,7 +8,7 @@ class Direction(float, Enum):
     EAST = 0
     SOUTH_EAST = math.pi * -1/4
     SOUTH = math.pi * -1/2
-    SOUTH_WEST = math.pi * 3/4
+    SOUTH_WEST = math.pi * -3/4
     WEST = math.pi
     NORTH_WEST = math.pi * 3/4
     NORTH = math.pi * 1/2

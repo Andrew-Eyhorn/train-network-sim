@@ -35,6 +35,9 @@ def get_all_stations(train_lines: list[TrainLine], stations: dict[Station]):
                 stations[station.name] = station
 
 def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
+    """
+    Only works when the stations already exist in data
+    """
     stations_list = []
     with open(filepath, newline ='') as stations_file:
         for line in stations_file.readlines():
@@ -44,8 +47,8 @@ def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
         data["stations"][stations_list[i]].is_loop_station = True
 
     data["loop_lines"].append(new_loop)
-data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
-# data = {"line_count": 0, "loop_lines": [], "linear_lines": []}
+
+
 
 
 def read_json_network(filepath: str) -> dict:
@@ -65,47 +68,53 @@ def read_json_network(filepath: str) -> dict:
             read_data["loop_lines"] = [LoopLine.model_validate(line) for line in data["loop_lines"]]
             read_data["linear_lines"] = [TrainLine.model_validate(line) for line in data["linear_lines"]]
             return read_data
+    
+
+def add_line(data: dict, line_stations_file: str, name: str, color: str, direction: Direction, extra_connection: tuple[str,str] | None):
+    stations = data["stations"]
+    new_line = read_train_line(line_stations_file, stations, name, color, direction)
+
+    data["linear_lines"].append(new_line)
+    
+    data["line_count"] += 1
+    if extra_connection is not None:
+        #custom changes
+        station1: Station = stations[extra_connection[0]]
+        station2: Station = stations[extra_connection[1]]
+        station1.add_connection(station2.name, new_line.line_id)
+        station2.add_connection(station1.name, new_line.line_id)
+
+
+data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
+
 if __name__ == "__main__":
     #read existing json
-    filepath = "data/temp.json"
+    filepath = "data/network_data.json"
     try:
         data = read_json_network(filepath)
     except:
         pass
     
     stations = data["stations"]
-    # #read new txt
-    # new_line = read_train_line("data/lilydale_line_stations.txt", stations, "Lilydale", "lightblue", Direction.EAST)
-    # new_line = read_train_line("data/belgrave_line_stations.txt", stations, "Belgrave", "cyan", Direction.EAST)
-    # new_line = read_train_line("data/alamein_line_stations.txt", stations, "Alamein", "blue", Direction.EAST)
-    # new_line = read_train_line("data/glen_waverly_line_stations.txt", stations, "Glen Waverly", "darkblue", Direction.EAST)
-    # new_line = read_train_line("data/pakenham_line_stations.txt", stations, "Pakenham", "purple", Direction.SOUTH_EAST)
-    # new_line = read_train_line("data/cranbourne_line_stations.txt", stations, "Cranbourne", "lightpurple", Direction.SOUTH_EAST)
-    # new_line = read_train_line("data/frankston_line_stations.txt", stations, "Frankston", "darkpink", Direction.SOUTH)
-    # new_line = read_train_line("data/sandringham_line_stations.txt", stations, "Sandringham", "pink", Direction.SOUTH)
-    # new_line = read_train_line("data/williamstown_line_stations.txt", stations, "Williamstown", "green", Direction.SOUTH_WEST)
-    # new_line = read_train_line("data/werribee_line_stations.txt", stations, "Werribee", "lightgreen", Direction.SOUTH_WEST)
-    # new_line = read_train_line("data/sunbury_line_stations.txt", stations, "Sunbury", "darkyellow", Direction.NORTH_WEST)
-    # new_line = read_train_line("data/craigieburn_line_stations.txt", stations, "Craigieburn", "orange", Direction.NORTH)
-    # new_line = read_train_line("data/upfield_line_stations.txt", stations, "Upflied", "darkorange", Direction.NORTH)
-    # new_line = read_train_line("data/hurstbridge_line_stations.txt", stations, "Hurstbridge", "darkred", Direction.NORTH_EAST)
-    # new_line = read_train_line("data/mernda_line_stations.txt", stations, "Mernda", "red", Direction.NORTH_EAST)
+
+    add_line(data,"data/lilydale_line_stations.txt", "Lilydale", "lightblue", Direction.EAST, ("Flinders Street", "Richmond"))
+    add_line(data,"data/belgrave_line_stations.txt", "Belgrave", "cyan", Direction.EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/alamein_line_stations.txt", "Alamein", "blue", Direction.EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/glen_waverly_line_stations.txt", "Glen Waverly", "darkblue", Direction.EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/pakenham_line_stations.txt", "Pakenham", "purple", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/cranbourne_line_stations.txt", "Cranbourne", "lightpurple", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/frankston_line_stations.txt", "Frankston", "magenta", Direction.SOUTH,("Flinders Street", "Richmond"))
+    add_line(data,"data/sandringham_line_stations.txt", "Sandringham", "pink", Direction.SOUTH,("Flinders Street", "Richmond"))
+    add_line(data,"data/williamstown_line_stations.txt", "Williamstown", "green", Direction.SOUTH,None)
+    add_line(data,"data/werribee_line_stations.txt", "Werribee", "lightgreen", Direction.SOUTH_WEST,None)
+    add_line(data,"data/sunbury_line_stations.txt", "Sunbury", "yellow", Direction.WEST,("Southern Cross", "North Melbourne"))
+    add_line(data,"data/craigieburn_line_stations.txt", "Craigieburn", "orange", Direction.NORTH,("Southern Cross", "North Melbourne"))
+    add_line(data,"data/upfield_line_stations.txt", "Upflied", "darkorange", Direction.NORTH,("Southern Cross", "North Melbourne"))
+    add_line(data,"data/hurstbridge_line_stations.txt", "Hurstbridge", "darkred", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
+    add_line(data,"data/mernda_line_stations.txt", "Mernda", "red", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
 
 
-
-    new_line = read_train_line("data/mernda_line_stations.txt", stations, "Mernda", "red", Direction.NORTH_EAST)
-    
-    data["linear_lines"].append(new_line)
-    
-    data["line_count"] += 1
-    #custom changes
-    # station1: Station = stations["North Melbourne"]
-    # station2: Station = stations["Southern Cross"]
-    station1: Station = stations["Flinders Street"]
-    station2: Station = stations["Jolimont"]
-    station1.add_connection(station2.name, new_line.line_id)
-    station2.add_connection(station1.name, new_line.line_id)
-    # read_loop_line("data/city_loop.txt", (0,0), data)
+    read_loop_line("data/city_loop.txt", (0,0), data)
     #save json
     with open(filepath, 'w', encoding='utf-8') as f:
         json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": [], "linear_lines": []}

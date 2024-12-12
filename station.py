@@ -6,7 +6,7 @@ from typing import Optional
 
 class Station(BaseModel):
     name: str
-    connections: list[tuple[str,int]] = Field(default_factory=list) #list of (name, line_id), so connections to stations and via which line
+    connections: dict[int,list[str]] = Field(default_factory=dict) #dict of  "line id" : [connections list] pairs, all connections of same line under one id
     map_x: Optional[int] = random.randint(1,100)
     map_y: Optional[int] = random.randint(1,100)
     map_angle: Optional[float] = 0
@@ -19,12 +19,11 @@ class Station(BaseModel):
         """
         Adds a connection if not already in the station's connections list
         """
-        connection = (station_name, line_id)
-        if self.connections is None:
-            self.connections = [connection]
+        if line_id not in self.connections.keys():
+            self.connections[line_id] = [station_name]
         else:
-            if connection not in self.connections:
-                self.connections.append(connection)
+            if station_name not in self.connections[line_id]:
+                self.connections[line_id].append(station_name)
 
 
     def update_map_coords(self, coords: tuple[float,float]):

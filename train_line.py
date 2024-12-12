@@ -3,6 +3,7 @@ import math
 from enum import Enum
 
 from pydantic import BaseModel, Field
+from typing import ClassVar
 
 class Direction(float, Enum):
     EAST = 0
@@ -16,9 +17,10 @@ class Direction(float, Enum):
 
 
 class TrainLine(BaseModel):
-    _line_number: int = 0
+    _line_number: ClassVar[int] = 0
     name: str
     line_color: str
+    
     line_id: int = Field(init = False, default= 0)
     length: int = Field(init = False, default= 0)
     direction: Direction
@@ -31,7 +33,7 @@ class TrainLine(BaseModel):
         super().__init__(**data)
         if 'line_id' not in data or data['line_id'] is None:
             self.line_id = self._line_number
-            self._line_number += 1
+            TrainLine._line_number += 1
     
     def add_station(self, station: Station):
         self.stations.append(station.name)
@@ -42,6 +44,7 @@ class TrainLine(BaseModel):
     
     def __repr__(self):
         return self.__str__()
+
     
 
 

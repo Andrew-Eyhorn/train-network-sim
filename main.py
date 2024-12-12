@@ -23,12 +23,11 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
             return id / 2
         else:
             return -1 * (id + 1) / 2
+        
     #For each station, we map its connections to 0,1, .... and add 1 if its even
     for station in stations.values():
-        line_set = set()
-        for connection in station.connections:
-            line_set.add(connection[1])
-        sorted_connections = list(line_set)
+        connected_lines: list = station.connections.keys()
+        sorted_connections = list(connected_lines)
         sorted_connections.sort()
         is_even = (len(sorted_connections) % 2 == 0)
 
@@ -36,8 +35,9 @@ def generate_graph(stations: dict[Station], train_lines: list[TrainLine]) -> nx.
         for i in range(len(sorted_connections)):
             normalised_id[sorted_connections[i]] = i + is_even
 
-        for connection in station.connections:
-            graph.add_edge(station.name, connection[0], color=train_lines[connection[1]].line_color, key=connection[1], offset = get_edge_offset(normalised_id[connection[1]]))
+        for line_id in connected_lines:
+            for connected_station in station.connections[line_id]:
+                graph.add_edge(station.name, connected_station, color=train_lines[line_id].line_color, key=line_id, offset = get_edge_offset(normalised_id[line_id]))
     return graph
 
 
@@ -88,14 +88,6 @@ def get_vector(angle: float) -> tuple[float,float]:
     else:
         return (math.cos(angle), math.sin(angle))
 
-# def rotate_vector(vector: tuple[float,float], angle: float) -> tuple[float,float]:
-#     """
-#     rotates a coord on the plane by angle radians
-#     """
-#     x,y = vector
-#     x_new = x * math.cos(angle) + y * math.sin(angle)
-#     y_new = -1 * x * math.sin(angle) + y * math.cos(angle)
-#     return (x_new, y_new)
 
 def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_stations: dict[Station], spacing: int):
     #get longest line
@@ -153,8 +145,8 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
-    # data = read_json_network("data/network_data.json")
-    data = read_json_network("data/temp.json")
+    data = read_json_network("data/network_data.json")
+    # data = read_json_network("data/temp.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
     loops = data["loop_lines"]
@@ -163,17 +155,7 @@ if __name__ == "__main__":
     calculate_loop_station_pos(loops[0], stations, mapped_stations,  100)
     map_stations(train_lines, stations, mapped_stations, 30)
     G = generate_graph(stations, train_lines)
-    #display graph
-    # pos = nx.get_node_attributes(G, 'pos')
 
-    # px = 1/plt.rcParams['figure.dpi']
-    # fig,ax = plt.subplots(figsize=(10000*px,10000*px))
-    # node_sizes = nx.get_node_attributes(G, "size")
-    # nx.draw_networkx_nodes(G,pos,nodelist = node_sizes.keys(), node_size = list(node_sizes.values()))
-    # nx.draw_networkx_labels(G, pos, ax=ax)
-    # # nx.draw_networkx_edges(G,pos)
-    # draw_lines(G,pos,ax)
-    # plt.show()
-
+    #save to json
     with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))

@@ -24,7 +24,7 @@ class TrainLine(BaseModel):
     line_id: int = Field(init = False, default= 0)
     length: int = Field(init = False, default= 0)
     direction: Direction
-    stations: list[str] = Field(default_factory=list)
+    stations: list[dict] = Field(default_factory=list) #List of {"station name": str, "stop" : boolean}
 
 
 
@@ -35,8 +35,8 @@ class TrainLine(BaseModel):
             self.line_id = self._line_number
             TrainLine._line_number += 1
     
-    def add_station(self, station: Station):
-        self.stations.append(station.name)
+    def add_station(self, station: Station, stop: bool = True):
+        self.stations.append({"station": station.name, "stop": stop})
         self.length += 1
     
     def __str__(self):

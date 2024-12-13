@@ -89,7 +89,7 @@ data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
 
 if __name__ == "__main__":
     #read existing json
-    filepath = "data/network_data.json"
+    filepath = "data/temp.json"
     try:
         data = read_json_network(filepath)
     except:
@@ -102,14 +102,14 @@ if __name__ == "__main__":
     add_line(data,"data/alamein_line_stations.txt", "Alamein", "blue", Direction.EAST,("Flinders Street", "Richmond"))
     add_line(data,"data/glen_waverly_line_stations.txt", "Glen Waverly", "darkblue", Direction.EAST,("Flinders Street", "Richmond"))
     add_line(data,"data/pakenham_line_stations.txt", "Pakenham", "purple", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/cranbourne_line_stations.txt", "Cranbourne", "lightpurple", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
+    add_line(data,"data/cranbourne_line_stations.txt", "Cranbourne", "#a569bd", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
     add_line(data,"data/frankston_line_stations.txt", "Frankston", "magenta", Direction.SOUTH,("Flinders Street", "Richmond"))
     add_line(data,"data/sandringham_line_stations.txt", "Sandringham", "pink", Direction.SOUTH,("Flinders Street", "Richmond"))
     add_line(data,"data/williamstown_line_stations.txt", "Williamstown", "green", Direction.SOUTH,None)
     add_line(data,"data/werribee_line_stations.txt", "Werribee", "lightgreen", Direction.SOUTH_WEST,None)
     add_line(data,"data/sunbury_line_stations.txt", "Sunbury", "yellow", Direction.WEST,("Southern Cross", "North Melbourne"))
     add_line(data,"data/craigieburn_line_stations.txt", "Craigieburn", "orange", Direction.NORTH,("Southern Cross", "North Melbourne"))
-    add_line(data,"data/upfield_line_stations.txt", "Upflied", "darkorange", Direction.NORTH,("Southern Cross", "North Melbourne"))
+    add_line(data,"data/upfield_line_stations.txt", "Upfield", "darkorange", Direction.NORTH,("Southern Cross", "North Melbourne"))
     add_line(data,"data/hurstbridge_line_stations.txt", "Hurstbridge", "darkred", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
     add_line(data,"data/mernda_line_stations.txt", "Mernda", "red", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
 
@@ -128,6 +128,6 @@ if __name__ == "__main__":
 
 
 
-#TODO - Change station conenctions to be "line id" : [connections] pairs
+#TODO - Change station conenctions to be "line id" : [connections] pairs - #DONE
 #     - Change line station list to be pairs of ["station name": str, "stops" : boolean] for wehather it stops or not
 #     - When reading lines, now do 2nd passthrough of all lines, to try and detect non-stopping stations, and insert them at correct ps with "false"

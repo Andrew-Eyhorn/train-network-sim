@@ -3422,7 +3422,7 @@
         },
         {
             "name": "Cranbourne",
-            "line_color": "lightpurple",
+            "line_color": "#a569bd",
             "line_id": 5,
             "length": 24,
             "direction": -0.7853981633974483,
@@ -3618,7 +3618,7 @@
             ]
         },
         {
-            "name": "Upflied",
+            "name": "Upfield",
             "line_color": "darkorange",
             "line_id": 12,
             "length": 19,

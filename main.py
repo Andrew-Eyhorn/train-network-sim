@@ -98,7 +98,7 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
         direction = None
         vector = None
         for i in range(len(line.stations)):
-            station: Station = stations[line.stations[i]]
+            station: Station = stations[line.stations[i]["station"]]
             if station.name not in mapped_stations.keys():
                 if i == 0: #if this is the first station to be mapped
                     direction = get_offset_angle(line.direction)
@@ -108,8 +108,8 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                     station.update_map_coords((x,y))
                     mapped_stations[station.name] = station
                 else:
+                    prev_station: Station = stations[line.stations[i-1]["station"]]
                     if direction is None:
-                        prev_station: Station = stations[line.stations[i-1]]
                         prev_angle = prev_station.map_angle
                         if prev_station.is_loop_station or not math.isclose(line.direction, prev_angle):
                             direction = line.direction
@@ -121,7 +121,6 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                             direction = prev_angle - offset_angle
                             vector = get_vector(direction)
 
-                    prev_station: Station = stations[line.stations[i-1]]
                     p_x, p_y = prev_station.map_x, prev_station.map_y
                     x = p_x + spacing * vector[0]
                     y = p_y + spacing * vector[1]
@@ -145,7 +144,7 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
-    data = read_json_network("data/network_data.json")
+    data = read_json_network("data/temp.json")
     # data = read_json_network("data/temp.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]

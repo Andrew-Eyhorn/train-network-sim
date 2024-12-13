@@ -57,8 +57,8 @@
                     "Jolimont"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": true
         },
@@ -121,8 +121,8 @@
                     "Flinders Street"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": true
         },
@@ -174,8 +174,8 @@
                     "Southern Cross"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": true
         },
@@ -227,8 +227,8 @@
                     "Flagstaff"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": true
         },
@@ -280,8 +280,8 @@
                     "Melbourne Central"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": true
         },
@@ -327,8 +327,8 @@
                     "Flinders Street"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -352,8 +352,8 @@
                     "Richmond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -377,8 +377,8 @@
                     "East Richmond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -398,8 +398,8 @@
                     "Burnley"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -419,8 +419,8 @@
                     "Hawthorn"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -440,8 +440,8 @@
                     "Glenferrie"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -461,8 +461,8 @@
                     "Auburn"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -478,8 +478,8 @@
                     "Camberwell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -495,8 +495,8 @@
                     "East Camberwell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -512,8 +512,8 @@
                     "Canterbury"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -529,8 +529,8 @@
                     "Chatham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -546,8 +546,8 @@
                     "Union"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -563,8 +563,8 @@
                     "Box Hill"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -580,8 +580,8 @@
                     "Laburnum"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -597,8 +597,8 @@
                     "Blackburn"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -614,8 +614,8 @@
                     "Nunawading"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -631,8 +631,8 @@
                     "Mitcham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -648,8 +648,8 @@
                     "Heatherdale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -661,8 +661,8 @@
                     "Ringwood"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -674,8 +674,8 @@
                     "Ringwood East"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -687,8 +687,8 @@
                     "Croydon"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -699,8 +699,8 @@
                     "Mooroolbark"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -712,8 +712,8 @@
                     "Ringwood"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -725,8 +725,8 @@
                     "Heathmont"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -738,8 +738,8 @@
                     "Bayswater"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -751,8 +751,8 @@
                     "Boronia"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -764,8 +764,8 @@
                     "Ferntree Gully"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -777,8 +777,8 @@
                     "Upper Ferntree Gully"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -790,8 +790,8 @@
                     "Upwey"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -802,8 +802,8 @@
                     "Tecoma"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -815,8 +815,8 @@
                     "Camberwell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -828,8 +828,8 @@
                     "Riversdale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -841,8 +841,8 @@
                     "Wilison"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -854,8 +854,8 @@
                     "Hartwell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -867,8 +867,8 @@
                     "Burwood"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -879,8 +879,8 @@
                     "Ashburton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -892,8 +892,8 @@
                     "Burnley"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -905,8 +905,8 @@
                     "Heyington"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -918,8 +918,8 @@
                     "Kooyong"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -931,8 +931,8 @@
                     "Tooronga"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -944,8 +944,8 @@
                     "Gardiner"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -957,8 +957,8 @@
                     "Glen Iris"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -970,8 +970,8 @@
                     "Darling"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -983,8 +983,8 @@
                     "East Malvern"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -996,8 +996,8 @@
                     "Holmesglen"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1009,8 +1009,8 @@
                     "Jordanville"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1022,8 +1022,8 @@
                     "Mount Waverley"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1034,8 +1034,8 @@
                     "Syndal"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1059,8 +1059,8 @@
                     "Richmond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1080,8 +1080,8 @@
                     "Armadale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1101,8 +1101,8 @@
                     "Malvern"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1118,8 +1118,8 @@
                     "Caulfield"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1135,8 +1135,8 @@
                     "Carnegie"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1152,8 +1152,8 @@
                     "Murrumbeena"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1169,8 +1169,8 @@
                     "Hughesdale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1186,8 +1186,8 @@
                     "Oakleigh"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1203,8 +1203,8 @@
                     "Huntingdale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1220,8 +1220,8 @@
                     "Clayton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1237,8 +1237,8 @@
                     "Westall"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1254,8 +1254,8 @@
                     "Springvale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1271,8 +1271,8 @@
                     "Sandown Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1288,8 +1288,8 @@
                     "Noble Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1305,8 +1305,8 @@
                     "Yarraman"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1318,8 +1318,8 @@
                     "Dandenong"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1331,8 +1331,8 @@
                     "Hallam"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1344,8 +1344,8 @@
                     "Narre Warren"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1357,8 +1357,8 @@
                     "Berwick"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1370,8 +1370,8 @@
                     "Beaconsfield"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1383,8 +1383,8 @@
                     "Officer"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1396,8 +1396,8 @@
                     "Cardinia Road"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1408,8 +1408,8 @@
                     "Pakenham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1421,8 +1421,8 @@
                     "Dandenong"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1434,8 +1434,8 @@
                     "Lynbrook"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1446,8 +1446,8 @@
                     "Merinda Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1459,8 +1459,8 @@
                     "South Yarra"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1472,8 +1472,8 @@
                     "Hawksburn"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1485,8 +1485,8 @@
                     "Toorak"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1498,8 +1498,8 @@
                     "Caulfield"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1511,8 +1511,8 @@
                     "Glen Huntly"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1524,8 +1524,8 @@
                     "Ormond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1537,8 +1537,8 @@
                     "McKinnon"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1550,8 +1550,8 @@
                     "Bentleigh"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1563,8 +1563,8 @@
                     "Patterson"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1576,8 +1576,8 @@
                     "Moorabbin"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1589,8 +1589,8 @@
                     "Highett"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1602,8 +1602,8 @@
                     "Southland"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1615,8 +1615,8 @@
                     "Cheltenham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1628,8 +1628,8 @@
                     "Mentone"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1641,8 +1641,8 @@
                     "Parkdale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1654,8 +1654,8 @@
                     "Mordialloc"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1667,8 +1667,8 @@
                     "Aspendale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1680,8 +1680,8 @@
                     "Edithvale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1693,8 +1693,8 @@
                     "Chelsea"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1706,8 +1706,8 @@
                     "Bonbeach"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1719,8 +1719,8 @@
                     "Carrum"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1732,8 +1732,8 @@
                     "Seaford"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1744,8 +1744,8 @@
                     "Kananook"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1757,8 +1757,8 @@
                     "South Yarra"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1770,8 +1770,8 @@
                     "Prahran"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1783,8 +1783,8 @@
                     "Windsor"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1796,8 +1796,8 @@
                     "Balaclava"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1809,8 +1809,8 @@
                     "Ripponlea"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1822,8 +1822,8 @@
                     "Elsternwick"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1835,8 +1835,8 @@
                     "Gardenvale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1848,8 +1848,8 @@
                     "North Brighton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1861,8 +1861,8 @@
                     "Middle Brighton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1874,8 +1874,8 @@
                     "Brighton Beach"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1886,8 +1886,8 @@
                     "Hampton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1918,8 +1918,8 @@
                     "Southern Cross"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1935,8 +1935,8 @@
                     "North Melbourne"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1956,8 +1956,8 @@
                     "North Melbourne"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1973,8 +1973,8 @@
                     "Footscray"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -1990,8 +1990,8 @@
                     "Seddon"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2007,8 +2007,8 @@
                     "Yarraville"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2024,8 +2024,8 @@
                     "Spotswood"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2037,8 +2037,8 @@
                     "Newport"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2050,8 +2050,8 @@
                     "North Williamstown"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2062,8 +2062,8 @@
                     "Williamstown Beach"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2075,8 +2075,8 @@
                     "Newport"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2088,8 +2088,8 @@
                     "Seaholme"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2101,8 +2101,8 @@
                     "Altona"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2114,8 +2114,8 @@
                     "Westona"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2127,8 +2127,8 @@
                     "Laverton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2140,8 +2140,8 @@
                     "Aircraft"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2153,8 +2153,8 @@
                     "Williams Landing"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2165,8 +2165,8 @@
                     "Hoppers Crossing"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2178,8 +2178,8 @@
                     "Footscray"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2191,8 +2191,8 @@
                     "Middle Footscray"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2204,8 +2204,8 @@
                     "West Footscray"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2217,8 +2217,8 @@
                     "Tottenham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2230,8 +2230,8 @@
                     "Sunshine"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2243,8 +2243,8 @@
                     "Albion"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2256,8 +2256,8 @@
                     "Ginifer"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2269,8 +2269,8 @@
                     "St Albans"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2282,8 +2282,8 @@
                     "Keilor Plains"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2295,8 +2295,8 @@
                     "Watergardens"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2307,8 +2307,8 @@
                     "Diggers Rest"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2320,8 +2320,8 @@
                     "North Melbourne"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2333,8 +2333,8 @@
                     "Kensington"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2346,8 +2346,8 @@
                     "Newmarket"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2359,8 +2359,8 @@
                     "Ascot Vale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2372,8 +2372,8 @@
                     "Moonee Ponds"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2385,8 +2385,8 @@
                     "Essendon"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2398,8 +2398,8 @@
                     "Glenbervie"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2411,8 +2411,8 @@
                     "Strathmore"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2424,8 +2424,8 @@
                     "Pascoe Vale"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2437,8 +2437,8 @@
                     "Oak Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2450,8 +2450,8 @@
                     "Glenroy"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2463,8 +2463,8 @@
                     "Jacana"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2476,8 +2476,8 @@
                     "Broadmeadows"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2489,8 +2489,8 @@
                     "Coolaroo"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2501,8 +2501,8 @@
                     "Roxburgh Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2514,8 +2514,8 @@
                     "North Melbourne"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2527,8 +2527,8 @@
                     "Macaulay"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2540,8 +2540,8 @@
                     "Flemington Bridge"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2553,8 +2553,8 @@
                     "Royal Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2566,8 +2566,8 @@
                     "Jewell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2579,8 +2579,8 @@
                     "Brunswick"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2592,8 +2592,8 @@
                     "Anstey"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2605,8 +2605,8 @@
                     "Moreland"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2618,8 +2618,8 @@
                     "Coburg"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2631,8 +2631,8 @@
                     "Batman"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2644,8 +2644,8 @@
                     "Merlynston"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2657,8 +2657,8 @@
                     "Fawkner"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2669,8 +2669,8 @@
                     "Gowrie"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2688,8 +2688,8 @@
                     "Flinders Street"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2705,8 +2705,8 @@
                     "Jolimont"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2722,8 +2722,8 @@
                     "West Richmond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2739,8 +2739,8 @@
                     "North Richmond"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2756,8 +2756,8 @@
                     "Collingwood"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2773,8 +2773,8 @@
                     "Victoria Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2786,8 +2786,8 @@
                     "Clifton Hill"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2799,8 +2799,8 @@
                     "Westgarth"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2812,8 +2812,8 @@
                     "Dennis"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2825,8 +2825,8 @@
                     "Fairfield"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2838,8 +2838,8 @@
                     "Alphington"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2851,8 +2851,8 @@
                     "Darebin"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2864,8 +2864,8 @@
                     "Ivanhoe"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2877,8 +2877,8 @@
                     "Eaglemont"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2890,8 +2890,8 @@
                     "Heidelberg"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2903,8 +2903,8 @@
                     "Rosanna"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2916,8 +2916,8 @@
                     "Macleod"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2929,8 +2929,8 @@
                     "Watsonia"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2942,8 +2942,8 @@
                     "Greensborough"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2955,8 +2955,8 @@
                     "Montmorency"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2968,8 +2968,8 @@
                     "Eltham"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2981,8 +2981,8 @@
                     "Diamond Creek"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -2993,8 +2993,8 @@
                     "Wattle Glen"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3006,8 +3006,8 @@
                     "Clifton Hill"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3019,8 +3019,8 @@
                     "Rushall"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3032,8 +3032,8 @@
                     "Merri"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3045,8 +3045,8 @@
                     "Northcote"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3058,8 +3058,8 @@
                     "Croxton"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3071,8 +3071,8 @@
                     "Thornbury"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3084,8 +3084,8 @@
                     "Bell"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3097,8 +3097,8 @@
                     "Preston"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3110,8 +3110,8 @@
                     "Regent"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3123,8 +3123,8 @@
                     "Reservoir"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3136,8 +3136,8 @@
                     "Ruthven"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3149,8 +3149,8 @@
                     "Keon Park"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3162,8 +3162,8 @@
                     "Thomastown"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3175,8 +3175,8 @@
                     "Lalor"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3188,8 +3188,8 @@
                     "Epping"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3201,8 +3201,8 @@
                     "South Morang"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3214,8 +3214,8 @@
                     "Middle Gorge"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         },
@@ -3226,8 +3226,8 @@
                     "Hawkstowe"
                 ]
             },
-            "map_x": 57,
-            "map_y": 15,
+            "map_x": 62,
+            "map_y": 5,
             "map_angle": 0,
             "is_loop_station": false
         }
@@ -3257,33 +3257,114 @@
             "length": 27,
             "direction": 0.0,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "East Richmond",
-                "Burnley",
-                "Hawthorn",
-                "Glenferrie",
-                "Auburn",
-                "Camberwell",
-                "East Camberwell",
-                "Canterbury",
-                "Chatham",
-                "Union",
-                "Box Hill",
-                "Laburnum",
-                "Blackburn",
-                "Nunawading",
-                "Mitcham",
-                "Heatherdale",
-                "Ringwood",
-                "Ringwood East",
-                "Croydon",
-                "Mooroolbark",
-                "Lilydale"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Burnley",
+                    "stop": true
+                },
+                {
+                    "station": "Hawthorn",
+                    "stop": true
+                },
+                {
+                    "station": "Glenferrie",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "East Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "Canterbury",
+                    "stop": true
+                },
+                {
+                    "station": "Chatham",
+                    "stop": true
+                },
+                {
+                    "station": "Union",
+                    "stop": true
+                },
+                {
+                    "station": "Box Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Laburnum",
+                    "stop": true
+                },
+                {
+                    "station": "Blackburn",
+                    "stop": true
+                },
+                {
+                    "station": "Nunawading",
+                    "stop": true
+                },
+                {
+                    "station": "Mitcham",
+                    "stop": true
+                },
+                {
+                    "station": "Heatherdale",
+                    "stop": true
+                },
+                {
+                    "station": "Ringwood",
+                    "stop": true
+                },
+                {
+                    "station": "Ringwood East",
+                    "stop": true
+                },
+                {
+                    "station": "Croydon",
+                    "stop": true
+                },
+                {
+                    "station": "Mooroolbark",
+                    "stop": true
+                },
+                {
+                    "station": "Lilydale",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3293,37 +3374,130 @@
             "length": 31,
             "direction": 0.0,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "East Richmond",
-                "Burnley",
-                "Hawthorn",
-                "Glenferrie",
-                "Auburn",
-                "Camberwell",
-                "East Camberwell",
-                "Canterbury",
-                "Chatham",
-                "Union",
-                "Box Hill",
-                "Laburnum",
-                "Blackburn",
-                "Nunawading",
-                "Mitcham",
-                "Heatherdale",
-                "Ringwood",
-                "Heathmont",
-                "Bayswater",
-                "Boronia",
-                "Ferntree Gully",
-                "Upper Ferntree Gully",
-                "Upwey",
-                "Tecoma",
-                "Belgrave"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Burnley",
+                    "stop": true
+                },
+                {
+                    "station": "Hawthorn",
+                    "stop": true
+                },
+                {
+                    "station": "Glenferrie",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "East Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "Canterbury",
+                    "stop": true
+                },
+                {
+                    "station": "Chatham",
+                    "stop": true
+                },
+                {
+                    "station": "Union",
+                    "stop": true
+                },
+                {
+                    "station": "Box Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Laburnum",
+                    "stop": true
+                },
+                {
+                    "station": "Blackburn",
+                    "stop": true
+                },
+                {
+                    "station": "Nunawading",
+                    "stop": true
+                },
+                {
+                    "station": "Mitcham",
+                    "stop": true
+                },
+                {
+                    "station": "Heatherdale",
+                    "stop": true
+                },
+                {
+                    "station": "Ringwood",
+                    "stop": true
+                },
+                {
+                    "station": "Heathmont",
+                    "stop": true
+                },
+                {
+                    "station": "Bayswater",
+                    "stop": true
+                },
+                {
+                    "station": "Boronia",
+                    "stop": true
+                },
+                {
+                    "station": "Ferntree Gully",
+                    "stop": true
+                },
+                {
+                    "station": "Upper Ferntree Gully",
+                    "stop": true
+                },
+                {
+                    "station": "Upwey",
+                    "stop": true
+                },
+                {
+                    "station": "Tecoma",
+                    "stop": true
+                },
+                {
+                    "station": "Belgrave",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3333,24 +3507,78 @@
             "length": 18,
             "direction": 0.0,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "East Richmond",
-                "Burnley",
-                "Hawthorn",
-                "Glenferrie",
-                "Auburn",
-                "Camberwell",
-                "Riversdale",
-                "Wilison",
-                "Hartwell",
-                "Burwood",
-                "Ashburton",
-                "Alamein"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Burnley",
+                    "stop": true
+                },
+                {
+                    "station": "Hawthorn",
+                    "stop": true
+                },
+                {
+                    "station": "Glenferrie",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "Riversdale",
+                    "stop": true
+                },
+                {
+                    "station": "Wilison",
+                    "stop": true
+                },
+                {
+                    "station": "Hartwell",
+                    "stop": true
+                },
+                {
+                    "station": "Burwood",
+                    "stop": true
+                },
+                {
+                    "station": "Ashburton",
+                    "stop": true
+                },
+                {
+                    "station": "Alamein",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3360,26 +3588,86 @@
             "length": 20,
             "direction": 0.0,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "East Richmond",
-                "Burnley",
-                "Heyington",
-                "Kooyong",
-                "Tooronga",
-                "Gardiner",
-                "Glen Iris",
-                "Darling",
-                "East Malvern",
-                "Holmesglen",
-                "Jordanville",
-                "Mount Waverley",
-                "Syndal",
-                "Glen Waverley"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Burnley",
+                    "stop": true
+                },
+                {
+                    "station": "Heyington",
+                    "stop": true
+                },
+                {
+                    "station": "Kooyong",
+                    "stop": true
+                },
+                {
+                    "station": "Tooronga",
+                    "stop": true
+                },
+                {
+                    "station": "Gardiner",
+                    "stop": true
+                },
+                {
+                    "station": "Glen Iris",
+                    "stop": true
+                },
+                {
+                    "station": "Darling",
+                    "stop": true
+                },
+                {
+                    "station": "East Malvern",
+                    "stop": true
+                },
+                {
+                    "station": "Holmesglen",
+                    "stop": true
+                },
+                {
+                    "station": "Jordanville",
+                    "stop": true
+                },
+                {
+                    "station": "Mount Waverley",
+                    "stop": true
+                },
+                {
+                    "station": "Syndal",
+                    "stop": true
+                },
+                {
+                    "station": "Glen Waverley",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3389,35 +3677,122 @@
             "length": 29,
             "direction": -0.7853981633974483,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "South Yarra",
-                "Malvern",
-                "Caulfield",
-                "Carnegie",
-                "Murrumbeena",
-                "Hughesdale",
-                "Oakleigh",
-                "Huntingdale",
-                "Clayton",
-                "Westall",
-                "Springvale",
-                "Sandown Park",
-                "Noble Park",
-                "Yarraman",
-                "Dandenong",
-                "Hallam",
-                "Narre Warren",
-                "Berwick",
-                "Beaconsfield",
-                "Officer",
-                "Cardinia Road",
-                "Pakenham",
-                "East Pakenham"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "South Yarra",
+                    "stop": true
+                },
+                {
+                    "station": "Malvern",
+                    "stop": true
+                },
+                {
+                    "station": "Caulfield",
+                    "stop": true
+                },
+                {
+                    "station": "Carnegie",
+                    "stop": true
+                },
+                {
+                    "station": "Murrumbeena",
+                    "stop": true
+                },
+                {
+                    "station": "Hughesdale",
+                    "stop": true
+                },
+                {
+                    "station": "Oakleigh",
+                    "stop": true
+                },
+                {
+                    "station": "Huntingdale",
+                    "stop": true
+                },
+                {
+                    "station": "Clayton",
+                    "stop": true
+                },
+                {
+                    "station": "Westall",
+                    "stop": true
+                },
+                {
+                    "station": "Springvale",
+                    "stop": true
+                },
+                {
+                    "station": "Sandown Park",
+                    "stop": true
+                },
+                {
+                    "station": "Noble Park",
+                    "stop": true
+                },
+                {
+                    "station": "Yarraman",
+                    "stop": true
+                },
+                {
+                    "station": "Dandenong",
+                    "stop": true
+                },
+                {
+                    "station": "Hallam",
+                    "stop": true
+                },
+                {
+                    "station": "Narre Warren",
+                    "stop": true
+                },
+                {
+                    "station": "Berwick",
+                    "stop": true
+                },
+                {
+                    "station": "Beaconsfield",
+                    "stop": true
+                },
+                {
+                    "station": "Officer",
+                    "stop": true
+                },
+                {
+                    "station": "Cardinia Road",
+                    "stop": true
+                },
+                {
+                    "station": "Pakenham",
+                    "stop": true
+                },
+                {
+                    "station": "East Pakenham",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3427,30 +3802,102 @@
             "length": 24,
             "direction": -0.7853981633974483,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Richmond",
-                "South Yarra",
-                "Malvern",
-                "Caulfield",
-                "Carnegie",
-                "Murrumbeena",
-                "Hughesdale",
-                "Oakleigh",
-                "Huntingdale",
-                "Clayton",
-                "Westall",
-                "Springvale",
-                "Sandown Park",
-                "Noble Park",
-                "Yarraman",
-                "Dandenong",
-                "Lynbrook",
-                "Merinda Park",
-                "Cranbourne"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "South Yarra",
+                    "stop": true
+                },
+                {
+                    "station": "Malvern",
+                    "stop": true
+                },
+                {
+                    "station": "Caulfield",
+                    "stop": true
+                },
+                {
+                    "station": "Carnegie",
+                    "stop": true
+                },
+                {
+                    "station": "Murrumbeena",
+                    "stop": true
+                },
+                {
+                    "station": "Hughesdale",
+                    "stop": true
+                },
+                {
+                    "station": "Oakleigh",
+                    "stop": true
+                },
+                {
+                    "station": "Huntingdale",
+                    "stop": true
+                },
+                {
+                    "station": "Clayton",
+                    "stop": true
+                },
+                {
+                    "station": "Westall",
+                    "stop": true
+                },
+                {
+                    "station": "Springvale",
+                    "stop": true
+                },
+                {
+                    "station": "Sandown Park",
+                    "stop": true
+                },
+                {
+                    "station": "Noble Park",
+                    "stop": true
+                },
+                {
+                    "station": "Yarraman",
+                    "stop": true
+                },
+                {
+                    "station": "Dandenong",
+                    "stop": true
+                },
+                {
+                    "station": "Lynbrook",
+                    "stop": true
+                },
+                {
+                    "station": "Merinda Park",
+                    "stop": true
+                },
+                {
+                    "station": "Cranbourne",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3460,34 +3907,118 @@
             "length": 28,
             "direction": -1.5707963267948966,
             "stations": [
-                "Flinders Street",
-                "Richmond",
-                "South Yarra",
-                "Hawksburn",
-                "Toorak",
-                "Armadale",
-                "Malvern",
-                "Caulfield",
-                "Glen Huntly",
-                "Ormond",
-                "McKinnon",
-                "Bentleigh",
-                "Patterson",
-                "Moorabbin",
-                "Highett",
-                "Southland",
-                "Cheltenham",
-                "Mentone",
-                "Parkdale",
-                "Mordialloc",
-                "Aspendale",
-                "Edithvale",
-                "Chelsea",
-                "Bonbeach",
-                "Carrum",
-                "Seaford",
-                "Kananook",
-                "Frankston"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "South Yarra",
+                    "stop": true
+                },
+                {
+                    "station": "Hawksburn",
+                    "stop": true
+                },
+                {
+                    "station": "Toorak",
+                    "stop": true
+                },
+                {
+                    "station": "Armadale",
+                    "stop": true
+                },
+                {
+                    "station": "Malvern",
+                    "stop": true
+                },
+                {
+                    "station": "Caulfield",
+                    "stop": true
+                },
+                {
+                    "station": "Glen Huntly",
+                    "stop": true
+                },
+                {
+                    "station": "Ormond",
+                    "stop": true
+                },
+                {
+                    "station": "McKinnon",
+                    "stop": true
+                },
+                {
+                    "station": "Bentleigh",
+                    "stop": true
+                },
+                {
+                    "station": "Patterson",
+                    "stop": true
+                },
+                {
+                    "station": "Moorabbin",
+                    "stop": true
+                },
+                {
+                    "station": "Highett",
+                    "stop": true
+                },
+                {
+                    "station": "Southland",
+                    "stop": true
+                },
+                {
+                    "station": "Cheltenham",
+                    "stop": true
+                },
+                {
+                    "station": "Mentone",
+                    "stop": true
+                },
+                {
+                    "station": "Parkdale",
+                    "stop": true
+                },
+                {
+                    "station": "Mordialloc",
+                    "stop": true
+                },
+                {
+                    "station": "Aspendale",
+                    "stop": true
+                },
+                {
+                    "station": "Edithvale",
+                    "stop": true
+                },
+                {
+                    "station": "Chelsea",
+                    "stop": true
+                },
+                {
+                    "station": "Bonbeach",
+                    "stop": true
+                },
+                {
+                    "station": "Carrum",
+                    "stop": true
+                },
+                {
+                    "station": "Seaford",
+                    "stop": true
+                },
+                {
+                    "station": "Kananook",
+                    "stop": true
+                },
+                {
+                    "station": "Frankston",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3497,20 +4028,62 @@
             "length": 14,
             "direction": -1.5707963267948966,
             "stations": [
-                "Flinders Street",
-                "Richmond",
-                "South Yarra",
-                "Prahran",
-                "Windsor",
-                "Balaclava",
-                "Ripponlea",
-                "Elsternwick",
-                "Gardenvale",
-                "North Brighton",
-                "Middle Brighton",
-                "Brighton Beach",
-                "Hampton",
-                "Sandringham"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "South Yarra",
+                    "stop": true
+                },
+                {
+                    "station": "Prahran",
+                    "stop": true
+                },
+                {
+                    "station": "Windsor",
+                    "stop": true
+                },
+                {
+                    "station": "Balaclava",
+                    "stop": true
+                },
+                {
+                    "station": "Ripponlea",
+                    "stop": true
+                },
+                {
+                    "station": "Elsternwick",
+                    "stop": true
+                },
+                {
+                    "station": "Gardenvale",
+                    "stop": true
+                },
+                {
+                    "station": "North Brighton",
+                    "stop": true
+                },
+                {
+                    "station": "Middle Brighton",
+                    "stop": true
+                },
+                {
+                    "station": "Brighton Beach",
+                    "stop": true
+                },
+                {
+                    "station": "Hampton",
+                    "stop": true
+                },
+                {
+                    "station": "Sandringham",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3520,18 +4093,54 @@
             "length": 12,
             "direction": -1.5707963267948966,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "North Melbourne",
-                "South Kensington",
-                "Footscray",
-                "Seddon",
-                "Yarraville",
-                "Spotswood",
-                "Newport",
-                "North Williamstown",
-                "Williamstown Beach",
-                "Williamstown"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "North Melbourne",
+                    "stop": true
+                },
+                {
+                    "station": "South Kensington",
+                    "stop": true
+                },
+                {
+                    "station": "Footscray",
+                    "stop": true
+                },
+                {
+                    "station": "Seddon",
+                    "stop": true
+                },
+                {
+                    "station": "Yarraville",
+                    "stop": true
+                },
+                {
+                    "station": "Spotswood",
+                    "stop": true
+                },
+                {
+                    "station": "Newport",
+                    "stop": true
+                },
+                {
+                    "station": "North Williamstown",
+                    "stop": true
+                },
+                {
+                    "station": "Williamstown Beach",
+                    "stop": true
+                },
+                {
+                    "station": "Williamstown",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3541,23 +4150,74 @@
             "length": 17,
             "direction": -2.356194490192345,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "North Melbourne",
-                "South Kensington",
-                "Footscray",
-                "Seddon",
-                "Yarraville",
-                "Spotswood",
-                "Newport",
-                "Seaholme",
-                "Altona",
-                "Westona",
-                "Laverton",
-                "Aircraft",
-                "Williams Landing",
-                "Hoppers Crossing",
-                "Werribee"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "North Melbourne",
+                    "stop": true
+                },
+                {
+                    "station": "South Kensington",
+                    "stop": true
+                },
+                {
+                    "station": "Footscray",
+                    "stop": true
+                },
+                {
+                    "station": "Seddon",
+                    "stop": true
+                },
+                {
+                    "station": "Yarraville",
+                    "stop": true
+                },
+                {
+                    "station": "Spotswood",
+                    "stop": true
+                },
+                {
+                    "station": "Newport",
+                    "stop": true
+                },
+                {
+                    "station": "Seaholme",
+                    "stop": true
+                },
+                {
+                    "station": "Altona",
+                    "stop": true
+                },
+                {
+                    "station": "Westona",
+                    "stop": true
+                },
+                {
+                    "station": "Laverton",
+                    "stop": true
+                },
+                {
+                    "station": "Aircraft",
+                    "stop": true
+                },
+                {
+                    "station": "Williams Landing",
+                    "stop": true
+                },
+                {
+                    "station": "Hoppers Crossing",
+                    "stop": true
+                },
+                {
+                    "station": "Werribee",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3567,24 +4227,78 @@
             "length": 18,
             "direction": 3.141592653589793,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Parliament",
-                "Melbourne Central",
-                "Flagstaff",
-                "North Melbourne",
-                "Footscray",
-                "Middle Footscray",
-                "West Footscray",
-                "Tottenham",
-                "Sunshine",
-                "Albion",
-                "Ginifer",
-                "St Albans",
-                "Keilor Plains",
-                "Watergardens",
-                "Diggers Rest",
-                "Sunbury"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "North Melbourne",
+                    "stop": true
+                },
+                {
+                    "station": "Footscray",
+                    "stop": true
+                },
+                {
+                    "station": "Middle Footscray",
+                    "stop": true
+                },
+                {
+                    "station": "West Footscray",
+                    "stop": true
+                },
+                {
+                    "station": "Tottenham",
+                    "stop": true
+                },
+                {
+                    "station": "Sunshine",
+                    "stop": true
+                },
+                {
+                    "station": "Albion",
+                    "stop": true
+                },
+                {
+                    "station": "Ginifer",
+                    "stop": true
+                },
+                {
+                    "station": "St Albans",
+                    "stop": true
+                },
+                {
+                    "station": "Keilor Plains",
+                    "stop": true
+                },
+                {
+                    "station": "Watergardens",
+                    "stop": true
+                },
+                {
+                    "station": "Diggers Rest",
+                    "stop": true
+                },
+                {
+                    "station": "Sunbury",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3594,27 +4308,90 @@
             "length": 21,
             "direction": 1.5707963267948966,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Parliament",
-                "Melbourne Central",
-                "Flagstaff",
-                "North Melbourne",
-                "Kensington",
-                "Newmarket",
-                "Ascot Vale",
-                "Moonee Ponds",
-                "Essendon",
-                "Glenbervie",
-                "Strathmore",
-                "Pascoe Vale",
-                "Oak Park",
-                "Glenroy",
-                "Jacana",
-                "Broadmeadows",
-                "Coolaroo",
-                "Roxburgh Park",
-                "Craigieburn"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "North Melbourne",
+                    "stop": true
+                },
+                {
+                    "station": "Kensington",
+                    "stop": true
+                },
+                {
+                    "station": "Newmarket",
+                    "stop": true
+                },
+                {
+                    "station": "Ascot Vale",
+                    "stop": true
+                },
+                {
+                    "station": "Moonee Ponds",
+                    "stop": true
+                },
+                {
+                    "station": "Essendon",
+                    "stop": true
+                },
+                {
+                    "station": "Glenbervie",
+                    "stop": true
+                },
+                {
+                    "station": "Strathmore",
+                    "stop": true
+                },
+                {
+                    "station": "Pascoe Vale",
+                    "stop": true
+                },
+                {
+                    "station": "Oak Park",
+                    "stop": true
+                },
+                {
+                    "station": "Glenroy",
+                    "stop": true
+                },
+                {
+                    "station": "Jacana",
+                    "stop": true
+                },
+                {
+                    "station": "Broadmeadows",
+                    "stop": true
+                },
+                {
+                    "station": "Coolaroo",
+                    "stop": true
+                },
+                {
+                    "station": "Roxburgh Park",
+                    "stop": true
+                },
+                {
+                    "station": "Craigieburn",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3624,25 +4401,82 @@
             "length": 19,
             "direction": 1.5707963267948966,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Parliament",
-                "Melbourne Central",
-                "Flagstaff",
-                "North Melbourne",
-                "Macaulay",
-                "Flemington Bridge",
-                "Royal Park",
-                "Jewell",
-                "Brunswick",
-                "Anstey",
-                "Moreland",
-                "Coburg",
-                "Batman",
-                "Merlynston",
-                "Fawkner",
-                "Gowrie",
-                "Upfield"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "North Melbourne",
+                    "stop": true
+                },
+                {
+                    "station": "Macaulay",
+                    "stop": true
+                },
+                {
+                    "station": "Flemington Bridge",
+                    "stop": true
+                },
+                {
+                    "station": "Royal Park",
+                    "stop": true
+                },
+                {
+                    "station": "Jewell",
+                    "stop": true
+                },
+                {
+                    "station": "Brunswick",
+                    "stop": true
+                },
+                {
+                    "station": "Anstey",
+                    "stop": true
+                },
+                {
+                    "station": "Moreland",
+                    "stop": true
+                },
+                {
+                    "station": "Coburg",
+                    "stop": true
+                },
+                {
+                    "station": "Batman",
+                    "stop": true
+                },
+                {
+                    "station": "Merlynston",
+                    "stop": true
+                },
+                {
+                    "station": "Fawkner",
+                    "stop": true
+                },
+                {
+                    "station": "Gowrie",
+                    "stop": true
+                },
+                {
+                    "station": "Upfield",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3652,34 +4486,118 @@
             "length": 28,
             "direction": 0.7853981633974483,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Jolimont",
-                "West Richmond",
-                "North Richmond",
-                "Collingwood",
-                "Victoria Park",
-                "Clifton Hill",
-                "Westgarth",
-                "Dennis",
-                "Fairfield",
-                "Alphington",
-                "Darebin",
-                "Ivanhoe",
-                "Eaglemont",
-                "Heidelberg",
-                "Rosanna",
-                "Macleod",
-                "Watsonia",
-                "Greensborough",
-                "Montmorency",
-                "Eltham",
-                "Diamond Creek",
-                "Wattle Glen",
-                "Hurstbridge"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Jolimont",
+                    "stop": true
+                },
+                {
+                    "station": "West Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "North Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Collingwood",
+                    "stop": true
+                },
+                {
+                    "station": "Victoria Park",
+                    "stop": true
+                },
+                {
+                    "station": "Clifton Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Westgarth",
+                    "stop": true
+                },
+                {
+                    "station": "Dennis",
+                    "stop": true
+                },
+                {
+                    "station": "Fairfield",
+                    "stop": true
+                },
+                {
+                    "station": "Alphington",
+                    "stop": true
+                },
+                {
+                    "station": "Darebin",
+                    "stop": true
+                },
+                {
+                    "station": "Ivanhoe",
+                    "stop": true
+                },
+                {
+                    "station": "Eaglemont",
+                    "stop": true
+                },
+                {
+                    "station": "Heidelberg",
+                    "stop": true
+                },
+                {
+                    "station": "Rosanna",
+                    "stop": true
+                },
+                {
+                    "station": "Macleod",
+                    "stop": true
+                },
+                {
+                    "station": "Watsonia",
+                    "stop": true
+                },
+                {
+                    "station": "Greensborough",
+                    "stop": true
+                },
+                {
+                    "station": "Montmorency",
+                    "stop": true
+                },
+                {
+                    "station": "Eltham",
+                    "stop": true
+                },
+                {
+                    "station": "Diamond Creek",
+                    "stop": true
+                },
+                {
+                    "station": "Wattle Glen",
+                    "stop": true
+                },
+                {
+                    "station": "Hurstbridge",
+                    "stop": true
+                }
             ]
         },
         {
@@ -3689,35 +4607,122 @@
             "length": 29,
             "direction": 0.7853981633974483,
             "stations": [
-                "Flinders Street",
-                "Southern Cross",
-                "Flagstaff",
-                "Melbourne Central",
-                "Parliament",
-                "Jolimont",
-                "West Richmond",
-                "North Richmond",
-                "Collingwood",
-                "Victoria Park",
-                "Clifton Hill",
-                "Rushall",
-                "Merri",
-                "Northcote",
-                "Croxton",
-                "Thornbury",
-                "Bell",
-                "Preston",
-                "Regent",
-                "Reservoir",
-                "Ruthven",
-                "Keon Park",
-                "Thomastown",
-                "Lalor",
-                "Epping",
-                "South Morang",
-                "Middle Gorge",
-                "Hawkstowe",
-                "Mernda"
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Jolimont",
+                    "stop": true
+                },
+                {
+                    "station": "West Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "North Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Collingwood",
+                    "stop": true
+                },
+                {
+                    "station": "Victoria Park",
+                    "stop": true
+                },
+                {
+                    "station": "Clifton Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Rushall",
+                    "stop": true
+                },
+                {
+                    "station": "Merri",
+                    "stop": true
+                },
+                {
+                    "station": "Northcote",
+                    "stop": true
+                },
+                {
+                    "station": "Croxton",
+                    "stop": true
+                },
+                {
+                    "station": "Thornbury",
+                    "stop": true
+                },
+                {
+                    "station": "Bell",
+                    "stop": true
+                },
+                {
+                    "station": "Preston",
+                    "stop": true
+                },
+                {
+                    "station": "Regent",
+                    "stop": true
+                },
+                {
+                    "station": "Reservoir",
+                    "stop": true
+                },
+                {
+                    "station": "Ruthven",
+                    "stop": true
+                },
+                {
+                    "station": "Keon Park",
+                    "stop": true
+                },
+                {
+                    "station": "Thomastown",
+                    "stop": true
+                },
+                {
+                    "station": "Lalor",
+                    "stop": true
+                },
+                {
+                    "station": "Epping",
+                    "stop": true
+                },
+                {
+                    "station": "South Morang",
+                    "stop": true
+                },
+                {
+                    "station": "Middle Gorge",
+                    "stop": true
+                },
+                {
+                    "station": "Hawkstowe",
+                    "stop": true
+                },
+                {
+                    "station": "Mernda",
+                    "stop": true
+                }
             ]
         }
     ]

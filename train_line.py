@@ -38,6 +38,10 @@ class TrainLine(BaseModel):
     def add_station(self, station: Station, stop: bool = True):
         self.stations.append({"station": station.name, "stop": stop})
         self.length += 1
+
+    def insert_station(self, position: int, station: Station, stop: bool = True):
+        self.stations.insert(position,{"station": station.name, "stop": stop})
+        self.length += 1
     
     def __str__(self):
         return self.name + " line, stations:" + str(self.stations)
@@ -45,8 +49,11 @@ class TrainLine(BaseModel):
     def __repr__(self):
         return self.__str__()
 
-    
+    def __len__(self):
+        return self.length
 
+    def __getitem__(self, i: int):
+        return self.stations[i]
 
 class LoopLine(BaseModel):
     centre_pos: tuple[int,int]

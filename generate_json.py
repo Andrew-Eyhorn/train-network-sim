@@ -74,6 +74,7 @@ def add_line(data: dict, line_stations_file: str, name: str, color: str, directi
     stations = data["stations"]
     new_line = read_train_line(line_stations_file, stations, name, color, direction)
 
+    
     data["linear_lines"].append(new_line)
     
     data["line_count"] += 1
@@ -83,6 +84,52 @@ def add_line(data: dict, line_stations_file: str, name: str, color: str, directi
         station2: Station = stations[extra_connection[1]]
         station1.add_connection(station2.name, new_line.line_id)
         station2.add_connection(station1.name, new_line.line_id)
+
+
+
+
+def find_pass_stations(data: dict, target_line: TrainLine):
+    """
+    Finds if the target line has stations it passes through without stopping by checking the order of stations in other lines.
+    If such stations are found, they are insterted into the target's station list with "stop" as False
+    
+    Lines must have more than 2 stations for this to work
+    """
+    lines = data["linear_lines"]
+    for comparison_line in lines:
+        if comparison_line.line_id == target_line.line_id:
+            continue
+
+        #for every conseutive pair in target, check if they exist in consecutive order in comparison line
+        for i in range(len(target_line) - 1):
+            
+            if not target_line[i]["stop"] or stations[target_line[i]["station"]].is_loop_station:
+                continue
+            start = target_line.stations[i]["station"]
+            end = target_line.stations[i + 1]["station"]
+
+            start_pos = None
+            end_pos = None
+            for j in range(len(comparison_line)):
+                if comparison_line[j]["station"] == start:
+                    start_pos = j
+                if comparison_line[j]["station"] == end:
+                    end_pos = j
+            if start_pos is None or end_pos is None:
+                continue
+            
+            if start_pos + 1 < end_pos:
+                extra_stations: list[str] = []
+            
+                for j in range(start_pos + 1, end_pos):
+                    extra_stations.append(comparison_line.stations[j]["station"])
+                pos = i + 1
+                for station in extra_stations:
+                    target_line.insert_station(pos, data["stations"][station], False)
+                    pos += 1
+
+
+
 
 
 data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
@@ -114,7 +161,14 @@ if __name__ == "__main__":
     add_line(data,"data/mernda_line_stations.txt", "Mernda", "red", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
 
 
+
+
+    
     read_loop_line("data/city_loop.txt", (0,0), data)
+
+    for line in data["linear_lines"]:
+        find_pass_stations(data, line)
+
     #save json
     with open(filepath, 'w', encoding='utf-8') as f:
         json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": [], "linear_lines": []}
@@ -128,6 +182,10 @@ if __name__ == "__main__":
 
 
 
-#TODO - Change station conenctions to be "line id" : [connections] pairs - #DONE
-#     - Change line station list to be pairs of ["station name": str, "stops" : boolean] for wehather it stops or not
-#     - When reading lines, now do 2nd passthrough of all lines, to try and detect non-stopping stations, and insert them at correct ps with "false"
+"""TODO - Change station conenctions to be "line id" : [connections] pairs - #DONE
+#     - Change line station list to be pairs of ["station name": str, "stops" : boolean] for wehather it stops or not - #DONE
+#     - When reading lines, now do 2nd passthrough of all lines, to try and detect non-stopping stations, and insert them at correct ps with "false" DONE
+      - Fix text on map
+      - Have line return to direction
+#     - Rework data to store lines with an id as key isntead of 0,1,2 blah
+"""

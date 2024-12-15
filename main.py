@@ -97,6 +97,7 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
     for line in sorted_lines:
         direction = None
         vector = None
+        new_stations_placed = 0
         for i in range(len(line.stations)):
             station: Station = stations[line.stations[i]["station"]]
             if station.name not in mapped_stations.keys():
@@ -120,13 +121,16 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                                 offset_angle *= -1
                             direction = prev_angle - offset_angle
                             vector = get_vector(direction)
-
+                    spacing_changed = spacing
+                    if new_stations_placed == 0:
+                        spacing_changed = spacing * 2.5
                     p_x, p_y = prev_station.map_x, prev_station.map_y
-                    x = p_x + spacing * vector[0]
-                    y = p_y + spacing * vector[1]
+                    x = p_x + spacing_changed * vector[0]
+                    y = p_y + spacing_changed * vector[1]
                     station.update_map_coords((x,y))
                     station.map_angle = direction
                     mapped_stations[station.name] = station
+                    new_stations_placed += 1
     
 
 def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_stations: dict[Station], distance: int):
@@ -139,6 +143,7 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
         x = r * math.cos(t) + loop.centre_pos[0]
         y = r * math.sin(t) + loop.centre_pos[1]
         station.update_map_coords((x,y))
+        station.map_angle = angle
         station.is_loop_station = True
         mapped_stations[station.name] = station
 

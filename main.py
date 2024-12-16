@@ -67,7 +67,6 @@ def get_offset_angle(station_number: int) -> float:
     Gives how much we should offset off the current line based on nubmer of stations passed(more stations, smaller offset)
     station_number must be >= 0
     """
-    # max_angle = math.pi/4
     max_angle = math.pi/2
     station_number = min(station_number, 20)
     reducer = station_number // 5 + 1
@@ -102,7 +101,7 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
             station: Station = stations[line.stations[i]["station"]]
             if station.name not in mapped_stations.keys():
                 if i == 0: #if this is the first station to be mapped
-                    direction = get_offset_angle(line.direction)
+                    direction = line.direction
                     vector = get_vector(direction)
                     x,y = 0,0
                     station.map_angle = direction
@@ -123,7 +122,12 @@ def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_st
                             vector = get_vector(direction)
                     spacing_changed = spacing
                     if new_stations_placed == 0:
-                        spacing_changed = spacing * 2.5
+                        spacing_changed = spacing * 3
+                    if new_stations_placed == 6:
+                        if not math.isclose(line.direction, direction):
+                            direction = line.direction
+                            spacing_changed = spacing * 2
+                        vector = get_vector(direction)
                     p_x, p_y = prev_station.map_x, prev_station.map_y
                     x = p_x + spacing_changed * vector[0]
                     y = p_y + spacing_changed * vector[1]
@@ -143,7 +147,7 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
         x = r * math.cos(t) + loop.centre_pos[0]
         y = r * math.sin(t) + loop.centre_pos[1]
         station.update_map_coords((x,y))
-        station.map_angle = angle
+        station.map_angle = -t
         station.is_loop_station = True
         mapped_stations[station.name] = station
 

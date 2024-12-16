@@ -185,7 +185,7 @@ if __name__ == "__main__":
 """TODO - Change station conenctions to be "line id" : [connections] pairs - #DONE
 #     - Change line station list to be pairs of ["station name": str, "stops" : boolean] for wehather it stops or not - #DONE
 #     - When reading lines, now do 2nd passthrough of all lines, to try and detect non-stopping stations, and insert them at correct ps with "false" DONE
-      - Fix text on map
-      - Have line return to direction
-#     - Rework data to store lines with an id as key isntead of 0,1,2 blah
+      - Fix text on map #mostly done, but loop needs condition
+      - Have line return to direction #Done
+#     - Rework data to store lines with an id as key isntead of 0,1,2 blah 
 """

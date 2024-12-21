@@ -3,15 +3,24 @@ from station import Station
 
 import json
 
-def read_train_line(filepath: str, stations: dict[Station], name: str, color: str, direction: Direction) -> TrainLine:
+import matplotlib as mpl
+import os
+
+
+
+
+def read_train_line(filepath: str, stations: dict[Station], color: str) -> TrainLine:
     """
     Read a txt file containing station names in order
     """
     #read txt, and get station names, and connect them
     station_name_list = []
     with open(filepath, newline ='') as stations_file:
-        for line in stations_file.readlines():
-            station_name_list.append(line.strip())
+        line_data = stations_file.readlines()
+        name = line_data[0].strip()
+        direction = Direction[line_data[1].upper().strip()]
+        for row in line_data[2:]:
+            station_name_list.append(row.strip())
 
     train_line = TrainLine(name = name, line_color = color, direction = direction)
     for i, station_name in enumerate(station_name_list):
@@ -25,18 +34,30 @@ def read_train_line(filepath: str, stations: dict[Station], name: str, color: st
         if i != 0:
             new_station.add_connection(station_name_list[i-1], train_line.line_id)
         train_line.add_station(new_station)
+    
+    #add loop connection:
+    loop_entry = None
+    loop_exit = None
+    for i,station in enumerate(train_line.stations):
+        station_name = station["station"]
+        if loop_entry is None and stations[station_name].is_loop_station:
+            loop_entry = i
+        if loop_exit is None and not stations[station_name].is_loop_station:
+            loop_exit = i
+            break
+    if loop_exit > loop_entry + 2:
+        stations[train_line.stations[loop_entry]["station"]].add_connection(train_line.stations[loop_exit]["station"], train_line.line_id)
+        stations[train_line.stations[loop_exit]["station"]].add_connection(train_line.stations[loop_entry]["station"], train_line.line_id)
+
+
     return train_line
 
 
-def get_all_stations(train_lines: list[TrainLine], stations: dict[Station]):
-    for line in train_lines:
-        for station in line.stations:
-            if station.name not in stations.keys():
-                stations[station.name] = station
+
 
 def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
     """
-    Only works when the stations already exist in data
+    Makes stations that are in the loop marked as "loop stations"
     """
     stations_list = []
     with open(filepath, newline ='') as stations_file:
@@ -44,6 +65,8 @@ def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
             stations_list.append(line.strip())
     new_loop = LoopLine(centre_pos = centre, stations = stations_list)
     for i in range(len(stations_list) - 1):
+        if stations_list[i] not in data["stations"].keys():
+            data["stations"][stations_list[i]] = Station(name  = stations_list[i])
         data["stations"][stations_list[i]].is_loop_station = True
 
     data["loop_lines"].append(new_loop)
@@ -70,20 +93,14 @@ def read_json_network(filepath: str) -> dict:
             return read_data
     
 
-def add_line(data: dict, line_stations_file: str, name: str, color: str, direction: Direction, extra_connection: tuple[str,str] | None):
+def add_line(data: dict, line_stations_file: str, color: str):
     stations = data["stations"]
-    new_line = read_train_line(line_stations_file, stations, name, color, direction)
+    new_line = read_train_line(line_stations_file, stations, color)
 
     
     data["linear_lines"].append(new_line)
     
     data["line_count"] += 1
-    if extra_connection is not None:
-        #custom changes
-        station1: Station = stations[extra_connection[0]]
-        station2: Station = stations[extra_connection[1]]
-        station1.add_connection(station2.name, new_line.line_id)
-        station2.add_connection(station1.name, new_line.line_id)
 
 
 
@@ -144,27 +161,28 @@ if __name__ == "__main__":
     
     stations = data["stations"]
 
-    add_line(data,"data/lilydale_line_stations.txt", "Lilydale", "lightblue", Direction.EAST, ("Flinders Street", "Richmond"))
-    add_line(data,"data/belgrave_line_stations.txt", "Belgrave", "cyan", Direction.EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/alamein_line_stations.txt", "Alamein", "blue", Direction.EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/glen_waverly_line_stations.txt", "Glen Waverly", "darkblue", Direction.EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/pakenham_line_stations.txt", "Pakenham", "purple", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/cranbourne_line_stations.txt", "Cranbourne", "#a569bd", Direction.SOUTH_EAST,("Flinders Street", "Richmond"))
-    add_line(data,"data/frankston_line_stations.txt", "Frankston", "magenta", Direction.SOUTH,("Flinders Street", "Richmond"))
-    add_line(data,"data/sandringham_line_stations.txt", "Sandringham", "pink", Direction.SOUTH,("Flinders Street", "Richmond"))
-    add_line(data,"data/williamstown_line_stations.txt", "Williamstown", "green", Direction.SOUTH,None)
-    add_line(data,"data/werribee_line_stations.txt", "Werribee", "lightgreen", Direction.SOUTH_WEST,None)
-    add_line(data,"data/sunbury_line_stations.txt", "Sunbury", "yellow", Direction.WEST,("Southern Cross", "North Melbourne"))
-    add_line(data,"data/craigieburn_line_stations.txt", "Craigieburn", "orange", Direction.NORTH,("Southern Cross", "North Melbourne"))
-    add_line(data,"data/upfield_line_stations.txt", "Upfield", "darkorange", Direction.NORTH,("Southern Cross", "North Melbourne"))
-    add_line(data,"data/hurstbridge_line_stations.txt", "Hurstbridge", "darkred", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
-    add_line(data,"data/mernda_line_stations.txt", "Mernda", "red", Direction.NORTH_EAST,("Flinders Street", "Jolimont"))
+    
+    read_loop_line("data/loop_lines/city_loop.txt", (0,0), data)
 
+    #init
+    line_data_path = "data/linear_lines"
+    lines_to_read = len(os.listdir(line_data_path))
+
+    #prepare colors
+    gradient = [x * 1/lines_to_read for x in range(lines_to_read)]
+    cmap = mpl.colormaps["rainbow"]
+    colors = [mpl.colors.to_hex(cmap(i)) for i in gradient]
+    i = 0
+    for file_name in os.listdir(line_data_path):
+        #get filepath
+        line = os.path.join(line_data_path, file_name)
+        add_line(data, line, color = str(colors[i]))
+        #get to next color
+        i += 1
 
 
 
     
-    read_loop_line("data/city_loop.txt", (0,0), data)
 
     for line in data["linear_lines"]:
         find_pass_stations(data, line)
@@ -188,4 +206,18 @@ if __name__ == "__main__":
       - Fix text on map #mostly done, but loop needs condition
       - Have line return to direction #Done
 #     - Rework data to store lines with an id as key isntead of 0,1,2 blah 
+"""
+
+
+
+
+
+"""
+name
+direction
+station
+break
+ - check wehn exiting loop. connect to entry of loop #problem - werribee line/wilismation
+
+
 """

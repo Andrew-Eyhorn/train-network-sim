@@ -67,5 +67,7 @@ class LoopLine(BaseModel):
 
 
 if __name__ == "__main__":
-    new_line = train_line = TrainLine(name = "Belgrave", line_color = "blue", direction = Direction.EAST)
-    print(new_line.model_dump_json(indent = 4))
+    # new_line = train_line = TrainLine(name = "Belgrave", line_color = "blue", direction = Direction.EAST)
+    # print(new_line.model_dump_json(indent = 4))
+    test = Direction["NORTH_EAST"]
+    print(test)

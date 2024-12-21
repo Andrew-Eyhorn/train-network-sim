@@ -1,3 +1,5 @@
+Lilydale
+East
 Flinders Street
 Southern Cross
 Flagstaff
@@ -21,11 +23,7 @@ Nunawading
 Mitcham
 Heatherdale
 Ringwood
-Heathmont
-Bayswater
-Boronia
-Ferntree Gully
-Upper Ferntree Gully
-Upwey
-Tecoma
-Belgrave
+Ringwood East
+Croydon
+Mooroolbark
+Lilydale

@@ -143,7 +143,7 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
     r = distance * math.sin(angle/2) / math.sin(angle) 
     for i in range(n):
         station: Station = stations[loop.stations[i]]
-        t = i * angle
+        t = i * angle + math.pi/5
         x = r * math.cos(t) + loop.centre_pos[0]
         y = r * math.sin(t) + loop.centre_pos[1]
         station.update_map_coords((x,y))

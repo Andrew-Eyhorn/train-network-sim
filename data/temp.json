@@ -3,3238 +3,3238 @@
         {
             "name": "Parliament",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "2": [
+                "2_Craigieburn": [
                     "Melbourne Central",
                     "Flinders Street"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "6": [
+                "6_Hurstbridge": [
                     "Jolimont",
                     "Melbourne Central"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Jolimont",
                     "Melbourne Central"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Richmond",
                     "Melbourne Central"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "Melbourne Central",
                     "Flinders Street"
                 ],
-                "12": [
+                "12_Upfield": [
                     "Melbourne Central",
                     "Flinders Street"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": true
         },
         {
             "name": "Melbourne Central",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "2": [
+                "2_Craigieburn": [
                     "Flagstaff",
                     "Parliament"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "6": [
+                "6_Hurstbridge": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Parliament",
                     "Flagstaff"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "Flagstaff",
                     "Parliament"
                 ],
-                "12": [
+                "12_Upfield": [
                     "Flagstaff",
                     "Parliament"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": true
         },
         {
             "name": "Flagstaff",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "2": [
+                "2_Craigieburn": [
                     "North Melbourne",
                     "Melbourne Central"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "6": [
+                "6_Hurstbridge": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Melbourne Central",
                     "Southern Cross"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "North Melbourne",
                     "Melbourne Central"
                 ],
-                "12": [
+                "12_Upfield": [
                     "North Melbourne",
                     "Melbourne Central"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": true
         },
         {
             "name": "Southern Cross",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "2": [
+                "2_Craigieburn": [
                     "Flinders Street",
                     "North Melbourne"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "6": [
+                "6_Hurstbridge": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Flagstaff",
                     "Flinders Street"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "Flinders Street",
                     "North Melbourne"
                 ],
-                "12": [
+                "12_Upfield": [
                     "Flinders Street",
                     "North Melbourne"
                 ],
-                "13": [
+                "13_Werribee": [
                     "North Melbourne",
                     "Flinders Street"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "North Melbourne",
                     "Flinders Street"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": true
         },
         {
             "name": "Flinders Street",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "2": [
+                "2_Craigieburn": [
                     "Parliament",
                     "Southern Cross"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "4": [
+                "4_Frankston": [
                     "Richmond"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "6": [
+                "6_Hurstbridge": [
                     "Southern Cross",
                     "Jolimont"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Southern Cross",
                     "Jolimont"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Southern Cross",
                     "Richmond"
                 ],
-                "10": [
+                "10_Sandringham": [
                     "Richmond"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "Parliament",
                     "Southern Cross"
                 ],
-                "12": [
+                "12_Upfield": [
                     "Parliament",
                     "Southern Cross"
                 ],
-                "13": [
+                "13_Werribee": [
                     "Southern Cross"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Southern Cross"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": true
         },
         {
             "name": "Richmond",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "East Richmond",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "East Richmond",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "3": [
+                "3_Cranbourne": [
                     "South Yarra",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "4": [
+                "4_Frankston": [
                     "South Yarra",
                     "Flinders Street"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "East Richmond",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "East Richmond",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "South Yarra",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "10": [
+                "10_Sandringham": [
                     "South Yarra",
                     "Flinders Street"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "East Richmond",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Burnley",
                     "Richmond"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Burnley",
                     "Richmond"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Burnley",
                     "Richmond"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Burnley",
                     "Richmond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Burnley",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Hawthorn",
                     "East Richmond"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Hawthorn",
                     "East Richmond"
                 ],
-                "5": [
+                "5_Glen Waverley": [
                     "Heyington",
                     "East Richmond"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Hawthorn",
                     "East Richmond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hawthorn",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Glenferrie",
                     "Burnley"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Glenferrie",
                     "Burnley"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Glenferrie",
                     "Burnley"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glenferrie",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Auburn",
                     "Hawthorn"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Auburn",
                     "Hawthorn"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Auburn",
                     "Hawthorn"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Auburn",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Camberwell",
                     "Glenferrie"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "Camberwell",
                     "Glenferrie"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Camberwell",
                     "Glenferrie"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Camberwell",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Riversdale",
                     "Auburn"
                 ],
-                "1": [
+                "1_Belgrave": [
                     "East Camberwell",
                     "Auburn"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "East Camberwell",
                     "Auburn"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Riversdale",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Wilison",
                     "Camberwell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Wilison",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Hartwell",
                     "Riversdale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hartwell",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Burwood",
                     "Wilison"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Burwood",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Ashburton",
                     "Hartwell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ashburton",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Alamein",
                     "Burwood"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Alamein",
             "connections": {
-                "0": [
+                "0_Alamein": [
                     "Ashburton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "East Camberwell",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Canterbury",
                     "Camberwell"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Canterbury",
                     "Camberwell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Canterbury",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Chatham",
                     "East Camberwell"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Chatham",
                     "East Camberwell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Chatham",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Union",
                     "Canterbury"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Union",
                     "Canterbury"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Union",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Box Hill",
                     "Chatham"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Box Hill",
                     "Chatham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Box Hill",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Laburnum",
                     "Union"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Laburnum",
                     "Union"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Laburnum",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Blackburn",
                     "Box Hill"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Blackburn",
                     "Box Hill"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Blackburn",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Nunawading",
                     "Laburnum"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Nunawading",
                     "Laburnum"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Nunawading",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Mitcham",
                     "Blackburn"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Mitcham",
                     "Blackburn"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mitcham",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Heatherdale",
                     "Nunawading"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Heatherdale",
                     "Nunawading"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Heatherdale",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Ringwood",
                     "Mitcham"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Ringwood",
                     "Mitcham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ringwood",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Heathmont",
                     "Heatherdale"
                 ],
-                "7": [
+                "7_Lilydale": [
                     "Ringwood East",
                     "Heatherdale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Heathmont",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Bayswater",
                     "Ringwood"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Bayswater",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Boronia",
                     "Heathmont"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Boronia",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Ferntree Gully",
                     "Bayswater"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ferntree Gully",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Upper Ferntree Gully",
                     "Boronia"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Upper Ferntree Gully",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Upwey",
                     "Ferntree Gully"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Upwey",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Tecoma",
                     "Upper Ferntree Gully"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Tecoma",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Belgrave",
                     "Upwey"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Belgrave",
             "connections": {
-                "1": [
+                "1_Belgrave": [
                     "Tecoma"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "North Melbourne",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Kensington",
                     "Flagstaff",
                     "Southern Cross"
                 ],
-                "11": [
+                "11_Sunbury": [
                     "Footscray",
                     "Flagstaff",
                     "Southern Cross"
                 ],
-                "12": [
+                "12_Upfield": [
                     "Macaulay",
                     "Flagstaff",
                     "Southern Cross"
                 ],
-                "13": [
+                "13_Werribee": [
                     "South Kensington",
                     "Southern Cross"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "South Kensington",
                     "Southern Cross"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Kensington",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Newmarket",
                     "North Melbourne"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Newmarket",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Ascot Vale",
                     "Kensington"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ascot Vale",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Moonee Ponds",
                     "Newmarket"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Moonee Ponds",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Essendon",
                     "Ascot Vale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Essendon",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Glenbervie",
                     "Moonee Ponds"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glenbervie",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Strathmore",
                     "Essendon"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Strathmore",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Pascoe Vale",
                     "Glenbervie"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Pascoe Vale",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Oak Park",
                     "Strathmore"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Oak Park",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Glenroy",
                     "Pascoe Vale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glenroy",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Jacana",
                     "Oak Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Jacana",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Broadmeadows",
                     "Glenroy"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Broadmeadows",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Coolaroo",
                     "Jacana"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Coolaroo",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Roxburgh Park",
                     "Broadmeadows"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Roxburgh Park",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Craigieburn",
                     "Coolaroo"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Craigieburn",
             "connections": {
-                "2": [
+                "2_Craigieburn": [
                     "Roxburgh Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "South Yarra",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Malvern",
                     "Richmond"
                 ],
-                "4": [
+                "4_Frankston": [
                     "Hawksburn",
                     "Richmond"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Malvern",
                     "Richmond"
                 ],
-                "10": [
+                "10_Sandringham": [
                     "Prahran",
                     "Richmond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Malvern",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Caulfield",
                     "South Yarra"
                 ],
-                "4": [
+                "4_Frankston": [
                     "Caulfield",
                     "Armadale"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Caulfield",
                     "South Yarra"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Caulfield",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Carnegie",
                     "Malvern"
                 ],
-                "4": [
+                "4_Frankston": [
                     "Glen Huntly",
                     "Malvern"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Carnegie",
                     "Malvern"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Carnegie",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Murrumbeena",
                     "Caulfield"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Murrumbeena",
                     "Caulfield"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Murrumbeena",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Hughesdale",
                     "Carnegie"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Hughesdale",
                     "Carnegie"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hughesdale",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Oakleigh",
                     "Murrumbeena"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Oakleigh",
                     "Murrumbeena"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Oakleigh",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Huntingdale",
                     "Hughesdale"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Huntingdale",
                     "Hughesdale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Huntingdale",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Clayton",
                     "Oakleigh"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Clayton",
                     "Oakleigh"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Clayton",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Westall",
                     "Huntingdale"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Westall",
                     "Huntingdale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Westall",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Springvale",
                     "Clayton"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Springvale",
                     "Clayton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Springvale",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Sandown Park",
                     "Westall"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Sandown Park",
                     "Westall"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Sandown Park",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Noble Park",
                     "Springvale"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Noble Park",
                     "Springvale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Noble Park",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Yarraman",
                     "Sandown Park"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Yarraman",
                     "Sandown Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Yarraman",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Dandenong",
                     "Noble Park"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Dandenong",
                     "Noble Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Dandenong",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Lynbrook",
                     "Yarraman"
                 ],
-                "9": [
+                "9_Pakenham": [
                     "Hallam",
                     "Yarraman"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Lynbrook",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Merinda Park",
                     "Dandenong"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Merinda Park",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Cranbourne",
                     "Lynbrook"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Cranbourne",
             "connections": {
-                "3": [
+                "3_Cranbourne": [
                     "Merinda Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hawksburn",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Toorak",
                     "South Yarra"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Toorak",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Armadale",
                     "Hawksburn"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Armadale",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Malvern",
                     "Toorak"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glen Huntly",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Ormond",
                     "Caulfield"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ormond",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "McKinnon",
                     "Glen Huntly"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "McKinnon",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Bentleigh",
                     "Ormond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Bentleigh",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Patterson",
                     "McKinnon"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Patterson",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Moorabbin",
                     "Bentleigh"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Moorabbin",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Highett",
                     "Patterson"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Highett",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Southland",
                     "Moorabbin"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Southland",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Cheltenham",
                     "Highett"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Cheltenham",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Mentone",
                     "Southland"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mentone",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Parkdale",
                     "Cheltenham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Parkdale",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Mordialloc",
                     "Mentone"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mordialloc",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Aspendale",
                     "Parkdale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Aspendale",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Edithvale",
                     "Mordialloc"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Edithvale",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Chelsea",
                     "Aspendale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Chelsea",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Bonbeach",
                     "Edithvale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Bonbeach",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Carrum",
                     "Chelsea"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Carrum",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Seaford",
                     "Bonbeach"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Seaford",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Kananook",
                     "Carrum"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Kananook",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Frankston",
                     "Seaford"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Frankston",
             "connections": {
-                "4": [
+                "4_Frankston": [
                     "Kananook"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Heyington",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Kooyong",
                     "Burnley"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Kooyong",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Tooronga",
                     "Heyington"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Tooronga",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Gardiner",
                     "Kooyong"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Gardiner",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Glen Iris",
                     "Tooronga"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glen Iris",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Darling",
                     "Gardiner"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Darling",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "East Malvern",
                     "Glen Iris"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "East Malvern",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Holmesglen",
                     "Darling"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Holmesglen",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Jordanville",
                     "East Malvern"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Jordanville",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Mount Waverley",
                     "Holmesglen"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mount Waverley",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Syndal",
                     "Jordanville"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Syndal",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Glen Waverley",
                     "Mount Waverley"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Glen Waverley",
             "connections": {
-                "5": [
+                "5_Glen Waverley": [
                     "Syndal"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Jolimont",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "West Richmond",
                     "Parliament",
                     "Flinders Street"
                 ],
-                "8": [
+                "8_Mernda": [
                     "West Richmond",
                     "Parliament",
                     "Flinders Street"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "West Richmond",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "North Richmond",
                     "Jolimont"
                 ],
-                "8": [
+                "8_Mernda": [
                     "North Richmond",
                     "Jolimont"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "North Richmond",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Collingwood",
                     "West Richmond"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Collingwood",
                     "West Richmond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Collingwood",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Victoria Park",
                     "North Richmond"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Victoria Park",
                     "North Richmond"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Victoria Park",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Clifton Hill",
                     "Collingwood"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Clifton Hill",
                     "Collingwood"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Clifton Hill",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Westgarth",
                     "Victoria Park"
                 ],
-                "8": [
+                "8_Mernda": [
                     "Rushall",
                     "Victoria Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Westgarth",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Dennis",
                     "Clifton Hill"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Dennis",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Fairfield",
                     "Westgarth"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Fairfield",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Alphington",
                     "Dennis"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Alphington",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Darebin",
                     "Fairfield"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Darebin",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Ivanhoe",
                     "Alphington"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ivanhoe",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Eaglemont",
                     "Darebin"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Eaglemont",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Heidelberg",
                     "Ivanhoe"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Heidelberg",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Rosanna",
                     "Eaglemont"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Rosanna",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Macleod",
                     "Heidelberg"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Macleod",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Watsonia",
                     "Rosanna"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Watsonia",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Greensborough",
                     "Macleod"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Greensborough",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Montmorency",
                     "Watsonia"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Montmorency",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Eltham",
                     "Greensborough"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Eltham",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Diamond Creek",
                     "Montmorency"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Diamond Creek",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Wattle Glen",
                     "Eltham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Wattle Glen",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Hurstbridge",
                     "Diamond Creek"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hurstbridge",
             "connections": {
-                "6": [
+                "6_Hurstbridge": [
                     "Wattle Glen"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ringwood East",
             "connections": {
-                "7": [
+                "7_Lilydale": [
                     "Croydon",
                     "Ringwood"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Croydon",
             "connections": {
-                "7": [
+                "7_Lilydale": [
                     "Mooroolbark",
                     "Ringwood East"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mooroolbark",
             "connections": {
-                "7": [
+                "7_Lilydale": [
                     "Lilydale",
                     "Croydon"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Lilydale",
             "connections": {
-                "7": [
+                "7_Lilydale": [
                     "Mooroolbark"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Rushall",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Merri",
                     "Clifton Hill"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Merri",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Northcote",
                     "Rushall"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Northcote",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Croxton",
                     "Merri"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Croxton",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Thornbury",
                     "Northcote"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Thornbury",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Bell",
                     "Croxton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Bell",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Preston",
                     "Thornbury"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Preston",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Regent",
                     "Bell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Regent",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Reservoir",
                     "Preston"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Reservoir",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Ruthven",
                     "Regent"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ruthven",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Keon Park",
                     "Reservoir"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Keon Park",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Thomastown",
                     "Ruthven"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Thomastown",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Lalor",
                     "Keon Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Lalor",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Epping",
                     "Thomastown"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Epping",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "South Morang",
                     "Lalor"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "South Morang",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Middle Gorge",
                     "Epping"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Middle Gorge",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Hawkstowe",
                     "South Morang"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hawkstowe",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Mernda",
                     "Middle Gorge"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Mernda",
             "connections": {
-                "8": [
+                "8_Mernda": [
                     "Hawkstowe"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hallam",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Narre Warren",
                     "Dandenong"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Narre Warren",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Berwick",
                     "Hallam"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Berwick",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Beaconsfield",
                     "Narre Warren"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Beaconsfield",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Officer",
                     "Berwick"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Officer",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Cardinia Road",
                     "Beaconsfield"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Cardinia Road",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Pakenham",
                     "Officer"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Pakenham",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "East Pakenham",
                     "Cardinia Road"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "East Pakenham",
             "connections": {
-                "9": [
+                "9_Pakenham": [
                     "Pakenham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Prahran",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Windsor",
                     "South Yarra"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Windsor",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Balaclava",
                     "Prahran"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Balaclava",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Ripponlea",
                     "Windsor"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ripponlea",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Elsternwick",
                     "Balaclava"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Elsternwick",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Gardenvale",
                     "Ripponlea"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Gardenvale",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "North Brighton",
                     "Elsternwick"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "North Brighton",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Middle Brighton",
                     "Gardenvale"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Middle Brighton",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Brighton Beach",
                     "North Brighton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Brighton Beach",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Hampton",
                     "Middle Brighton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hampton",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Sandringham",
                     "Brighton Beach"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Sandringham",
             "connections": {
-                "10": [
+                "10_Sandringham": [
                     "Hampton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Footscray",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Middle Footscray",
                     "North Melbourne"
                 ],
-                "13": [
+                "13_Werribee": [
                     "Seddon",
                     "South Kensington"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Seddon",
                     "South Kensington"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Middle Footscray",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "West Footscray",
                     "Footscray"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "West Footscray",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Tottenham",
                     "Middle Footscray"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Tottenham",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Sunshine",
                     "West Footscray"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Sunshine",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Albion",
                     "Tottenham"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Albion",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Ginifer",
                     "Sunshine"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Ginifer",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "St Albans",
                     "Albion"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "St Albans",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Keilor Plains",
                     "Ginifer"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Keilor Plains",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Watergardens",
                     "St Albans"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Watergardens",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Diggers Rest",
                     "Keilor Plains"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Diggers Rest",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Sunbury",
                     "Watergardens"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Sunbury",
             "connections": {
-                "11": [
+                "11_Sunbury": [
                     "Diggers Rest"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Macaulay",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Flemington Bridge",
                     "North Melbourne"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Flemington Bridge",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Royal Park",
                     "Macaulay"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Royal Park",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Jewell",
                     "Flemington Bridge"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Jewell",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Brunswick",
                     "Royal Park"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Brunswick",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Anstey",
                     "Jewell"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Anstey",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Moreland",
                     "Brunswick"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Moreland",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Coburg",
                     "Anstey"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Coburg",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Batman",
                     "Moreland"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Batman",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Merlynston",
                     "Coburg"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Merlynston",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Fawkner",
                     "Batman"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Fawkner",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Gowrie",
                     "Merlynston"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Gowrie",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Upfield",
                     "Fawkner"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Upfield",
             "connections": {
-                "12": [
+                "12_Upfield": [
                     "Gowrie"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "South Kensington",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Footscray",
                     "North Melbourne"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Footscray",
                     "North Melbourne"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Seddon",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Yarraville",
                     "Footscray"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Yarraville",
                     "Footscray"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Yarraville",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Spotswood",
                     "Seddon"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Spotswood",
                     "Seddon"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Spotswood",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Newport",
                     "Yarraville"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "Newport",
                     "Yarraville"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Newport",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Seaholme",
                     "Spotswood"
                 ],
-                "14": [
+                "14_Williamstown": [
                     "North Williamstown",
                     "Spotswood"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Seaholme",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Altona",
                     "Newport"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Altona",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Westona",
                     "Seaholme"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Westona",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Laverton",
                     "Altona"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Laverton",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Aircraft",
                     "Westona"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Aircraft",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Williams Landing",
                     "Laverton"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Williams Landing",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Hoppers Crossing",
                     "Aircraft"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Hoppers Crossing",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Werribee",
                     "Williams Landing"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Werribee",
             "connections": {
-                "13": [
+                "13_Werribee": [
                     "Hoppers Crossing"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "North Williamstown",
             "connections": {
-                "14": [
+                "14_Williamstown": [
                     "Williamstown Beach",
                     "Newport"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Williamstown Beach",
             "connections": {
-                "14": [
+                "14_Williamstown": [
                     "Williamstown",
                     "North Williamstown"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         },
         {
             "name": "Williamstown",
             "connections": {
-                "14": [
+                "14_Williamstown": [
                     "Williamstown Beach"
                 ]
             },
-            "map_x": 23,
-            "map_y": 96,
+            "map_x": 85,
+            "map_y": 30,
             "map_angle": 0,
             "is_loop_station": false
         }
     ],
     "line_count": 15,
-    "loop_lines": [
-        {
+    "loop_lines": {
+        "0": {
             "centre_pos": [
                 0,
                 0
@@ -3246,14 +3246,15 @@
                 "Southern Cross",
                 "Flinders Street",
                 "Parliament"
-            ]
+            ],
+            "loop_id": 0
         }
-    ],
-    "linear_lines": [
-        {
+    },
+    "linear_lines": {
+        "0_Alamein": {
             "name": "Alamein",
-            "line_color": "#8000ff",
-            "line_id": 0,
+            "line_color": "#000000",
+            "line_id": "0_Alamein",
             "length": 18,
             "direction": 0.0,
             "stations": [
@@ -3331,10 +3332,10 @@
                 }
             ]
         },
-        {
+        "1_Belgrave": {
             "name": "Belgrave",
-            "line_color": "#5e35fe",
-            "line_id": 1,
+            "line_color": "#7d008e",
+            "line_id": "1_Belgrave",
             "length": 31,
             "direction": 0.0,
             "stations": [
@@ -3464,10 +3465,10 @@
                 }
             ]
         },
-        {
+        "2_Craigieburn": {
             "name": "Craigieburn",
-            "line_color": "#3c68f9",
-            "line_id": 2,
+            "line_color": "#2d00a4",
+            "line_id": "2_Craigieburn",
             "length": 21,
             "direction": 1.5707963267948966,
             "stations": [
@@ -3557,10 +3558,10 @@
                 }
             ]
         },
-        {
+        "3_Cranbourne": {
             "name": "Cranbourne",
-            "line_color": "#1996f3",
-            "line_id": 3,
+            "line_color": "#0000dd",
+            "line_id": "3_Cranbourne",
             "length": 27,
             "direction": -0.7853981633974483,
             "stations": [
@@ -3674,10 +3675,10 @@
                 }
             ]
         },
-        {
+        "4_Frankston": {
             "name": "Frankston",
-            "line_color": "#08bee9",
-            "line_id": 4,
+            "line_color": "#0082dd",
+            "line_id": "4_Frankston",
             "length": 28,
             "direction": -1.5707963267948966,
             "stations": [
@@ -3795,10 +3796,10 @@
                 }
             ]
         },
-        {
+        "5_Glen Waverley": {
             "name": "Glen Waverley",
-            "line_color": "#2adddd",
-            "line_id": 5,
+            "line_color": "#00a4bb",
+            "line_id": "5_Glen Waverley",
             "length": 20,
             "direction": 0.0,
             "stations": [
@@ -3884,10 +3885,10 @@
                 }
             ]
         },
-        {
+        "6_Hurstbridge": {
             "name": "Hurstbridge",
-            "line_color": "#4df3ce",
-            "line_id": 6,
+            "line_color": "#00aa88",
+            "line_id": "6_Hurstbridge",
             "length": 28,
             "direction": 0.7853981633974483,
             "stations": [
@@ -4005,10 +4006,10 @@
                 }
             ]
         },
-        {
+        "7_Lilydale": {
             "name": "Lilydale",
-            "line_color": "#6efebe",
-            "line_id": 7,
+            "line_color": "#00a400",
+            "line_id": "7_Lilydale",
             "length": 27,
             "direction": 0.0,
             "stations": [
@@ -4122,10 +4123,10 @@
                 }
             ]
         },
-        {
+        "8_Mernda": {
             "name": "Mernda",
-            "line_color": "#90feab",
-            "line_id": 8,
+            "line_color": "#00d200",
+            "line_id": "8_Mernda",
             "length": 29,
             "direction": 0.7853981633974483,
             "stations": [
@@ -4247,10 +4248,10 @@
                 }
             ]
         },
-        {
+        "9_Pakenham": {
             "name": "Pakenham",
-            "line_color": "#b2f396",
-            "line_id": 9,
+            "line_color": "#00ff00",
+            "line_id": "9_Pakenham",
             "length": 32,
             "direction": -0.7853981633974483,
             "stations": [
@@ -4384,10 +4385,10 @@
                 }
             ]
         },
-        {
+        "10_Sandringham": {
             "name": "Sandringham",
-            "line_color": "#d4dd80",
-            "line_id": 10,
+            "line_color": "#ccf900",
+            "line_id": "10_Sandringham",
             "length": 14,
             "direction": -1.5707963267948966,
             "stations": [
@@ -4449,10 +4450,10 @@
                 }
             ]
         },
-        {
+        "11_Sunbury": {
             "name": "Sunbury",
-            "line_color": "#f6be68",
-            "line_id": 11,
+            "line_color": "#f9d700",
+            "line_id": "11_Sunbury",
             "length": 19,
             "direction": 3.141592653589793,
             "stations": [
@@ -4534,10 +4535,10 @@
                 }
             ]
         },
-        {
+        "12_Upfield": {
             "name": "Upfield",
-            "line_color": "#ff964f",
-            "line_id": 12,
+            "line_color": "#ff9900",
+            "line_id": "12_Upfield",
             "length": 19,
             "direction": 1.5707963267948966,
             "stations": [
@@ -4619,10 +4620,10 @@
                 }
             ]
         },
-        {
+        "13_Werribee": {
             "name": "Werribee",
-            "line_color": "#ff6835",
-            "line_id": 13,
+            "line_color": "#f40000",
+            "line_id": "13_Werribee",
             "length": 17,
             "direction": -2.356194490192345,
             "stations": [
@@ -4696,10 +4697,10 @@
                 }
             ]
         },
-        {
+        "14_Williamstown": {
             "name": "Williamstown",
-            "line_color": "#ff351b",
-            "line_id": 14,
+            "line_color": "#d20000",
+            "line_id": "14_Williamstown",
             "length": 12,
             "direction": -1.5707963267948966,
             "stations": [
@@ -4753,5 +4754,5 @@
                 }
             ]
         }
-    ]
+    }
 }

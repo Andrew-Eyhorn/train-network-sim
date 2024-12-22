@@ -69,7 +69,7 @@ def read_loop_line(filepath: str, centre: tuple[int,int], data: dict):
             data["stations"][stations_list[i]] = Station(name  = stations_list[i])
         data["stations"][stations_list[i]].is_loop_station = True
 
-    data["loop_lines"].append(new_loop)
+    data["loop_lines"][new_loop.loop_id] = new_loop
 
 
 
@@ -88,8 +88,10 @@ def read_json_network(filepath: str) -> dict:
                 read_data["stations"][station.name] = station
             read_data["line_count"] = data["line_count"]
             TrainLine._line_number = read_data["line_count"]
-            read_data["loop_lines"] = [LoopLine.model_validate(line) for line in data["loop_lines"]]
-            read_data["linear_lines"] = [TrainLine.model_validate(line) for line in data["linear_lines"]]
+            # read_data["loop_lines"] = [LoopLine.model_validate(line) for line in data["loop_lines"]]
+            # read_data["linear_lines"] = [TrainLine.model_validate(line) for line in data["linear_lines"]]
+            read_data["loop_lines"] = {line_id : LoopLine.model_validate(line) for line_id,line in data["loop_lines"].items()}
+            read_data["linear_lines"] = {line_id : TrainLine.model_validate(line) for line_id,line in data["linear_lines"].items()}
             return read_data
     
 
@@ -98,7 +100,7 @@ def add_line(data: dict, line_stations_file: str, color: str):
     new_line = read_train_line(line_stations_file, stations, color)
 
     
-    data["linear_lines"].append(new_line)
+    data["linear_lines"][new_line.line_id] = new_line
     
     data["line_count"] += 1
 
@@ -113,7 +115,8 @@ def find_pass_stations(data: dict, target_line: TrainLine):
     Lines must have more than 2 stations for this to work
     """
     lines = data["linear_lines"]
-    for comparison_line in lines:
+    for line_id in lines.keys():
+        comparison_line = lines[line_id]
         if comparison_line.line_id == target_line.line_id:
             continue
 
@@ -149,7 +152,7 @@ def find_pass_stations(data: dict, target_line: TrainLine):
 
 
 
-data = {"stations": {}, "line_count": 0, "loop_lines": [], "linear_lines": []}
+data = {"stations": {}, "line_count": 0, "loop_lines": {}, "linear_lines": {}}
 
 if __name__ == "__main__":
     #read existing json
@@ -170,7 +173,7 @@ if __name__ == "__main__":
 
     #prepare colors
     gradient = [x * 1/lines_to_read for x in range(lines_to_read)]
-    cmap = mpl.colormaps["rainbow"]
+    cmap = mpl.colormaps["nipy_spectral"]
     colors = [mpl.colors.to_hex(cmap(i)) for i in gradient]
     i = 0
     for file_name in os.listdir(line_data_path):
@@ -184,15 +187,15 @@ if __name__ == "__main__":
 
     
 
-    for line in data["linear_lines"]:
-        find_pass_stations(data, line)
+    for line in data["linear_lines"].keys():
+        find_pass_stations(data, data["linear_lines"][line])
 
     #save json
     with open(filepath, 'w', encoding='utf-8') as f:
-        json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": [], "linear_lines": []}
+        json_data = {"stations": [], "line_count": data["line_count"], "loop_lines": {}, "linear_lines": {}}
         json_data["stations"]= [stations[station].model_dump() for station in stations.keys()]
-        json_data["loop_lines"] = [line.model_dump() for line in data["loop_lines"]]
-        json_data["linear_lines"] = [line.model_dump() for line in data["linear_lines"]]
+        json_data["loop_lines"] = {line_id : line.model_dump() for line_id,line in data["loop_lines"].items()}
+        json_data["linear_lines"] = {line_id : line.model_dump() for line_id,line in data["linear_lines"].items()}
         json.dump(json_data, f, indent=4)
 
 

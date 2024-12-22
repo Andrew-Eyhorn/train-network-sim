@@ -21,7 +21,7 @@ class TrainLine(BaseModel):
     name: str
     line_color: str
     
-    line_id: int = Field(init = False, default= 0)
+    line_id: str = Field(init = False, default= 0)
     length: int = Field(init = False, default= 0)
     direction: Direction
     stations: list[dict] = Field(default_factory=list) #List of {"station name": str, "stop" : boolean}
@@ -32,7 +32,7 @@ class TrainLine(BaseModel):
     def __init__(self, **data):
         super().__init__(**data)
         if 'line_id' not in data or data['line_id'] is None:
-            self.line_id = self._line_number
+            self.line_id = str(self._line_number) + "_" + self.name
             TrainLine._line_number += 1
     
     def add_station(self, station: Station, stop: bool = True):
@@ -56,13 +56,15 @@ class TrainLine(BaseModel):
         return self.stations[i]
 
 class LoopLine(BaseModel):
+    _loop_number: ClassVar[int] = 0
     centre_pos: tuple[int,int]
     stations: list[str]
-
-
-
-
-
+    loop_id: int = Field(init = False, default= 0)
+    def __init__(self, **data):
+        super().__init__(**data)
+        if 'line_id' not in data or data['line_id'] is None:
+            self.loop_id = self._loop_number
+            LoopLine._loop_number += 1
 
 
 

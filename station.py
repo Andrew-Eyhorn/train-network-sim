@@ -6,7 +6,7 @@ from typing import Optional
 
 class Station(BaseModel):
     name: str
-    connections: dict[int,list[str]] = Field(default_factory=dict) #dict of  "line id" : [connections list] pairs, all connections of same line under one id
+    connections: dict[str,list[str]] = Field(default_factory=dict) #dict of  "line id" : [connections list] pairs, all connections of same line under one id
     map_x: Optional[int] = random.randint(1,100)
     map_y: Optional[int] = random.randint(1,100)
     map_angle: Optional[float] = 0

@@ -88,8 +88,9 @@ def get_vector(angle: float) -> tuple[float,float]:
         return (math.cos(angle), math.sin(angle))
 
 
-def map_stations(line_group: list[TrainLine], stations: dict[Station], mapped_stations: dict[Station], spacing: int):
+def map_stations(line_group: dict[str, TrainLine], stations: dict[Station], mapped_stations: dict[Station], spacing: int):
     #get longest line
+    line_group = list(line_group.values())
     sorted_lines = sorted(line_group, reverse = True, key = lambda line: line.length)
     #draw it out in desired direciton
     line: TrainLine
@@ -160,7 +161,7 @@ if __name__ == "__main__":
     loops = data["loop_lines"]
     mapped_stations: dict[Station] = {}
 
-    calculate_loop_station_pos(loops[0], stations, mapped_stations,  100)
+    calculate_loop_station_pos(loops["0"], stations, mapped_stations,  100)
     map_stations(train_lines, stations, mapped_stations, 30)
     G = generate_graph(stations, train_lines)
 

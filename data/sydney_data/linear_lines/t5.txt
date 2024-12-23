@@ -1,0 +1,99 @@
+T5 Cumberland Line
+north_south
+Campbelltown
+Leumeah
+Minto
+Ingleburn
+Macquarie Fields
+Glenfield
+Casula
+Liverpool
+Warwick Farm
+Cabramatta
+Carramar
+Villawood
+Leightonfield
+Chester Hill
+Sefton
+Birrong
+Yagoona
+Bankstown
+Punchbowl
+Wiley Park
+Lakemba
+Belmore
+Campsie
+Canterbury
+Hurlstone Park
+Dulwich Hill
+Marrickville
+Sydenham
+St Peters
+Erskineville
+Redfern
+Central
+Town Hall
+Wynyard
+Milsons Point
+North Sydney
+Waverton
+Wollstonecraft
+St Leonards
+Artarmon
+Chatswood
+Roseville
+Lindfield
+Killara
+Gordon
+Pymble
+Turramurra
+Warrawee
+Wahroonga
+Waitara
+Hornsby
+Normanhurst
+Thornleigh
+Pennant Hills
+Beecroft
+Cheltenham
+Epping
+Eastwood
+Denistone
+West Ryde
+Meadowbank
+Rhodes
+Concord West
+North Strathfield
+Strathfield
+Homebush
+Flemington
+Lidcombe
+Auburn
+Clyde
+Granville
+Harris Park
+Parramatta
+Westmead
+Wentworthville
+Pendle Hill
+Toongabbie
+Seven Hills
+Blacktown
+Marayong
+Quakers Hill
+Schofields
+Riverstone
+Vineyard
+Mulgrave
+Windsor
+Clarendon
+East Richmond
+Richmond
+Mount Druitt
+Rooty Hill
+Doonside
+Kingswood
+Werrington
+St Marys
+Penrith
+Emu Plains

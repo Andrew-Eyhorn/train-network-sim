@@ -154,7 +154,8 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
-    data = read_json_network("data/temp.json")
+    train_line_path = "data/melbourne_data"
+    data = read_json_network(train_line_path + "/network_data")
     # data = read_json_network("data/temp.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]

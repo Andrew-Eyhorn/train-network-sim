@@ -156,7 +156,8 @@ data = {"stations": {}, "line_count": 0, "loop_lines": {}, "linear_lines": {}}
 
 if __name__ == "__main__":
     #read existing json
-    filepath = "data/temp.json"
+    train_line_path = "data/sydney_data"
+    filepath = train_line_path + "/network_data"
     try:
         data = read_json_network(filepath)
     except:
@@ -165,10 +166,10 @@ if __name__ == "__main__":
     stations = data["stations"]
 
     
-    read_loop_line("data/loop_lines/city_loop.txt", (0,0), data)
+    read_loop_line(train_line_path + "/loop_lines/city_loop.txt", (0,0), data)
 
     #init
-    line_data_path = "data/linear_lines"
+    line_data_path = train_line_path + "/linear_lines"
     lines_to_read = len(os.listdir(line_data_path))
 
     #prepare colors

@@ -169,3 +169,24 @@ if __name__ == "__main__":
     #save to json
     with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
+
+
+
+"""
+#TODO:
+for returning joints, need to redirect when (stations left till rejoin) * (distance) is < the distance between current station and that station
+#maybe mid-line direction change?
+
+#define centre location to convert longlat to cooord
+#Use real location for splits, map between these points
+#maybe lookup location in api if possible (could maybe scrape if not)
+
+#at some point change data storage from txt to something better
+
+#mininmum test: lilydale line mapping
+
+
+#have maunally picked of decent colors and exytended version, have option to set color
+#compared various big city maps to se how they do things (styling, colors, thickness?)
+"""
+

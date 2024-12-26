@@ -203,7 +203,7 @@ if __name__ == "__main__":
 
     centre = "Flinders Street"
     stations[centre].update_map_coords((0,0))
-    offset = (stations[centre].latitude,stations[centre].longitude)
+    offset = (stations[centre].longitude,stations[centre].latitude)
 
     for i in range(len(line.stations)):
         station: Station = stations[line.stations[i]["station"]]
@@ -214,7 +214,7 @@ if __name__ == "__main__":
             else:
                 section_end = i
             if station.map_x is None:
-                station.update_map_coords(((station.latitude - offset[0])*1111,(station.longitude - offset[1])*1111))
+                station.update_map_coords(((station.longitude - offset[0])*1111,(station.latitude - offset[1])*1111))
                 mapped_stations[station.name] = station
         if section_end is not None:
             if section_end - section_start < 1:

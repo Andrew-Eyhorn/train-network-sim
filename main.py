@@ -154,16 +154,87 @@ def calculate_loop_station_pos(loop: LoopLine, stations: dict[Station], mapped_s
 
 
 if __name__ == "__main__":
+    # train_line_path = "data/melbourne_data"
+    # data = read_json_network(train_line_path + "/network_data")
+    # # data = read_json_network("data/temp.json")
+    # stations = data["stations"]
+    # train_lines = data["linear_lines"]
+    # loops = data["loop_lines"]
+    # mapped_stations: dict[Station] = {}
+
+    # calculate_loop_station_pos(loops["0"], stations, mapped_stations,  100)
+    # map_stations(train_lines, stations, mapped_stations, 30)
+
+    # G = generate_graph(stations, train_lines)
+
+    # #save to json
+    # with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
+    #     outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
+
+
+
+
+    #Temp test of lon lat
     train_line_path = "data/melbourne_data"
-    data = read_json_network(train_line_path + "/network_data")
-    # data = read_json_network("data/temp.json")
+    data = read_json_network(train_line_path + "/network_data.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
     loops = data["loop_lines"]
     mapped_stations: dict[Station] = {}
 
     calculate_loop_station_pos(loops["0"], stations, mapped_stations,  100)
-    map_stations(train_lines, stations, mapped_stations, 30)
+
+    temp_longlat_dict = {"Lilydale": (-37.7571582,145.34586560554067),
+    "Ringwood": (-37.8152752,145.22962),
+    "Camberwell": (-37.82658505,145.0586576878648),
+    "Burnley": 	(-37.82762235,145.0080911963464),
+    "Richmond": (-37.823932049999996,144.98957127791425),
+    "Flinders Street": (-37.818185650000004,144.9664771839778)}
+
+    for station,location in temp_longlat_dict.items():
+        stations[station].update_real_coords(location[0], location[1])
+    
+    line = train_lines["0_Lilydale"]
+
+    new_stations_placed = 0
+
+    section_start = None
+    section_end = None
+
+    centre = "Flinders Street"
+    stations[centre].update_map_coords((0,0))
+    offset = (stations[centre].latitude,stations[centre].longitude)
+
+    for i in range(len(line.stations)):
+        station: Station = stations[line.stations[i]["station"]]
+        
+        if station.longitude is not None:
+            if section_start is None:
+                section_start = i
+            else:
+                section_end = i
+            if station.map_x is None:
+                station.update_map_coords(((station.latitude - offset[0])*1111,(station.longitude - offset[1])*1111))
+                mapped_stations[station.name] = station
+        if section_end is not None:
+            if section_end - section_start < 1:
+                section_start = section_end
+                section_end = None
+                break
+
+            start_coord = [stations[line.stations[section_start]["station"]].map_x, stations[line.stations[section_start]["station"]].map_y]
+            end_coord = [stations[line.stations[section_end]["station"]].map_x, stations[line.stations[section_end]["station"]].map_y]
+            vector = [(end_coord[0] - start_coord[0])/(section_end - section_start),(end_coord[1] - start_coord[1])/(section_end - section_start)]
+            current_coord = start_coord
+            for j in range(section_start+1,section_end):
+                current_coord[0] += vector[0]
+                current_coord[1] += vector[1]
+                station: Station = stations[line.stations[j]["station"]]
+                if station.name not in mapped_stations.keys():
+                    station.update_map_coords(current_coord)
+            section_start = section_end
+            section_end = None
+
     G = generate_graph(stations, train_lines)
 
     #save to json
@@ -171,6 +242,10 @@ if __name__ == "__main__":
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
 
 
+
+                
+            
+    
 
 """
 #TODO:

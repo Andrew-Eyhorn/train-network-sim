@@ -156,20 +156,21 @@ data = {"stations": {}, "line_count": 0, "loop_lines": {}, "linear_lines": {}}
 
 if __name__ == "__main__":
     #read existing json
-    train_line_path = "data/sydney_data"
-    filepath = train_line_path + "/network_data"
-    try:
-        data = read_json_network(filepath)
-    except:
-        pass
+    train_line_path = "data/melbourne_data"
+    filepath = train_line_path + "/network_data.json"
+    # try:
+    #     data = read_json_network(filepath)
+    # except:
+    #     pass
     
     stations = data["stations"]
 
-    
+
     read_loop_line(train_line_path + "/loop_lines/city_loop.txt", (0,0), data)
 
     #init
     line_data_path = train_line_path + "/linear_lines"
+    line_data_path = train_line_path + "/testing_lines"
     lines_to_read = len(os.listdir(line_data_path))
 
     #prepare colors
@@ -223,4 +224,28 @@ station
 break
  - check wehn exiting loop. connect to entry of loop #problem - werribee line/wilismation
 
+"""
+
+
+
+
+"""
+Lilydale: -37.7571582,145.34586560554067x
+Ringwood: -37.8152752,145.22962
+Camberwell: -37.82658505,145.0586576878648
+Burnley: 	-37.82762235,145.0080911963464
+Richmond: -37.823932049999996,144.98957127791425
+Flinders Street: -37.818185650000004,144.9664771839778
+
+figure out overwerite file, then save with null long lat
+
+All in main/new file, dont forget to save when adding lat long
+
+Map long/lat to coord - linear for now
+Get two stations with location
+Evenly Distribute the stations
+Move on to next
+
+
+#make genreat no voerride eac htime?
 """

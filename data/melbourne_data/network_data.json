@@ -1,0 +1,546 @@
+{
+    "stations": [
+        {
+            "name": "Parliament",
+            "connections": {
+                "0_Lilydale": [
+                    "Richmond",
+                    "Melbourne Central"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Melbourne Central",
+            "connections": {
+                "0_Lilydale": [
+                    "Parliament",
+                    "Flagstaff"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Flagstaff",
+            "connections": {
+                "0_Lilydale": [
+                    "Melbourne Central",
+                    "Southern Cross"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Southern Cross",
+            "connections": {
+                "0_Lilydale": [
+                    "Flagstaff",
+                    "Flinders Street"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Flinders Street",
+            "connections": {
+                "0_Lilydale": [
+                    "Southern Cross",
+                    "Richmond"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Richmond",
+            "connections": {
+                "0_Lilydale": [
+                    "East Richmond",
+                    "Parliament",
+                    "Flinders Street"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "East Richmond",
+            "connections": {
+                "0_Lilydale": [
+                    "Burnley",
+                    "Richmond"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Burnley",
+            "connections": {
+                "0_Lilydale": [
+                    "Hawthorn",
+                    "East Richmond"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Hawthorn",
+            "connections": {
+                "0_Lilydale": [
+                    "Glenferrie",
+                    "Burnley"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Glenferrie",
+            "connections": {
+                "0_Lilydale": [
+                    "Auburn",
+                    "Hawthorn"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Auburn",
+            "connections": {
+                "0_Lilydale": [
+                    "Camberwell",
+                    "Glenferrie"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Camberwell",
+            "connections": {
+                "0_Lilydale": [
+                    "East Camberwell",
+                    "Auburn"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "East Camberwell",
+            "connections": {
+                "0_Lilydale": [
+                    "Canterbury",
+                    "Camberwell"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Canterbury",
+            "connections": {
+                "0_Lilydale": [
+                    "Chatham",
+                    "East Camberwell"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Chatham",
+            "connections": {
+                "0_Lilydale": [
+                    "Union",
+                    "Canterbury"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Union",
+            "connections": {
+                "0_Lilydale": [
+                    "Box Hill",
+                    "Chatham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Box Hill",
+            "connections": {
+                "0_Lilydale": [
+                    "Laburnum",
+                    "Union"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Laburnum",
+            "connections": {
+                "0_Lilydale": [
+                    "Blackburn",
+                    "Box Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Blackburn",
+            "connections": {
+                "0_Lilydale": [
+                    "Nunawading",
+                    "Laburnum"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Nunawading",
+            "connections": {
+                "0_Lilydale": [
+                    "Mitcham",
+                    "Blackburn"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mitcham",
+            "connections": {
+                "0_Lilydale": [
+                    "Heatherdale",
+                    "Nunawading"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Heatherdale",
+            "connections": {
+                "0_Lilydale": [
+                    "Ringwood",
+                    "Mitcham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Ringwood",
+            "connections": {
+                "0_Lilydale": [
+                    "Ringwood East",
+                    "Heatherdale"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Ringwood East",
+            "connections": {
+                "0_Lilydale": [
+                    "Croydon",
+                    "Ringwood"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Croydon",
+            "connections": {
+                "0_Lilydale": [
+                    "Mooroolbark",
+                    "Ringwood East"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mooroolbark",
+            "connections": {
+                "0_Lilydale": [
+                    "Lilydale",
+                    "Croydon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lilydale",
+            "connections": {
+                "0_Lilydale": [
+                    "Mooroolbark"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        }
+    ],
+    "line_count": 1,
+    "loop_lines": {
+        "0": {
+            "centre_pos": [
+                0,
+                0
+            ],
+            "stations": [
+                "Parliament",
+                "Melbourne Central",
+                "Flagstaff",
+                "Southern Cross",
+                "Flinders Street",
+                "Parliament"
+            ],
+            "loop_id": 0
+        }
+    },
+    "linear_lines": {
+        "0_Lilydale": {
+            "name": "Lilydale",
+            "line_color": "#000000",
+            "line_id": "0_Lilydale",
+            "length": 27,
+            "direction": 0.0,
+            "stations": [
+                {
+                    "station": "Flinders Street",
+                    "stop": true
+                },
+                {
+                    "station": "Southern Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Flagstaff",
+                    "stop": true
+                },
+                {
+                    "station": "Melbourne Central",
+                    "stop": true
+                },
+                {
+                    "station": "Parliament",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Burnley",
+                    "stop": true
+                },
+                {
+                    "station": "Hawthorn",
+                    "stop": true
+                },
+                {
+                    "station": "Glenferrie",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "East Camberwell",
+                    "stop": true
+                },
+                {
+                    "station": "Canterbury",
+                    "stop": true
+                },
+                {
+                    "station": "Chatham",
+                    "stop": true
+                },
+                {
+                    "station": "Union",
+                    "stop": true
+                },
+                {
+                    "station": "Box Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Laburnum",
+                    "stop": true
+                },
+                {
+                    "station": "Blackburn",
+                    "stop": true
+                },
+                {
+                    "station": "Nunawading",
+                    "stop": true
+                },
+                {
+                    "station": "Mitcham",
+                    "stop": true
+                },
+                {
+                    "station": "Heatherdale",
+                    "stop": true
+                },
+                {
+                    "station": "Ringwood",
+                    "stop": true
+                },
+                {
+                    "station": "Ringwood East",
+                    "stop": true
+                },
+                {
+                    "station": "Croydon",
+                    "stop": true
+                },
+                {
+                    "station": "Mooroolbark",
+                    "stop": true
+                },
+                {
+                    "station": "Lilydale",
+                    "stop": true
+                }
+            ]
+        }
+    }
+}

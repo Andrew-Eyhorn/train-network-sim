@@ -7,8 +7,10 @@ from typing import Optional
 class Station(BaseModel):
     name: str
     connections: dict[str,list[str]] = Field(default_factory=dict) #dict of  "line id" : [connections list] pairs, all connections of same line under one id
-    map_x: Optional[int] = random.randint(1,100)
-    map_y: Optional[int] = random.randint(1,100)
+    map_x: Optional[int|None] = None
+    map_y: Optional[int|None] = None
+    latitude: Optional[float|None] = None
+    longitude: Optional[float|None] = None
     map_angle: Optional[float] = 0
     is_loop_station: Optional[bool] = False
 
@@ -38,6 +40,13 @@ class Station(BaseModel):
         Update the stations's relative angle to the graph centre for its line to the origin
         """
         self.map_angle = angle
+    
+    def update_real_coords(self, latitude: float, longitude: float):
+        """
+        Update the lat and long of the station
+        """
+        self.latitude = latitude
+        self.longitude = longitude
     def __str__(self):
         return f"{self.name} station. Location: ({self.map_x, self.map_y}). Angle: {self.map_angle}"
     

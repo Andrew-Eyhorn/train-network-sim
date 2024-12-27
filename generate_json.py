@@ -241,6 +241,8 @@ figure out overwerite file, then save with null long lat
 
 All in main/new file, dont forget to save when adding lat long
 
+#for api, gerneate local longlatdatabse for new city as a locaitons json
+
 Map long/lat to coord - linear for now
 Get two stations with location
 Evenly Distribute the stations

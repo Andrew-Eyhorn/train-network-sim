@@ -184,21 +184,38 @@ def calculate_loop_station_pos(
 
 
 
-def update_closest_station_coords(closest_station: str, line_vectors: list[LineVector], i: int, stations: dict[str, Station], temp_longlat_dict: dict[str, tuple[float, float]], offset: tuple[float,float]) -> None:
-    if closest_station != line_vectors[i].stations[0] and closest_station != line_vectors[i].stations[-1]:
-        station: Station = stations[closest_station]
-        if station.longitude is None:
-            try:
-                location = temp_longlat_dict[closest_station]
-            except KeyError:
-                raise Exception("Error updating station coords - no current GPS coords for station " + closest_station)
-            stations[closest_station].update_real_coords(location[0], location[1])
-        station.update_map_coords(
-                        (
-                            (station.longitude - offset[0]) * 1111,
-                            (station.latitude - offset[1]) * 1111,
-                        ))
+def update_closest_station_coords(closest_station: Station, temp_longlat_dict: dict[str, tuple[float, float]], offset: tuple[float,float]) -> None:
+    if closest_station.longitude is None:
+        try:
+            location = temp_longlat_dict[closest_station.name]
+        except KeyError:
+            raise Exception("Error updating station coords - no current GPS coords for station " + closest_station.name)
+        closest_station.update_real_coords(location[0], location[1])
+    closest_station.update_map_coords(
+                    (
+                        (closest_station.longitude - offset[0]) * 1111,
+                        (closest_station.latitude - offset[1]) * 1111,
+                    ))
 
+def map_line_vector_stations(line_vector: LineVector) -> None:
+    """
+    Maps the stations along the line vector that aren't the end points
+    """
+    current_coord = [line_vector.x1, line_vector.y1]
+    for i in range(1, len(line_vector.stations) - 1):
+        station: Station = line_vector.stations[i]
+        current_coord[0] += line_vector.vector_x
+        current_coord[1] += line_vector.vector_y
+        station.update_map_coords(current_coord)
+
+
+def process_split_vector(split_vector: LineVector) -> None:
+    """
+    Recalculates the vector direction and updates the split vector's station positions
+    """
+    split_vector.vector_x = (split_vector.stations[-1].map_x - split_vector.stations[0].map_x) / (len(split_vector.stations) - 1)
+    split_vector.vector_y = (split_vector.stations[-1].map_y - split_vector.stations[0].map_y) / (len(split_vector.stations) - 1)
+    map_line_vector_stations(split_vector)
 if __name__ == "__main__":
     # train_line_path = "data/melbourne_data"
     # data = read_json_network(train_line_path + "/network_data.json")
@@ -314,15 +331,15 @@ if __name__ == "__main__":
                 )
 
                 current_coord = start_coord
-                current_line_vector.add_station(stations[line.stations[section_start]["station"]].name)
+                current_line_vector.add_station(stations[line.stations[section_start]["station"]])
                 for j in range(section_start + 1, section_end):
                     current_coord[0] += current_line_vector.vector_x
                     current_coord[1] += current_line_vector.vector_y
                     station: Station = stations[line.stations[j]["station"]]
-                    current_line_vector.add_station(station.name)
+                    current_line_vector.add_station(station)
                     if station.name not in mapped_stations.keys():
                         station.update_map_coords(current_coord)
-                current_line_vector.add_station(stations[line.stations[section_end]["station"]].name)
+                current_line_vector.add_station(stations[line.stations[section_end]["station"]])
 
                 if current_line_vector not in line_vectors:
                     line_vectors.append(current_line_vector)
@@ -333,56 +350,45 @@ if __name__ == "__main__":
 
 
     #Check for vector crossovers and adjust stations positions
-    for i in range(len(line_vectors)):
-        for j in range(i + 1, len(line_vectors)):
-            intersection = line_vectors[i].intersect(line_vectors[j])
-            if intersection is not None:
-                # Find the stations closest to the intersection point on both sides
-                closest_station = None
-                closest_distance = float("inf")
-                second_closest_station = None
-                second_closest_distance = float("inf")
-                for station in line_vectors[i].stations:
-                    distance = math.sqrt(
-                        (stations[station].map_x - intersection[0]) ** 2
-                        + (stations[station].map_y - intersection[1]) ** 2
-                    )
-                    if distance < closest_distance:
-                        closest_station = station
-                        closest_distance = distance
-                    elif distance < second_closest_distance:
-                        second_closest_station = station
-                        second_closest_distance = distance
-                # Set the new position of the two stations to their gps coordinates
-                # and ignore if the station is an endpoint of the vector
+    intersection_found = True
+    while intersection_found:
+        intersection_found = False
+        for i in range(len(line_vectors)):
+            for j in range(i + 1, len(line_vectors)):
+                intersection = line_vectors[i].intersect(line_vectors[j])
+                if intersection is not None:
+                    intersection_found = True
+                    new_vectors = []
+                    # Do it for one line
+                    left_split, right_split = line_vectors[i].split(intersection)
+                    new_vectors.extend([left_split, right_split])
 
-                update_closest_station_coords(closest_station, line_vectors, i, stations, temp_longlat_dict, offset)
-                update_closest_station_coords(second_closest_station, line_vectors, i, stations, temp_longlat_dict, offset)
-    
-                
-                # Do it for the other line
-                closest_station = None
-                closest_distance = float("inf")
-                second_closest_station = None
-                second_closest_distance = float("inf")
-                for station in line_vectors[j].stations:
-                    distance = math.sqrt(
-                        (stations[station].map_x - intersection[0]) ** 2
-                        + (stations[station].map_y - intersection[1]) ** 2
-                    )
-                    if distance < closest_distance:
-                        closest_station = station
-                        closest_distance = distance
-                    elif distance < second_closest_distance:
-                        second_closest_station = station
-                        second_closest_distance = distance
-                # Set the new position of the two stations to their gps coordinates
-                # and ignore if the station is an endpoint of the vector
+                    update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
+                    process_split_vector(left_split)
 
-                update_closest_station_coords(closest_station, line_vectors, j, stations, temp_longlat_dict, offset)
-                update_closest_station_coords(second_closest_station, line_vectors, j, stations, temp_longlat_dict, offset)
+                    process_split_vector(right_split)
+                    update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
+                    #recalculate station positions for this vector, need to somehow get the line's vector correct before knowing the station's position
+
+                    
+                    # Do it for the other line
+                    left_split, right_split = line_vectors[j].split(intersection)
+                    new_vectors.extend([left_split, right_split])
+
+                    update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
+                    process_split_vector(left_split)
+
+                    process_split_vector(right_split)
+                    update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
+
+                    line_vectors.remove(line_vectors[i])
+                    line_vectors.remove(line_vectors[j - 1])
+                    line_vectors.extend(new_vectors)
 
 
+
+    for line_vector in line_vectors:
+        print(line_vector)
     G = generate_graph(stations, train_lines)
 
     # save to json

@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from station import Station
 import math
 
 
@@ -15,8 +15,8 @@ class LineVector:
         self.stations = []
 
 
-    def add_station(self, station_name: str):
-        self.stations.append(station_name)
+    def add_station(self, station: Station):
+        self.stations.append(station)
     
     def slope(self):
         return (self.y2 - self.y1) / (self.x2 - self.x1)
@@ -33,7 +33,8 @@ class LineVector:
         #If the interstion occurs at the start point of the vectors, return None
         if (math.isclose(x,self.x1) and math.isclose(y,self.y1)) or (math.isclose(x,self.x2) and math.isclose(y,self.y2)):
             return None
-
+        if (self.stations[-1] is other.stations[0] or self.stations[0] is other.stations[-1]):
+            return None
 
         # Check if the intersection point is within the bounds of both line segments
         if (min(self.x1, self.x2) <= x <= max(self.x1, self.x2) and
@@ -45,6 +46,51 @@ class LineVector:
             return None
         
     
+    def split(self, intersection: tuple[float,float]) -> tuple[LineVector,LineVector]:
+        """
+        Splits the line vector into two new line vectors using the two stations nearest the intersection point
+        """
+        closest_station_index = None
+        closest_distance = float("inf")
+        second_closest_station_index = None
+        for i,station in enumerate(self.stations):
+            distance = math.sqrt(
+                (station.map_x - intersection[0]) ** 2
+                + (station.map_y - intersection[1]) ** 2
+            )
+            if distance < closest_distance:
+                closest_station_index = i
+                closest_distance = distance
+                if i == len(self.stations) - 1:
+                    second_closest_station_index = i-1
+                else:
+                    second_closest_station_index = i+1
+        
+        # Create the new line vectors
+        if closest_station_index < second_closest_station_index:
+            left_station = self.stations[closest_station_index]
+            right_station = self.stations[second_closest_station_index]
+        else:
+            left_station = self.stations[second_closest_station_index]
+            right_station = self.stations[closest_station_index]
+        left_split = LineVector(
+            self.x1, self.y1, left_station.map_x, left_station.map_y,
+            left_station.map_x - self.x1, left_station.map_y - self.y1
+        )
+        for station in self.stations[:self.stations.index(left_station)+1]:
+            left_split.add_station(station)
+
+        right_split = LineVector(
+            right_station.map_x, right_station.map_y, self.x2, self.y2,
+            self.x2 - right_station.map_x, self.y2 - right_station.map_y
+        )
+        for station in self.stations[self.stations.index(right_station):]:
+            right_split.add_station(station)
+        
+        return left_split, right_split
+        
+
+
     def __eq__(self, other: LineVector):
         for i in range(len(self.stations)):
             try:
@@ -59,7 +105,7 @@ class LineVector:
         if self.stations == []:
             return f"Line vector from ({self.x1},{self.y1}) to ({self.x2},{self.y2}) with vector ({self.vector_x},{self.vector_y})"
         else:
-            return f"Line vector from {self.stations[0]} to {self.stations[-1]} with vector ({self.vector_x},{self.vector_y})"
+            return f"Line vector from {self.stations[0].name} to {self.stations[-1].name} with vector ({self.vector_x},{self.vector_y})"
         
 
 #TODO - add intersection thats splits into 2 new vectors method

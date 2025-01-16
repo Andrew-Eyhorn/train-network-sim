@@ -201,7 +201,7 @@ def map_line_vector_stations(line_vector: LineVector) -> None:
     """
     Maps the stations along the line vector that aren't the end points
     """
-    current_coord = [line_vector.x1, line_vector.y1]
+    current_coord = [line_vector.stations[0].map_x, line_vector.stations[0].map_y]
     for i in range(1, len(line_vector.stations) - 1):
         station: Station = line_vector.stations[i]
         current_coord[0] += line_vector.vector_x
@@ -364,10 +364,10 @@ if __name__ == "__main__":
                     new_vectors.extend([left_split, right_split])
 
                     update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
-                    process_split_vector(left_split)
-
-                    process_split_vector(right_split)
                     update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
+                    process_split_vector(left_split)
+                    process_split_vector(right_split)
+
                     #recalculate station positions for this vector, need to somehow get the line's vector correct before knowing the station's position
 
                     
@@ -376,10 +376,10 @@ if __name__ == "__main__":
                     new_vectors.extend([left_split, right_split])
 
                     update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
-                    process_split_vector(left_split)
-
-                    process_split_vector(right_split)
                     update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
+                    process_split_vector(left_split)
+                    process_split_vector(right_split)
+
 
                     line_vectors.remove(line_vectors[i])
                     line_vectors.remove(line_vectors[j - 1])

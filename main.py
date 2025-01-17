@@ -2,6 +2,7 @@ from station import Station
 from train_line import Direction, TrainLine, LoopLine
 from generate_json import read_json_network
 from line_vector import LineVector
+from long_lat_getter import set_station_coords, longlat_dict
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -184,18 +185,7 @@ def calculate_loop_station_pos(
 
 
 
-def update_closest_station_coords(closest_station: Station, temp_longlat_dict: dict[str, tuple[float, float]], offset: tuple[float,float]) -> None:
-    if closest_station.longitude is None:
-        try:
-            location = temp_longlat_dict[closest_station.name]
-        except KeyError:
-            raise Exception("Error updating station coords - no current GPS coords for station " + closest_station.name)
-        closest_station.update_real_coords(location[0], location[1])
-    closest_station.update_map_coords(
-                    (
-                        (closest_station.longitude - offset[0]) * 1111,
-                        (closest_station.latitude - offset[1]) * 1111,
-                    ))
+
 
 def map_line_vector_stations(line_vector: LineVector) -> None:
     """
@@ -209,13 +199,24 @@ def map_line_vector_stations(line_vector: LineVector) -> None:
         station.update_map_coords(current_coord)
 
 
-def process_split_vector(split_vector: LineVector) -> None:
-    """
-    Recalculates the vector direction and updates the split vector's station positions
-    """
-    split_vector.vector_x = (split_vector.stations[-1].map_x - split_vector.stations[0].map_x) / (len(split_vector.stations) - 1)
-    split_vector.vector_y = (split_vector.stations[-1].map_y - split_vector.stations[0].map_y) / (len(split_vector.stations) - 1)
-    map_line_vector_stations(split_vector)
+def is_anchor_point(station: Station, stations: dict[str, Station]) -> bool:
+    if station.is_loop_station:
+        return True
+    for line, connections in station.connections.items():
+        if len(station.connections[line]) == 1:
+            return True
+        for connection in connections:
+            if len(station.connections) > len(stations[connection].connections):
+                return True
+    return False
+
+
+def update_anchor_points_coordinates(stations: dict[str, Station], offset: tuple[float, float]) -> None:
+    for station in stations.values():
+        if is_anchor_point(station, stations):
+            set_station_coords(station, offset)
+            
+
 if __name__ == "__main__":
     # train_line_path = "data/melbourne_data"
     # data = read_json_network(train_line_path + "/network_data.json")
@@ -244,37 +245,21 @@ if __name__ == "__main__":
 
     calculate_loop_station_pos(loops["0"], stations, mapped_stations, 100)
 
-    temp_longlat_dict = {
-        "Burwood": (-37.851671,145.0805767),
-        "Hartwell": (-37.848978,145.083073),
-        "Darling": (-37.8689928,145.0629478),
-        'Glen Iris': (-37.8596103,145.0586893),
-    }
+    
 
-
-    anchor_points = {
-        "Lilydale": (-37.7571582, 145.34586560554067),
-        "Ringwood": (-37.8152752, 145.22962),
-        "Camberwell": (-37.82658505, 145.0586576878648),
-        "Burnley": (-37.82762235, 145.0080911963464),
-        "Richmond": (-37.823932049999996, 144.98957127791425),
-        "Flinders Street": (-37.818185650000004, 144.9664771839778),
-        "Belgrave": (-37.9096952,145.3548577),
-        "Alamein": (-37.8683603,145.0797334),
-        "Glen Waverley": (-37.8793882,145.1627795),
-    }
 
     line_vectors: list[LineVector] = []
 
-    for station, location in anchor_points.items():
-        stations[station].update_real_coords(location[0], location[1])
 
 
+    
 
 
     centre = "Flinders Street"
     stations[centre].update_map_coords((0, 0))
+    stations[centre].update_real_coords(longlat_dict[centre][0], longlat_dict[centre][1])
     offset = (stations[centre].longitude, stations[centre].latitude)
+    update_anchor_points_coordinates(stations, offset)
 
     for line_name in train_lines.keys():
         line = train_lines[line_name]
@@ -360,25 +345,21 @@ if __name__ == "__main__":
                     intersection_found = True
                     new_vectors = []
                     # Do it for one line
-                    left_split, right_split = line_vectors[i].split(intersection)
+                    left_split, right_split = line_vectors[i].split(intersection, offset)
                     new_vectors.extend([left_split, right_split])
 
-                    update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
-                    update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
-                    process_split_vector(left_split)
-                    process_split_vector(right_split)
+                    map_line_vector_stations(left_split)
+                    map_line_vector_stations(right_split)
 
                     #recalculate station positions for this vector, need to somehow get the line's vector correct before knowing the station's position
 
                     
                     # Do it for the other line
-                    left_split, right_split = line_vectors[j].split(intersection)
+                    left_split, right_split = line_vectors[j].split(intersection, offset)
                     new_vectors.extend([left_split, right_split])
 
-                    update_closest_station_coords(left_split.stations[-1], temp_longlat_dict, offset)
-                    update_closest_station_coords(right_split.stations[0], temp_longlat_dict, offset)
-                    process_split_vector(left_split)
-                    process_split_vector(right_split)
+                    map_line_vector_stations(left_split)
+                    map_line_vector_stations(right_split)
 
 
                     line_vectors.remove(line_vectors[i])

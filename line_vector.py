@@ -1,5 +1,6 @@
 from __future__ import annotations
 from station import Station
+from long_lat_getter import set_station_coords
 import math
 
 
@@ -46,7 +47,7 @@ class LineVector:
             return None
         
     
-    def split(self, intersection: tuple[float,float]) -> tuple[LineVector,LineVector]:
+    def split(self, intersection: tuple[float,float], offset: tuple[float, float]) -> tuple[LineVector,LineVector]:
         """
         Splits the line vector into two new line vectors using the two stations nearest the intersection point
         """
@@ -65,7 +66,8 @@ class LineVector:
                     second_closest_station_index = i-1
                 else:
                     second_closest_station_index = i+1
-        
+        set_station_coords(self.stations[closest_station_index], offset)
+        set_station_coords(self.stations[second_closest_station_index], offset)
         # Create the new line vectors
         if closest_station_index < second_closest_station_index:
             left_station = self.stations[closest_station_index]
@@ -75,14 +77,14 @@ class LineVector:
             right_station = self.stations[closest_station_index]
         left_split = LineVector(
             self.x1, self.y1, left_station.map_x, left_station.map_y,
-            left_station.map_x - self.x1, left_station.map_y - self.y1
+            (left_station.map_x - self.x1) / self.stations.index(left_station), (left_station.map_y - self.y1) / self.stations.index(left_station)
         )
         for station in self.stations[:self.stations.index(left_station)+1]:
             left_split.add_station(station)
 
         right_split = LineVector(
             right_station.map_x, right_station.map_y, self.x2, self.y2,
-            self.x2 - right_station.map_x, self.y2 - right_station.map_y
+            (self.x2 - right_station.map_x) / (len(self.stations) - self.stations.index(right_station)), (self.y2 - right_station.map_y) / (len(self.stations) - self.stations.index(right_station))
         )
         for station in self.stations[self.stations.index(right_station):]:
             right_split.add_station(station)

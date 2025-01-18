@@ -170,7 +170,7 @@ if __name__ == "__main__":
 
     #init
     line_data_path = train_line_path + "/linear_lines"
-    line_data_path = train_line_path + "/testing_lines"
+    # line_data_path = train_line_path + "/testing_lines"
     lines_to_read = len(os.listdir(line_data_path))
 
     #prepare colors

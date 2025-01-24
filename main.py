@@ -216,6 +216,14 @@ def update_anchor_points_coordinates(stations: dict[str, Station], offset: tuple
         if is_anchor_point(station, stations):
             set_station_coords(station, offset)
             
+def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]:
+    """
+    Scales the target coordinates based on distance from the centre, the closer the target coords are the to the centre, the more they are scaled
+    """
+    x, y = target_coords
+    distance = math.sqrt((x)**2 + (y)**2)
+    scale = 3 / (1 + (distance / 100))  # Scale formula
+    return (x * scale, y * scale)
 
 if __name__ == "__main__":
     # train_line_path = "data/melbourne_data"
@@ -368,8 +376,13 @@ if __name__ == "__main__":
 
 
 
-    for line_vector in line_vectors:
-        print(line_vector)
+    #scale the stations
+    for station in stations.values():
+        station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+
+
+    # for line_vector in line_vectors:
+    #     print(line_vector)
     G = generate_graph(stations, train_lines)
 
     # save to json

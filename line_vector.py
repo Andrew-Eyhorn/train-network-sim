@@ -75,10 +75,16 @@ class LineVector:
         else:
             left_station = self.stations[second_closest_station_index]
             right_station = self.stations[closest_station_index]
-        left_split = LineVector(
-            self.x1, self.y1, left_station.map_x, left_station.map_y,
-            (left_station.map_x - self.x1) / self.stations.index(left_station), (left_station.map_y - self.y1) / self.stations.index(left_station)
-        )
+        try:
+            left_split = LineVector(
+                self.x1, self.y1, left_station.map_x, left_station.map_y,
+                (left_station.map_x - self.x1) / self.stations.index(left_station), (left_station.map_y - self.y1) / self.stations.index(left_station)
+            )
+        except ZeroDivisionError:
+            #print error info about the number involed in the zero error and return None
+            print(len(self))
+            
+            return None
         for station in self.stations[:self.stations.index(left_station)+1]:
             left_split.add_station(station)
 
@@ -109,5 +115,6 @@ class LineVector:
         else:
             return f"Line vector from {self.stations[0].name} to {self.stations[-1].name} with vector ({self.vector_x},{self.vector_y})"
         
-
+    def __len__(self):
+        return len(self.stations)
 #TODO - add intersection thats splits into 2 new vectors method

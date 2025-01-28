@@ -222,27 +222,11 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     """
     x, y = target_coords
     distance = math.sqrt((x)**2 + (y)**2)
-    scale = 3 / (1 + (distance / 100))  # Scale formula
+    scale = max(1,2 / (1 + (distance / 100)))  # Scale formula
     return (x * scale, y * scale)
 
 if __name__ == "__main__":
-    # train_line_path = "data/melbourne_data"
-    # data = read_json_network(train_line_path + "/network_data.json")
-    # # data = read_json_network("data/temp.json")
-    # stations = data["stations"]
-    # train_lines = data["linear_lines"]
-    # loops = data["loop_lines"]
-    # mapped_stations: dict[Station] = {}
-
-    # calculate_loop_station_pos(loops["0"], stations, mapped_stations,  100)
-    # map_stations(train_lines, stations, mapped_stations, 30)
-
-    # G = generate_graph(stations, train_lines)
-
-    # #save to json
-    # with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
-    #     outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
-
+    
     # Temp test of lon lat
     train_line_path = "data/melbourne_data"
     data = read_json_network(train_line_path + "/network_data.json")
@@ -283,10 +267,6 @@ if __name__ == "__main__":
             station: Station = stations[line.stations[i]["station"]]
 
             if station.longitude is not None:
-                if section_start is None:
-                    section_start = i
-                else:
-                    section_end = i
                 if station.map_x is None:
                     station.update_map_coords(
                         (
@@ -295,6 +275,14 @@ if __name__ == "__main__":
                         )
                     )
                     mapped_stations[station.name] = station
+
+                if section_start is None:
+                    section_start = i
+                    station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+                else:
+                    section_end = i
+                    station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+                
             if section_end is not None:
                 if section_end - section_start < 1:
                     section_start = section_end
@@ -349,7 +337,7 @@ if __name__ == "__main__":
         for i in range(len(line_vectors)):
             for j in range(i + 1, len(line_vectors)):
                 intersection = line_vectors[i].intersect(line_vectors[j])
-                if intersection is not None:
+                if intersection is not None and len(line_vectors[i].stations) > 2 and len(line_vectors[j].stations) > 2:
                     intersection_found = True
                     new_vectors = []
                     # Do it for one line
@@ -377,8 +365,8 @@ if __name__ == "__main__":
 
 
     #scale the stations
-    for station in stations.values():
-        station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+    # for station in stations.values():
+    #     station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
 
 
     # for line_vector in line_vectors:

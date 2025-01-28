@@ -222,8 +222,47 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     """
     x, y = target_coords
     distance = math.sqrt((x)**2 + (y)**2)
-    scale = max(1,2 / (1 + (distance / 100)))  # Scale formula
-    return (x * scale, y * scale)
+    # if distance < 50:
+    #     return (x * 2, y * 2)
+    # elif distance < 100:
+    #     if x > 0 and y > 0:
+    #         return ((x - 50) * 1 + 100, (y - 50) * 1 + 100)
+    #     elif x < 0 and y > 0:
+    #         return ((x + 50) * 1 - 100, (y - 50) * 1 + 100)
+    #     elif x < 0 and y < 0:
+    #         return ((x + 50) * 1 - 100, (y + 50) * 1 - 100)
+    #     elif x > 0 and y < 0:
+    #         return ((x - 50) * 1 + 100, (y + 50) * 1 - 100)
+    # else:
+    #     if x > 0 and y > 0:
+    #         return ((x-100) * 0.5 + 150, (y-100) * 0.5 + 150)
+    #     elif x < 0 and y > 0:
+    #         return ((x+100) * 0.5 - 150, (y-100) * 0.5 + 150)
+    #     elif x < 0 and y < 0:
+    #         return ((x+100) * 0.5 - 150, (y+100) * 0.5 - 150)
+    #     elif x > 0 and y < 0:
+    #         return ((x-100) * 0.5 + 150, (y+100) * 0.5 - 150)
+
+    if x >= 0 and y >= 0:
+        return (scale(x), scale(y))
+    elif x < 0 and y >= 0:
+        return (-1 * scale(-x), scale(y))
+    elif x < 0 and y < 0:
+        return (-1 * scale(-x), -1 * scale(-y))
+    elif x >= 0 and y < 0:
+        return (scale(x), -1 * scale(-y))
+            
+    
+def scale(x: float) -> float:
+    if x < 50:
+        return x * 3
+    elif x < 100:
+        return (x - 50) * 1 + 150
+    elif x < 150:
+        return (x - 100) * 0.75 + 200
+    else:
+        return (x - 150) * 0.5 + 237.5
+    
 
 if __name__ == "__main__":
     
@@ -278,10 +317,8 @@ if __name__ == "__main__":
 
                 if section_start is None:
                     section_start = i
-                    station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
                 else:
                     section_end = i
-                    station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
                 
             if section_end is not None:
                 if section_end - section_start < 1:
@@ -365,8 +402,15 @@ if __name__ == "__main__":
 
 
     #scale the stations
-    # for station in stations.values():
-    #     station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+    for station in stations.values():
+        try:
+            station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+            station.update_angle(math.atan2(station.map_y, station.map_x))
+        except TypeError:
+            print(station.name)
+            print(station.map_x)
+            print(station.map_y)
+            print(scale_coordinates((station.map_x, station.map_y)))
 
 
     # for line_vector in line_vectors:

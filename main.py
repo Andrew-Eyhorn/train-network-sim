@@ -221,49 +221,52 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     Scales the target coordinates based on distance from the centre, the closer the target coords are the to the centre, the more they are scaled
     """
     x, y = target_coords
-    distance = math.sqrt((x)**2 + (y)**2)
-    # if distance < 50:
-    #     return (x * 2, y * 2)
-    # elif distance < 100:
-    #     if x > 0 and y > 0:
-    #         return ((x - 50) * 1 + 100, (y - 50) * 1 + 100)
-    #     elif x < 0 and y > 0:
-    #         return ((x + 50) * 1 - 100, (y - 50) * 1 + 100)
-    #     elif x < 0 and y < 0:
-    #         return ((x + 50) * 1 - 100, (y + 50) * 1 - 100)
-    #     elif x > 0 and y < 0:
-    #         return ((x - 50) * 1 + 100, (y + 50) * 1 - 100)
-    # else:
-    #     if x > 0 and y > 0:
-    #         return ((x-100) * 0.5 + 150, (y-100) * 0.5 + 150)
-    #     elif x < 0 and y > 0:
-    #         return ((x+100) * 0.5 - 150, (y-100) * 0.5 + 150)
-    #     elif x < 0 and y < 0:
-    #         return ((x+100) * 0.5 - 150, (y+100) * 0.5 - 150)
-    #     elif x > 0 and y < 0:
-    #         return ((x-100) * 0.5 + 150, (y+100) * 0.5 - 150)
-
+    # boundaries = [25, 50, 100, 200, 300]
+    # multipliers = [2, 1, 0.5, 0.25, 0.1]
+    boundaries = [50, 100, 150]
+    multipliers = [2, 1, 0.5]
+    x_out, y_out = dynamic_scale_alt(boundaries, multipliers, abs(x)), dynamic_scale_alt(boundaries, multipliers, abs(y))
     if x >= 0 and y >= 0:
-        return (scale(x), scale(y))
+        return x_out, y_out
     elif x < 0 and y >= 0:
-        return (-1 * scale(-x), scale(y))
+        return -1 * x_out, y_out
     elif x < 0 and y < 0:
-        return (-1 * scale(-x), -1 * scale(-y))
+        return -1 * x_out, -1 * y_out
     elif x >= 0 and y < 0:
-        return (scale(x), -1 * scale(-y))
+        return x_out, -1 * y_out
             
-    
-def scale(x: float) -> float:
-    if x < 50:
-        return x * 3
-    elif x < 100:
-        return (x - 50) * 1 + 150
-    elif x < 150:
-        return (x - 100) * 0.75 + 200
-    else:
-        return (x - 150) * 0.5 + 237.5
-    
 
+        
+def dynamic_scale_alt(boundaries: list[float], multipliers: list[float], x: float) -> float:
+    """
+    Given a list of boundaries and boarder multipliers, scales the coordinate value based where it falls on the map
+    """
+    assert len(boundaries) == len(multipliers)
+    assert x >= 0
+    if x > boundaries[-1]:
+        print(x)
+    i = 0
+    output = 0
+    if x < boundaries[0]:
+        return x * multipliers[0]
+    while i < len(boundaries) and x > boundaries[i]:
+        output += boundaries[i] * multipliers[i]
+        i += 1
+    try:
+        if i >= len(boundaries):
+            i-=1
+        diff = x - boundaries[i-1]
+        return diff * multipliers[i] + output
+    except IndexError:
+        # print information for debugging and raise error
+        print("Error in dynamic scale")
+        print("Boundaries: " + str(boundaries))
+        print("Multipliers: " + str(multipliers))
+        print("X: " + str(x))
+        print("I: " + str(i))
+        print("Output: " + str(output))
+        print("Diff: " + str(diff))
+        raise IndexError("Error in dynamic scale")
 if __name__ == "__main__":
     
     # Temp test of lon lat

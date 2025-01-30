@@ -226,6 +226,7 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     boundaries = [50, 100, 150]
     multipliers = [2, 1, 0.5]
     x_out, y_out = dynamic_scale_alt(boundaries, multipliers, abs(x)), dynamic_scale_alt(boundaries, multipliers, abs(y))
+    # x_out, y_out = scale(abs(x)), scale(abs(y))
     if x >= 0 and y >= 0:
         return x_out, y_out
     elif x < 0 and y >= 0:
@@ -235,6 +236,13 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     elif x >= 0 and y < 0:
         return x_out, -1 * y_out
             
+def scale(x: float) -> float:
+    if x <= 50:
+        return x * 2
+    elif x <= 100:
+        return (x - 50) * 1 + 100
+    else:
+        return (x - 100) * 0.5 + 150
 
         
 def dynamic_scale_alt(boundaries: list[float], multipliers: list[float], x: float) -> float:
@@ -243,30 +251,25 @@ def dynamic_scale_alt(boundaries: list[float], multipliers: list[float], x: floa
     """
     assert len(boundaries) == len(multipliers)
     assert x >= 0
-    if x > boundaries[-1]:
-        print(x)
+
+    values = [boundaries[0]*multipliers[0]] * len(boundaries) #stores how much  to add depending on the boundary surpassed
+    for i in range(1, len(boundaries)):
+        values[i] = (boundaries[i] - boundaries[i-1]) * multipliers[i] + values[i-1]
+    
+
     i = 0
     output = 0
     if x < boundaries[0]:
         return x * multipliers[0]
     while i < len(boundaries) and x > boundaries[i]:
-        output += boundaries[i] * multipliers[i]
+        output = values[i]
         i += 1
-    try:
-        if i >= len(boundaries):
-            i-=1
-        diff = x - boundaries[i-1]
-        return diff * multipliers[i] + output
-    except IndexError:
-        # print information for debugging and raise error
-        print("Error in dynamic scale")
-        print("Boundaries: " + str(boundaries))
-        print("Multipliers: " + str(multipliers))
-        print("X: " + str(x))
-        print("I: " + str(i))
-        print("Output: " + str(output))
-        print("Diff: " + str(diff))
-        raise IndexError("Error in dynamic scale")
+
+
+    i-=1
+    diff = x - boundaries[i]
+    return diff * multipliers[min(i+1, len(boundaries)-1)] + output
+
 if __name__ == "__main__":
     
     # Temp test of lon lat

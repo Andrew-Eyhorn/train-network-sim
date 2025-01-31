@@ -57,24 +57,89 @@ longlat_dict = {
         "Merlynston": (-37.7088889,144.9577778),
         "Fawkner": (-37.7027778,144.9605556),
         "Toorak": (-37.8411111,145.0138889),
-        "Armadale": (-37.8561111,145.0194444),
+        "Armadale": (-37.8561111,145.0194444),#####
+        "Heyington": (-37.8261111,145.035),
+        "Ashburton": (-37.865,145.0805556),
+        "East Malvern": (-37.8772222,145.0605556),
+        'Holmesglen': (-37.8772222,145.0605556),
         
+
 
     }
 
 
-def set_station_coords(closest_station: Station, offset: tuple[float,float]) -> None:
+def set_station_coords(station: Station, offset: tuple[float,float]) -> None:
     """
-    Sets the stations map coordinates based on the station's real coordinates and the offset.
+    Sets the stations map coordinates based on the station's real coordinates and the offset, then applies scaling
     """
-    if closest_station.longitude is None:
+    if station.longitude is None:
         try:
-            location = longlat_dict[closest_station.name]
+            location = longlat_dict[station.name]
         except KeyError:
-            raise Exception("Error updating station coords - no current GPS coords for station " + closest_station.name)
-        closest_station.update_real_coords(location[0], location[1])
-    closest_station.update_map_coords(
+            raise Exception("Error updating station coords - no current GPS coords for station " + station.name)
+        station.update_real_coords(location[0], location[1])
+    station.update_map_coords(
                     (
-                        (closest_station.longitude - offset[0]) * 1111,
-                        (closest_station.latitude - offset[1]) * 1111,
+                        (station.longitude - offset[0]) * 1111,
+                        (station.latitude - offset[1]) * 1111,
                     ))
+    #scale
+    station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+
+
+
+
+def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]:
+    """
+    Scales the target coordinates based on distance from the centre, the closer the target coords are the to the centre, the more they are scaled
+    """
+    x, y = target_coords
+    # boundaries = [25, 50, 100, 200, 300]
+    # multipliers = [2, 1, 0.5, 0.25, 0.1]
+    boundaries = [50, 100, 150]
+    multipliers = [2, 1, 0.5]
+    x_out, y_out = dynamic_scale_alt(boundaries, multipliers, abs(x)), dynamic_scale_alt(boundaries, multipliers, abs(y))
+    # x_out, y_out = scale(abs(x)), scale(abs(y))
+    if x >= 0 and y >= 0:
+        return x_out, y_out
+    elif x < 0 and y >= 0:
+        return -1 * x_out, y_out
+    elif x < 0 and y < 0:
+        return -1 * x_out, -1 * y_out
+    elif x >= 0 and y < 0:
+        return x_out, -1 * y_out
+            
+def scale(x: float) -> float:
+    if x <= 50:
+        return x * 2
+    elif x <= 100:
+        return (x - 50) * 1 + 100
+    else:
+        return (x - 100) * 0.5 + 150
+
+        
+def dynamic_scale_alt(boundaries: list[float], multipliers: list[float], x: float) -> float:
+    """
+    Given a list of boundaries and boarder multipliers, scales the coordinate value based where it falls on the map
+    """
+    assert len(boundaries) == len(multipliers)
+    assert x >= 0
+
+    values = [boundaries[0]*multipliers[0]] * len(boundaries) #stores how much  to add depending on the boundary surpassed
+    for i in range(1, len(boundaries)):
+        values[i] = (boundaries[i] - boundaries[i-1]) * multipliers[i] + values[i-1]
+    
+
+    i = 0
+    output = 0
+    if x < boundaries[0]:
+        return x * multipliers[0]
+    while i < len(boundaries) and x > boundaries[i]:
+        output = values[i]
+        i += 1
+
+
+    i-=1
+    diff = x - boundaries[i]
+    return diff * multipliers[min(i+1, len(boundaries)-1)] + output
+    

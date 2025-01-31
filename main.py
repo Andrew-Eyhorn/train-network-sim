@@ -2,7 +2,7 @@ from station import Station
 from train_line import Direction, TrainLine, LoopLine
 from generate_json import read_json_network
 from line_vector import LineVector
-from long_lat_getter import set_station_coords, longlat_dict
+from coord_setter import set_station_coords, longlat_dict
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -186,7 +186,6 @@ def calculate_loop_station_pos(
 
 
 
-
 def map_line_vector_stations(line_vector: LineVector) -> None:
     """
     Maps the stations along the line vector that aren't the end points
@@ -215,60 +214,9 @@ def update_anchor_points_coordinates(stations: dict[str, Station], offset: tuple
     for station in stations.values():
         if is_anchor_point(station, stations):
             set_station_coords(station, offset)
+
             
-def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]:
-    """
-    Scales the target coordinates based on distance from the centre, the closer the target coords are the to the centre, the more they are scaled
-    """
-    x, y = target_coords
-    # boundaries = [25, 50, 100, 200, 300]
-    # multipliers = [2, 1, 0.5, 0.25, 0.1]
-    boundaries = [50, 100, 150]
-    multipliers = [2, 1, 0.5]
-    x_out, y_out = dynamic_scale_alt(boundaries, multipliers, abs(x)), dynamic_scale_alt(boundaries, multipliers, abs(y))
-    # x_out, y_out = scale(abs(x)), scale(abs(y))
-    if x >= 0 and y >= 0:
-        return x_out, y_out
-    elif x < 0 and y >= 0:
-        return -1 * x_out, y_out
-    elif x < 0 and y < 0:
-        return -1 * x_out, -1 * y_out
-    elif x >= 0 and y < 0:
-        return x_out, -1 * y_out
-            
-def scale(x: float) -> float:
-    if x <= 50:
-        return x * 2
-    elif x <= 100:
-        return (x - 50) * 1 + 100
-    else:
-        return (x - 100) * 0.5 + 150
 
-        
-def dynamic_scale_alt(boundaries: list[float], multipliers: list[float], x: float) -> float:
-    """
-    Given a list of boundaries and boarder multipliers, scales the coordinate value based where it falls on the map
-    """
-    assert len(boundaries) == len(multipliers)
-    assert x >= 0
-
-    values = [boundaries[0]*multipliers[0]] * len(boundaries) #stores how much  to add depending on the boundary surpassed
-    for i in range(1, len(boundaries)):
-        values[i] = (boundaries[i] - boundaries[i-1]) * multipliers[i] + values[i-1]
-    
-
-    i = 0
-    output = 0
-    if x < boundaries[0]:
-        return x * multipliers[0]
-    while i < len(boundaries) and x > boundaries[i]:
-        output = values[i]
-        i += 1
-
-
-    i-=1
-    diff = x - boundaries[i]
-    return diff * multipliers[min(i+1, len(boundaries)-1)] + output
 
 if __name__ == "__main__":
     
@@ -400,7 +348,6 @@ if __name__ == "__main__":
                     map_line_vector_stations(left_split)
                     map_line_vector_stations(right_split)
 
-
                     line_vectors.remove(line_vectors[i])
                     line_vectors.remove(line_vectors[j - 1])
                     line_vectors.extend(new_vectors)
@@ -408,15 +355,15 @@ if __name__ == "__main__":
 
 
     #scale the stations
-    for station in stations.values():
-        try:
-            station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
-            station.update_angle(math.atan2(station.map_y, station.map_x))
-        except TypeError:
-            print(station.name)
-            print(station.map_x)
-            print(station.map_y)
-            print(scale_coordinates((station.map_x, station.map_y)))
+    # for station in stations.values():
+    #     try:
+    #         station.update_map_coords(scale_coordinates((station.map_x, station.map_y)))
+    #         station.update_angle(math.atan2(station.map_y, station.map_x))
+    #     except TypeError:
+    #         print(station.name)
+    #         print(station.map_x)
+    #         print(station.map_y)
+    #         print(scale_coordinates((station.map_x, station.map_y)))
 
 
     # for line_vector in line_vectors:

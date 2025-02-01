@@ -1,6 +1,6 @@
 from __future__ import annotations
 from station import Station
-from long_lat_getter import set_station_coords
+from coord_setter import set_station_coords
 import math
 
 

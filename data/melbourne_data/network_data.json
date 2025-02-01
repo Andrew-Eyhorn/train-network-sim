@@ -494,7 +494,7 @@
             "name": "Riversdale",
             "connections": {
                 "0_Alamein": [
-                    "Wilison",
+                    "Willison",
                     "Camberwell"
                 ]
             },
@@ -506,7 +506,7 @@
             "is_loop_station": false
         },
         {
-            "name": "Wilison",
+            "name": "Willison",
             "connections": {
                 "0_Alamein": [
                     "Hartwell",
@@ -525,7 +525,7 @@
             "connections": {
                 "0_Alamein": [
                     "Burwood",
-                    "Wilison"
+                    "Willison"
                 ]
             },
             "map_x": null,
@@ -3733,7 +3733,7 @@
                     "stop": true
                 },
                 {
-                    "station": "Wilison",
+                    "station": "Willison",
                     "stop": true
                 },
                 {

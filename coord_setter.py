@@ -1,5 +1,6 @@
 from station import Station
-
+import json
+from constants import city
 
 # This dictionary is used to store the GPS coordinates of each station.
 longlat_dict = {
@@ -66,6 +67,9 @@ longlat_dict = {
 
 
     }
+filepath = "data/" + city.lower() + "_data/longlat_dict.json"
+with open(filepath, 'r') as f:
+    longlat_dict = json.load(f)
 
 
 def set_station_coords(station: Station, offset: tuple[float,float]) -> None:

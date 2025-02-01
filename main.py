@@ -3,6 +3,7 @@ from train_line import Direction, TrainLine, LoopLine
 from generate_json import read_json_network
 from line_vector import LineVector
 from coord_setter import set_station_coords, longlat_dict
+from constants import city
 
 import networkx as nx
 import matplotlib.pyplot as plt

@@ -20,7 +20,13 @@ class LineVector:
         self.stations.append(station)
     
     def slope(self):
-        return (self.y2 - self.y1) / (self.x2 - self.x1)
+        try:
+            return (self.y2 - self.y1) / (self.x2 - self.x1)
+        except ZeroDivisionError:
+            print(f"Zero division error in slope calculation for line vector from {self.stations[0].name} to {self.stations[-1].name}")
+            print(f"Station coords: ({self.x1},{self.y1}) to ({self.x2},{self.y2})")
+            print(f"Vector: ({self.vector_x},{self.vector_y})")
+            raise ZeroDivisionError
 
     def parallel(self, other: LineVector):
         return math.isclose(self.slope(),other.slope())

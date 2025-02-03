@@ -98,10 +98,10 @@ def scale_coordinates(target_coords: tuple[float, float]) -> tuple[float, float]
     Scales the target coordinates based on distance from the centre, the closer the target coords are the to the centre, the more they are scaled
     """
     x, y = target_coords
-    # boundaries = [25, 50, 100, 200, 300]
-    # multipliers = [2, 1, 0.5, 0.25, 0.1]
-    boundaries = [50, 100, 150]
-    multipliers = [2, 1, 0.5]
+    # boundaries = [50, 100, 150]
+    # multipliers = [2, 1, 0.5]
+    boundaries = [10, 50, 100]
+    multipliers = [1, 1, 1]
     x_out, y_out = dynamic_scale_alt(boundaries, multipliers, abs(x)), dynamic_scale_alt(boundaries, multipliers, abs(y))
     # x_out, y_out = scale(abs(x)), scale(abs(y))
     if x >= 0 and y >= 0:

@@ -1,5 +1,26 @@
-T1 North Shore & Western Line
-north_west
+North Shore & Western Line
+west
+Richmond
+East Richmond
+Clarendon
+Windsor
+Mulgrave
+Vineyard
+Riverstone
+Schofields
+Quakers Hill
+Marayong
+Blacktown
+Seven Hills
+Toongabbie
+Pendle Hill
+Wentworthville
+Westmead
+Parramatta
+Harris Park
+Strathfield
+Burwood
+Redfern
 Central
 Town Hall
 Wynyard
@@ -20,69 +41,7 @@ Warrawee
 Wahroonga
 Waitara
 Hornsby
-Normanhurst
-Thornleigh
-Pennant Hills
-Beecroft
-Cheltenham
-Epping
-Eastwood
-Denistone
-West Ryde
-Meadowbank
-Rhodes
-Concord West
-North Strathfield
-Strathfield
-Homebush
-Flemington
-Lidcombe
-Auburn
-Clyde
-Granville
-Harris Park
-Parramatta
-Westmead
-Wentworthville
-Pendle Hill
-Toongabbie
-Seven Hills
-Blacktown
-Marayong
-Quakers Hill
-Schofields
-Riverstone
-Vineyard
-Mulgrave
-Windsor
-Clarendon
-East Richmond
-Richmond
-Kingswood
-Werrington
-St Marys
-Mount Druitt
-Rooty Hill
-Doonside
-Pendle Hill
-Blacktown
-Seven Hills
-Toongabbie
-Marayong
-Quakers Hill
-Schofields
-Riverstone
-Vineyard
-Mulgrave
-Windsor
-Clarendon
-East Richmond
-Richmond
-Mount Druitt
-Rooty Hill
-Doonside
-Kingswood
-Werrington
-St Marys
-Penrith
-Emu Plains
+Asquith
+Mount Colah
+Mount Kuring-gai
+Berowra

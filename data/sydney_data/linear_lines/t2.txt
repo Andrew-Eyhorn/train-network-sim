@@ -1,46 +1,35 @@
-T2 Inner West & Leppington Line
+Inner West & Leppington Line
 south_west
-Central
-Redfern
-Macdonaldtown
-Newtown
-Stanmore
-Petersham
-Lewisham
-Summer Hill
-Ashfield
-Croydon
-Burwood
-Strathfield
-Homebush
-Flemington
-Lidcombe
-Auburn
-Clyde
+Leppington
+Edmondson Park
+Leppington
+Casula
+Liverpool
+Warwick Farm
+Cabramatta
+Canley Vale
+Fairfield
+Yennora
+Guildford
+Merrylands
 Granville
-Harris Park
-Parramatta
-Westmead
-Wentworthville
-Pendle Hill
-Toongabbie
-Seven Hills
-Blacktown
-Marayong
-Quakers Hill
-Schofields
-Riverstone
-Vineyard
-Mulgrave
-Windsor
-Clarendon
-East Richmond
-Richmond
-Mount Druitt
-Rooty Hill
-Doonside
-Kingswood
-Werrington
-St Marys
-Penrith
-Emu Plains
+Clyde
+Auburn
+Lidcombe
+Flemington
+Strathfield
+Burwood
+Croydon
+Ashfield
+Summer Hill
+Lewisham
+Petersham
+Stanmore
+Newtown
+Redfern
+Central
+Town Hall
+Wynyard
+Circular Quay
+St James
+Museum

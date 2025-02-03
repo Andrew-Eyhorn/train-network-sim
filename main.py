@@ -222,7 +222,7 @@ def update_anchor_points_coordinates(stations: dict[str, Station], offset: tuple
 if __name__ == "__main__":
     
     # Temp test of lon lat
-    train_line_path = "data/melbourne_data"
+    train_line_path = "data/sydney_data"
     data = read_json_network(train_line_path + "/network_data.json")
     stations = data["stations"]
     train_lines = data["linear_lines"]
@@ -241,7 +241,7 @@ if __name__ == "__main__":
     
 
 
-    centre = "Flinders Street"
+    centre = "Central"
     stations[centre].update_map_coords((0, 0))
     stations[centre].update_real_coords(longlat_dict[centre][0], longlat_dict[centre][1])
     offset = (stations[centre].longitude, stations[centre].latitude)

@@ -35,14 +35,17 @@ async def main(stations: list[str], city: str, longlat_dict: dict[str, tuple[flo
         print("Fetching data for", station_name)
         data = await fetch_station_data(station_name + " Station, " + city)
         print("Received data for", station_name)
-        longlat_dict[station_name] = (float(data[0]['lat']), float(data[0]['lon']))
-        print("Added data for", station_name, ": ", longlat_dict[station_name])
-        with open(filepath, 'w') as f:
-            json.dump(longlat_dict, f)
+        try:
+            longlat_dict[station_name] = (float(data[0]['lat']), float(data[0]['lon']))
+            print("Added data for", station_name, ": ", longlat_dict[station_name])
+            with open(filepath, 'w') as f:
+                json.dump(longlat_dict, f)
+        except Exception as e:
+            print("Error adding data for", station_name, ":", e)
     print(f"Finished fetching data for all stations, total time elapsed: {time.time() - start_time:.2f} seconds")
 
 if __name__ == "__main__":
-    city = "Melbourne"
+    city = "Sydney"
     train_line_path = "data/" + city.lower() + "_data"
     data = read_json_network(train_line_path + "/network_data.json")
     stations = data["stations"]

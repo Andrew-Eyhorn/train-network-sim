@@ -45,6 +45,8 @@ def read_train_line(filepath: str, stations: dict[Station], color: str) -> Train
         if loop_exit is None and not stations[station_name].is_loop_station:
             loop_exit = i
             break
+    if loop_exit is None or loop_entry is None:
+        return train_line
     if loop_exit > loop_entry + 2:
         stations[train_line.stations[loop_entry]["station"]].add_connection(train_line.stations[loop_exit]["station"], train_line.line_id)
         stations[train_line.stations[loop_exit]["station"]].add_connection(train_line.stations[loop_entry]["station"], train_line.line_id)
@@ -156,7 +158,7 @@ data = {"stations": {}, "line_count": 0, "loop_lines": {}, "linear_lines": {}}
 
 if __name__ == "__main__":
     #read existing json
-    train_line_path = "data/melbourne_data"
+    train_line_path = "data/sydney_data"
     filepath = train_line_path + "/network_data.json"
     # try:
     #     data = read_json_network(filepath)

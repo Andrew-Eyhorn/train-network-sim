@@ -1,0 +1,4050 @@
+{
+    "stations": [
+        {
+            "name": "Central",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Waterloo",
+                    "Pitt Street"
+                ],
+                "1_North Shore & Western Line": [
+                    "Town Hall",
+                    "Redfern"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Town Hall",
+                    "Redfern"
+                ],
+                "3_Bankstown Line": [
+                    "Town Hall",
+                    "Redfern"
+                ],
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Redfern",
+                    "Town Hall"
+                ],
+                "7_Airport & South Line": [
+                    "Museum",
+                    "Green Square"
+                ],
+                "8_Northern Line": [
+                    "Redfern",
+                    "Town Hall"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Museum",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "St James"
+                ],
+                "3_Bankstown Line": [
+                    "",
+                    "St James"
+                ],
+                "7_Airport & South Line": [
+                    "St James",
+                    "Central"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "St James",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Museum",
+                    "Circular Quay"
+                ],
+                "3_Bankstown Line": [
+                    "Museum",
+                    "Circular Quay"
+                ],
+                "7_Airport & South Line": [
+                    "Circular Quay",
+                    "Museum"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Circular Quay",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "St James",
+                    "Wynyard"
+                ],
+                "3_Bankstown Line": [
+                    "St James",
+                    "Wynyard"
+                ],
+                "7_Airport & South Line": [
+                    "Wynyard",
+                    "St James"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Wynyard",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Milsons Point",
+                    "Town Hall"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Circular Quay",
+                    "Town Hall"
+                ],
+                "3_Bankstown Line": [
+                    "Circular Quay",
+                    "Town Hall"
+                ],
+                "7_Airport & South Line": [
+                    "Town Hall",
+                    "Circular Quay"
+                ],
+                "8_Northern Line": [
+                    "Town Hall",
+                    "Milsons Point"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Town Hall",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Wynyard",
+                    "Central"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Wynyard",
+                    "Central"
+                ],
+                "3_Bankstown Line": [
+                    "Wynyard",
+                    "Central"
+                ],
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Central",
+                    "Martin Place"
+                ],
+                "7_Airport & South Line": [
+                    "Wynyard"
+                ],
+                "8_Northern Line": [
+                    "Central",
+                    "Wynyard"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": true
+        },
+        {
+            "name": "Tallawong",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Rouse Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Rouse Hill",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Kellyville",
+                    "Tallawong"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Kellyville",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Bella Vista",
+                    "Rouse Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Bella Vista",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Norwest",
+                    "Kellyville"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Norwest",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Hills Showground",
+                    "Bella Vista"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Hills Showground",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Castle Hill",
+                    "Norwest"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Castle Hill",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Cherrybrook",
+                    "Hills Showground"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Cherrybrook",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Epping",
+                    "Castle Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Epping",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Macquarie University",
+                    "Cherrybrook"
+                ],
+                "8_Northern Line": [
+                    "Cheltenham",
+                    "Eastwood"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Macquarie University",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Macquarie Park",
+                    "Epping"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Macquarie Park",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "North Ryde",
+                    "Macquarie University"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "North Ryde",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Chatswood",
+                    "Macquarie Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Chatswood",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "North Sydney",
+                    "North Ryde"
+                ],
+                "1_North Shore & Western Line": [
+                    "Roseville",
+                    "Artarmon"
+                ],
+                "8_Northern Line": [
+                    "Artarmon",
+                    "Roseville"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "North Sydney",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Victoria Cross",
+                    "Chatswood"
+                ],
+                "1_North Shore & Western Line": [
+                    "Waverton",
+                    "Milsons Point"
+                ],
+                "8_Northern Line": [
+                    "Milsons Point",
+                    "Waverton"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Victoria Cross",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Barangaroo",
+                    "North Sydney"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Barangaroo",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Martin Place",
+                    "Victoria Cross"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Martin Place",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Pitt Street",
+                    "Barangaroo"
+                ],
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Town Hall",
+                    "Kings Cross"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Pitt Street",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Central",
+                    "Martin Place"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Waterloo",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Sydenham",
+                    "Central"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Sydenham",
+            "connections": {
+                "0_Sydney Metro Northwest Line": [
+                    "Waterloo"
+                ],
+                "3_Bankstown Line": [
+                    "St Peters",
+                    "Marrickville"
+                ],
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Tempe",
+                    "Redfern"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Richmond",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "East Richmond"
+                ],
+                "5_Cumberland Line": [
+                    "East Richmond"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "East Richmond",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Clarendon",
+                    "Richmond"
+                ],
+                "5_Cumberland Line": [
+                    "Richmond",
+                    "Clarendon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Clarendon",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Windsor",
+                    "East Richmond"
+                ],
+                "5_Cumberland Line": [
+                    "East Richmond",
+                    "Windsor"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Windsor",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Mulgrave",
+                    "Clarendon"
+                ],
+                "5_Cumberland Line": [
+                    "Clarendon",
+                    "Mulgrave"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mulgrave",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Vineyard",
+                    "Windsor"
+                ],
+                "5_Cumberland Line": [
+                    "Windsor",
+                    "Vineyard"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Vineyard",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Riverstone",
+                    "Mulgrave"
+                ],
+                "5_Cumberland Line": [
+                    "Mulgrave",
+                    "Riverstone"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Riverstone",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Schofields",
+                    "Vineyard"
+                ],
+                "5_Cumberland Line": [
+                    "Vineyard",
+                    "Schofields"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Schofields",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Quakers Hill",
+                    "Riverstone"
+                ],
+                "5_Cumberland Line": [
+                    "Riverstone",
+                    "Quakers Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Quakers Hill",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Marayong",
+                    "Schofields"
+                ],
+                "5_Cumberland Line": [
+                    "Schofields",
+                    "Marayong"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Marayong",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Blacktown",
+                    "Quakers Hill"
+                ],
+                "5_Cumberland Line": [
+                    "Quakers Hill",
+                    "Blacktown"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Blacktown",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Seven Hills",
+                    "Marayong"
+                ],
+                "5_Cumberland Line": [
+                    "Marayong",
+                    "Seven Hills"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Seven Hills",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Toongabbie",
+                    "Blacktown"
+                ],
+                "5_Cumberland Line": [
+                    "Blacktown",
+                    "Westmead"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Toongabbie",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Pendle Hill",
+                    "Seven Hills"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Pendle Hill",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Wentworthville",
+                    "Toongabbie"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Wentworthville",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Westmead",
+                    "Pendle Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Westmead",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Parramatta",
+                    "Wentworthville"
+                ],
+                "5_Cumberland Line": [
+                    "Seven Hills",
+                    "Parramatta"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Parramatta",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Harris Park",
+                    "Westmead"
+                ],
+                "5_Cumberland Line": [
+                    "Westmead",
+                    "Merrylands"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Harris Park",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Strathfield",
+                    "Parramatta"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Strathfield",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Burwood",
+                    "Harris Park"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Burwood",
+                    "Flemington"
+                ],
+                "8_Northern Line": [
+                    "North Strathfield",
+                    "Redfern"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Burwood",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Redfern",
+                    "Strathfield"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Croydon",
+                    "Strathfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Redfern",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Central",
+                    "Burwood"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Central",
+                    "Newtown"
+                ],
+                "3_Bankstown Line": [
+                    "Central",
+                    "Erskineville"
+                ],
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Sydenham",
+                    "Central"
+                ],
+                "8_Northern Line": [
+                    "Strathfield",
+                    "Central"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Milsons Point",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "North Sydney",
+                    "Wynyard"
+                ],
+                "8_Northern Line": [
+                    "Wynyard",
+                    "North Sydney"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Waverton",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Wollstonecraft",
+                    "North Sydney"
+                ],
+                "8_Northern Line": [
+                    "North Sydney",
+                    "Wollstonecraft"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Wollstonecraft",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "St Leonards",
+                    "Waverton"
+                ],
+                "8_Northern Line": [
+                    "Waverton",
+                    "St Leonards"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "St Leonards",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Artarmon",
+                    "Wollstonecraft"
+                ],
+                "8_Northern Line": [
+                    "Wollstonecraft",
+                    "Artarmon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Artarmon",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Chatswood",
+                    "St Leonards"
+                ],
+                "8_Northern Line": [
+                    "St Leonards",
+                    "Chatswood"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Roseville",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Lindfield",
+                    "Chatswood"
+                ],
+                "8_Northern Line": [
+                    "Chatswood",
+                    "Lindfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lindfield",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Killara",
+                    "Roseville"
+                ],
+                "8_Northern Line": [
+                    "Roseville",
+                    "Killara"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Killara",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Gordon",
+                    "Lindfield"
+                ],
+                "8_Northern Line": [
+                    "Lindfield",
+                    "Gordon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Gordon",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Pymble",
+                    "Killara"
+                ],
+                "8_Northern Line": [
+                    "Killara"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Pymble",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Turramurra",
+                    "Gordon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Turramurra",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Warrawee",
+                    "Pymble"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Warrawee",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Wahroonga",
+                    "Turramurra"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Wahroonga",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Waitara",
+                    "Warrawee"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Waitara",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Hornsby",
+                    "Wahroonga"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Hornsby",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Asquith",
+                    "Waitara"
+                ],
+                "8_Northern Line": [
+                    "Normanhurst"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Asquith",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Mount Colah",
+                    "Hornsby"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mount Colah",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Mount Kuring-gai",
+                    "Asquith"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mount Kuring-gai",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Berowra",
+                    "Mount Colah"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Berowra",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Mount Kuring-gai"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Leppington",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Edmondson Park",
+                    "Casula"
+                ],
+                "5_Cumberland Line": [
+                    "Edmondson Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Edmondson Park",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Leppington"
+                ],
+                "5_Cumberland Line": [
+                    "Glenfield",
+                    "Leppington"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Casula",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Liverpool",
+                    "Leppington"
+                ],
+                "5_Cumberland Line": [
+                    "Liverpool",
+                    "Glenfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Liverpool",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Warwick Farm",
+                    "Casula"
+                ],
+                "5_Cumberland Line": [
+                    "Warwick Farm",
+                    "Casula"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Warwick Farm",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Cabramatta",
+                    "Liverpool"
+                ],
+                "5_Cumberland Line": [
+                    "Cabramatta",
+                    "Liverpool"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Cabramatta",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Canley Vale",
+                    "Warwick Farm"
+                ],
+                "5_Cumberland Line": [
+                    "Canley Vale",
+                    "Warwick Farm"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Canley Vale",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Fairfield",
+                    "Cabramatta"
+                ],
+                "5_Cumberland Line": [
+                    "Fairfield",
+                    "Cabramatta"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Fairfield",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Yennora",
+                    "Canley Vale"
+                ],
+                "5_Cumberland Line": [
+                    "Yennora",
+                    "Canley Vale"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Yennora",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Guildford",
+                    "Fairfield"
+                ],
+                "5_Cumberland Line": [
+                    "Guildford",
+                    "Fairfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Guildford",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Merrylands",
+                    "Yennora"
+                ],
+                "5_Cumberland Line": [
+                    "Merrylands",
+                    "Yennora"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Merrylands",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Granville",
+                    "Guildford"
+                ],
+                "5_Cumberland Line": [
+                    "Parramatta",
+                    "Guildford"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Granville",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Clyde",
+                    "Merrylands"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Clyde",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Auburn",
+                    "Granville"
+                ],
+                "6_Carlingford Line": [
+                    "Rosehill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Auburn",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Lidcombe",
+                    "Clyde"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lidcombe",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Flemington",
+                    "Auburn"
+                ],
+                "3_Bankstown Line": [
+                    "Berala"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Flemington",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Strathfield",
+                    "Lidcombe"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Croydon",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Ashfield",
+                    "Burwood"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Ashfield",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Summer Hill",
+                    "Croydon"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Summer Hill",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Lewisham",
+                    "Ashfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lewisham",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Petersham",
+                    "Summer Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Petersham",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Stanmore",
+                    "Lewisham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Stanmore",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Newtown",
+                    "Petersham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Newtown",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Redfern",
+                    "Stanmore"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Berala",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Regents Park",
+                    "Lidcombe"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Regents Park",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Birrong",
+                    "Berala"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Birrong",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Yagoona",
+                    "Regents Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Yagoona",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Bankstown",
+                    "Birrong"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Bankstown",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Punchbowl",
+                    "Yagoona"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Punchbowl",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Wiley Park",
+                    "Bankstown"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Wiley Park",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Lakemba",
+                    "Punchbowl"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lakemba",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Belmore",
+                    "Wiley Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Belmore",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Campsie",
+                    "Lakemba"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Campsie",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Canterbury",
+                    "Belmore"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Canterbury",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Hurlstone Park",
+                    "Campsie"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Hurlstone Park",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Dulwich Hill",
+                    "Canterbury"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Dulwich Hill",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Marrickville",
+                    "Hurlstone Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Marrickville",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Sydenham",
+                    "Dulwich Hill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "St Peters",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Erskineville",
+                    "Sydenham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Erskineville",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Redfern",
+                    "St Peters"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "",
+            "connections": {
+                "3_Bankstown Line": [
+                    "Museum"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Bondi Junction",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Edgecliff"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Edgecliff",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Kings Cross",
+                    "Bondi Junction"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Kings Cross",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Martin Place",
+                    "Edgecliff"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Tempe",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Wolli Creek",
+                    "Sydenham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Wolli Creek",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Arncliffe",
+                    "Tempe"
+                ],
+                "7_Airport & South Line": [
+                    "International Airport",
+                    "Turrella"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Arncliffe",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Banksia",
+                    "Wolli Creek"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Banksia",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Rockdale",
+                    "Arncliffe"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Rockdale",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Kogarah",
+                    "Banksia"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Kogarah",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Carlton",
+                    "Rockdale"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Carlton",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Allawah",
+                    "Kogarah"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Allawah",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Hurstville",
+                    "Carlton"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Hurstville",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Penshurst",
+                    "Allawah"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Penshurst",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Mortdale",
+                    "Hurstville"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mortdale",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Oatley",
+                    "Penshurst"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Oatley",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Como",
+                    "Mortdale"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Como",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Jannali",
+                    "Oatley"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Jannali",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Sutherland",
+                    "Como"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Sutherland",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Kirrawee",
+                    "Jannali"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Kirrawee",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Gymea",
+                    "Sutherland"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Gymea",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Miranda",
+                    "Kirrawee"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Miranda",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Caringbah",
+                    "Gymea"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Caringbah",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Woolooware",
+                    "Miranda"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Woolooware",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Cronulla",
+                    "Caringbah"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Cronulla",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Engadine",
+                    "Woolooware"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Engadine",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Heathcote",
+                    "Cronulla"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Heathcote",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Waterfall",
+                    "Engadine"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Waterfall",
+            "connections": {
+                "4_T4 Eastern Suburbs & Illawarra Line": [
+                    "Heathcote"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Glenfield",
+            "connections": {
+                "5_Cumberland Line": [
+                    "Casula",
+                    "Edmondson Park"
+                ],
+                "7_Airport & South Line": [
+                    "Holsworthy",
+                    "Macquarie Fields"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Rosehill",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Camellia",
+                    "Clyde"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Camellia",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Rydalmere",
+                    "Rosehill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Rydalmere",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Dundas",
+                    "Camellia"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Dundas",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Telopea",
+                    "Rydalmere"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Telopea",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Carlingford",
+                    "Dundas"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Carlingford",
+            "connections": {
+                "6_Carlingford Line": [
+                    "Telopea"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Macarthur",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Campbelltown"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Campbelltown",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Leumeah",
+                    "Macarthur"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Leumeah",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Minto",
+                    "Campbelltown"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Minto",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Ingleburn",
+                    "Leumeah"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Ingleburn",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Macquarie Fields",
+                    "Minto"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Macquarie Fields",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Glenfield",
+                    "Ingleburn"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Holsworthy",
+            "connections": {
+                "7_Airport & South Line": [
+                    "East Hills",
+                    "Glenfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "East Hills",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Panania",
+                    "Holsworthy"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Panania",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Revesby",
+                    "East Hills"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Revesby",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Padstow",
+                    "Panania"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Padstow",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Riverwood",
+                    "Revesby"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Riverwood",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Narwee",
+                    "Padstow"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Narwee",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Beverly Hills",
+                    "Riverwood"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Beverly Hills",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Kingsgrove",
+                    "Narwee"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Kingsgrove",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Bexley North",
+                    "Beverly Hills"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Bexley North",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Bardwell Park",
+                    "Kingsgrove"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Bardwell Park",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Turrella",
+                    "Bexley North"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Turrella",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Wolli Creek",
+                    "Bardwell Park"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "International Airport",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Domestic Airport",
+                    "Wolli Creek"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Domestic Airport",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Mascot",
+                    "International Airport"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Mascot",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Green Square",
+                    "Domestic Airport"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Green Square",
+            "connections": {
+                "7_Airport & South Line": [
+                    "Central",
+                    "Mascot"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "North Strathfield",
+            "connections": {
+                "8_Northern Line": [
+                    "Concord West",
+                    "Strathfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Concord West",
+            "connections": {
+                "8_Northern Line": [
+                    "Rhodes",
+                    "North Strathfield"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Rhodes",
+            "connections": {
+                "8_Northern Line": [
+                    "Meadowbank",
+                    "Concord West"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Meadowbank",
+            "connections": {
+                "8_Northern Line": [
+                    "West Ryde",
+                    "Rhodes"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "West Ryde",
+            "connections": {
+                "8_Northern Line": [
+                    "Denistone",
+                    "Meadowbank"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Denistone",
+            "connections": {
+                "8_Northern Line": [
+                    "Eastwood",
+                    "West Ryde"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Eastwood",
+            "connections": {
+                "8_Northern Line": [
+                    "Epping",
+                    "Denistone"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Cheltenham",
+            "connections": {
+                "8_Northern Line": [
+                    "Beecroft",
+                    "Epping"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Beecroft",
+            "connections": {
+                "8_Northern Line": [
+                    "Pennant Hills",
+                    "Cheltenham"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Pennant Hills",
+            "connections": {
+                "8_Northern Line": [
+                    "Thornleigh",
+                    "Beecroft"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Thornleigh",
+            "connections": {
+                "8_Northern Line": [
+                    "Normanhurst",
+                    "Pennant Hills"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Normanhurst",
+            "connections": {
+                "8_Northern Line": [
+                    "Hornsby",
+                    "Thornleigh"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        }
+    ],
+    "line_count": 9,
+    "loop_lines": {
+        "0": {
+            "centre_pos": [
+                0,
+                0
+            ],
+            "stations": [
+                "Central",
+                "Museum",
+                "St James",
+                "Circular Quay",
+                "Wynyard",
+                "Town Hall",
+                "Central"
+            ],
+            "loop_id": 0
+        }
+    },
+    "linear_lines": {
+        "0_Sydney Metro Northwest Line": {
+            "name": "Sydney Metro Northwest Line",
+            "line_color": "#000000",
+            "line_id": "0_Sydney Metro Northwest Line",
+            "length": 25,
+            "direction": 2.356194490192345,
+            "stations": [
+                {
+                    "station": "Tallawong",
+                    "stop": true
+                },
+                {
+                    "station": "Rouse Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Kellyville",
+                    "stop": true
+                },
+                {
+                    "station": "Bella Vista",
+                    "stop": true
+                },
+                {
+                    "station": "Norwest",
+                    "stop": true
+                },
+                {
+                    "station": "Hills Showground",
+                    "stop": true
+                },
+                {
+                    "station": "Castle Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Cherrybrook",
+                    "stop": true
+                },
+                {
+                    "station": "Epping",
+                    "stop": true
+                },
+                {
+                    "station": "Macquarie University",
+                    "stop": true
+                },
+                {
+                    "station": "Macquarie Park",
+                    "stop": true
+                },
+                {
+                    "station": "North Ryde",
+                    "stop": true
+                },
+                {
+                    "station": "Chatswood",
+                    "stop": true
+                },
+                {
+                    "station": "Artarmon",
+                    "stop": false
+                },
+                {
+                    "station": "St Leonards",
+                    "stop": false
+                },
+                {
+                    "station": "Wollstonecraft",
+                    "stop": false
+                },
+                {
+                    "station": "Waverton",
+                    "stop": false
+                },
+                {
+                    "station": "North Sydney",
+                    "stop": true
+                },
+                {
+                    "station": "Victoria Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Barangaroo",
+                    "stop": true
+                },
+                {
+                    "station": "Martin Place",
+                    "stop": true
+                },
+                {
+                    "station": "Pitt Street",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Waterloo",
+                    "stop": true
+                },
+                {
+                    "station": "Sydenham",
+                    "stop": true
+                }
+            ]
+        },
+        "1_North Shore & Western Line": {
+            "name": "North Shore & Western Line",
+            "line_color": "#6d009c",
+            "line_id": "1_North Shore & Western Line",
+            "length": 52,
+            "direction": 3.141592653589793,
+            "stations": [
+                {
+                    "station": "Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Clarendon",
+                    "stop": true
+                },
+                {
+                    "station": "Windsor",
+                    "stop": true
+                },
+                {
+                    "station": "Mulgrave",
+                    "stop": true
+                },
+                {
+                    "station": "Vineyard",
+                    "stop": true
+                },
+                {
+                    "station": "Riverstone",
+                    "stop": true
+                },
+                {
+                    "station": "Schofields",
+                    "stop": true
+                },
+                {
+                    "station": "Quakers Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Marayong",
+                    "stop": true
+                },
+                {
+                    "station": "Blacktown",
+                    "stop": true
+                },
+                {
+                    "station": "Seven Hills",
+                    "stop": true
+                },
+                {
+                    "station": "Toongabbie",
+                    "stop": true
+                },
+                {
+                    "station": "Pendle Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Wentworthville",
+                    "stop": true
+                },
+                {
+                    "station": "Westmead",
+                    "stop": true
+                },
+                {
+                    "station": "Parramatta",
+                    "stop": true
+                },
+                {
+                    "station": "Harris Park",
+                    "stop": true
+                },
+                {
+                    "station": "Strathfield",
+                    "stop": true
+                },
+                {
+                    "station": "Burwood",
+                    "stop": true
+                },
+                {
+                    "station": "Croydon",
+                    "stop": false
+                },
+                {
+                    "station": "Ashfield",
+                    "stop": false
+                },
+                {
+                    "station": "Summer Hill",
+                    "stop": false
+                },
+                {
+                    "station": "Lewisham",
+                    "stop": false
+                },
+                {
+                    "station": "Petersham",
+                    "stop": false
+                },
+                {
+                    "station": "Stanmore",
+                    "stop": false
+                },
+                {
+                    "station": "Newtown",
+                    "stop": false
+                },
+                {
+                    "station": "Redfern",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                },
+                {
+                    "station": "Wynyard",
+                    "stop": true
+                },
+                {
+                    "station": "Milsons Point",
+                    "stop": true
+                },
+                {
+                    "station": "North Sydney",
+                    "stop": true
+                },
+                {
+                    "station": "Waverton",
+                    "stop": true
+                },
+                {
+                    "station": "Wollstonecraft",
+                    "stop": true
+                },
+                {
+                    "station": "St Leonards",
+                    "stop": true
+                },
+                {
+                    "station": "Artarmon",
+                    "stop": true
+                },
+                {
+                    "station": "Chatswood",
+                    "stop": true
+                },
+                {
+                    "station": "Roseville",
+                    "stop": true
+                },
+                {
+                    "station": "Lindfield",
+                    "stop": true
+                },
+                {
+                    "station": "Killara",
+                    "stop": true
+                },
+                {
+                    "station": "Gordon",
+                    "stop": true
+                },
+                {
+                    "station": "Pymble",
+                    "stop": true
+                },
+                {
+                    "station": "Turramurra",
+                    "stop": true
+                },
+                {
+                    "station": "Warrawee",
+                    "stop": true
+                },
+                {
+                    "station": "Wahroonga",
+                    "stop": true
+                },
+                {
+                    "station": "Waitara",
+                    "stop": true
+                },
+                {
+                    "station": "Hornsby",
+                    "stop": true
+                },
+                {
+                    "station": "Asquith",
+                    "stop": true
+                },
+                {
+                    "station": "Mount Colah",
+                    "stop": true
+                },
+                {
+                    "station": "Mount Kuring-gai",
+                    "stop": true
+                },
+                {
+                    "station": "Berowra",
+                    "stop": true
+                }
+            ]
+        },
+        "2_Inner West & Leppington Line": {
+            "name": "Inner West & Leppington Line",
+            "line_color": "#002fdd",
+            "line_id": "2_Inner West & Leppington Line",
+            "length": 35,
+            "direction": -2.356194490192345,
+            "stations": [
+                {
+                    "station": "Leppington",
+                    "stop": true
+                },
+                {
+                    "station": "Edmondson Park",
+                    "stop": true
+                },
+                {
+                    "station": "Leppington",
+                    "stop": true
+                },
+                {
+                    "station": "Edmondson Park",
+                    "stop": false
+                },
+                {
+                    "station": "Glenfield",
+                    "stop": false
+                },
+                {
+                    "station": "Casula",
+                    "stop": true
+                },
+                {
+                    "station": "Liverpool",
+                    "stop": true
+                },
+                {
+                    "station": "Warwick Farm",
+                    "stop": true
+                },
+                {
+                    "station": "Cabramatta",
+                    "stop": true
+                },
+                {
+                    "station": "Canley Vale",
+                    "stop": true
+                },
+                {
+                    "station": "Fairfield",
+                    "stop": true
+                },
+                {
+                    "station": "Yennora",
+                    "stop": true
+                },
+                {
+                    "station": "Guildford",
+                    "stop": true
+                },
+                {
+                    "station": "Merrylands",
+                    "stop": true
+                },
+                {
+                    "station": "Granville",
+                    "stop": true
+                },
+                {
+                    "station": "Clyde",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Lidcombe",
+                    "stop": true
+                },
+                {
+                    "station": "Flemington",
+                    "stop": true
+                },
+                {
+                    "station": "Strathfield",
+                    "stop": true
+                },
+                {
+                    "station": "Burwood",
+                    "stop": true
+                },
+                {
+                    "station": "Croydon",
+                    "stop": true
+                },
+                {
+                    "station": "Ashfield",
+                    "stop": true
+                },
+                {
+                    "station": "Summer Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Lewisham",
+                    "stop": true
+                },
+                {
+                    "station": "Petersham",
+                    "stop": true
+                },
+                {
+                    "station": "Stanmore",
+                    "stop": true
+                },
+                {
+                    "station": "Newtown",
+                    "stop": true
+                },
+                {
+                    "station": "Redfern",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                },
+                {
+                    "station": "Wynyard",
+                    "stop": true
+                },
+                {
+                    "station": "Circular Quay",
+                    "stop": true
+                },
+                {
+                    "station": "St James",
+                    "stop": true
+                },
+                {
+                    "station": "Museum",
+                    "stop": true
+                }
+            ]
+        },
+        "3_Bankstown Line": {
+            "name": "Bankstown Line",
+            "line_color": "#00a4bb",
+            "line_id": "3_Bankstown Line",
+            "length": 26,
+            "direction": -2.356194490192345,
+            "stations": [
+                {
+                    "station": "Lidcombe",
+                    "stop": true
+                },
+                {
+                    "station": "Berala",
+                    "stop": true
+                },
+                {
+                    "station": "Regents Park",
+                    "stop": true
+                },
+                {
+                    "station": "Birrong",
+                    "stop": true
+                },
+                {
+                    "station": "Yagoona",
+                    "stop": true
+                },
+                {
+                    "station": "Bankstown",
+                    "stop": true
+                },
+                {
+                    "station": "Punchbowl",
+                    "stop": true
+                },
+                {
+                    "station": "Wiley Park",
+                    "stop": true
+                },
+                {
+                    "station": "Lakemba",
+                    "stop": true
+                },
+                {
+                    "station": "Belmore",
+                    "stop": true
+                },
+                {
+                    "station": "Campsie",
+                    "stop": true
+                },
+                {
+                    "station": "Canterbury",
+                    "stop": true
+                },
+                {
+                    "station": "Hurlstone Park",
+                    "stop": true
+                },
+                {
+                    "station": "Dulwich Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Marrickville",
+                    "stop": true
+                },
+                {
+                    "station": "Sydenham",
+                    "stop": true
+                },
+                {
+                    "station": "St Peters",
+                    "stop": true
+                },
+                {
+                    "station": "Erskineville",
+                    "stop": true
+                },
+                {
+                    "station": "Redfern",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                },
+                {
+                    "station": "Wynyard",
+                    "stop": true
+                },
+                {
+                    "station": "Circular Quay",
+                    "stop": true
+                },
+                {
+                    "station": "St James",
+                    "stop": true
+                },
+                {
+                    "station": "Museum",
+                    "stop": true
+                },
+                {
+                    "station": "",
+                    "stop": true
+                }
+            ]
+        },
+        "4_T4 Eastern Suburbs & Illawarra Line": {
+            "name": "T4 Eastern Suburbs & Illawarra Line",
+            "line_color": "#009b13",
+            "line_id": "4_T4 Eastern Suburbs & Illawarra Line",
+            "length": 32,
+            "direction": -0.7853981633974483,
+            "stations": [
+                {
+                    "station": "Bondi Junction",
+                    "stop": true
+                },
+                {
+                    "station": "Edgecliff",
+                    "stop": true
+                },
+                {
+                    "station": "Kings Cross",
+                    "stop": true
+                },
+                {
+                    "station": "Martin Place",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Redfern",
+                    "stop": true
+                },
+                {
+                    "station": "Sydenham",
+                    "stop": true
+                },
+                {
+                    "station": "Tempe",
+                    "stop": true
+                },
+                {
+                    "station": "Wolli Creek",
+                    "stop": true
+                },
+                {
+                    "station": "Arncliffe",
+                    "stop": true
+                },
+                {
+                    "station": "Banksia",
+                    "stop": true
+                },
+                {
+                    "station": "Rockdale",
+                    "stop": true
+                },
+                {
+                    "station": "Kogarah",
+                    "stop": true
+                },
+                {
+                    "station": "Carlton",
+                    "stop": true
+                },
+                {
+                    "station": "Allawah",
+                    "stop": true
+                },
+                {
+                    "station": "Hurstville",
+                    "stop": true
+                },
+                {
+                    "station": "Penshurst",
+                    "stop": true
+                },
+                {
+                    "station": "Mortdale",
+                    "stop": true
+                },
+                {
+                    "station": "Oatley",
+                    "stop": true
+                },
+                {
+                    "station": "Como",
+                    "stop": true
+                },
+                {
+                    "station": "Jannali",
+                    "stop": true
+                },
+                {
+                    "station": "Sutherland",
+                    "stop": true
+                },
+                {
+                    "station": "Kirrawee",
+                    "stop": true
+                },
+                {
+                    "station": "Gymea",
+                    "stop": true
+                },
+                {
+                    "station": "Miranda",
+                    "stop": true
+                },
+                {
+                    "station": "Caringbah",
+                    "stop": true
+                },
+                {
+                    "station": "Woolooware",
+                    "stop": true
+                },
+                {
+                    "station": "Cronulla",
+                    "stop": true
+                },
+                {
+                    "station": "Engadine",
+                    "stop": true
+                },
+                {
+                    "station": "Heathcote",
+                    "stop": true
+                },
+                {
+                    "station": "Waterfall",
+                    "stop": true
+                }
+            ]
+        },
+        "5_Cumberland Line": {
+            "name": "Cumberland Line",
+            "line_color": "#00e200",
+            "line_id": "5_Cumberland Line",
+            "length": 26,
+            "direction": 1.5707963267948966,
+            "stations": [
+                {
+                    "station": "Leppington",
+                    "stop": true
+                },
+                {
+                    "station": "Edmondson Park",
+                    "stop": true
+                },
+                {
+                    "station": "Glenfield",
+                    "stop": true
+                },
+                {
+                    "station": "Casula",
+                    "stop": true
+                },
+                {
+                    "station": "Liverpool",
+                    "stop": true
+                },
+                {
+                    "station": "Warwick Farm",
+                    "stop": true
+                },
+                {
+                    "station": "Cabramatta",
+                    "stop": true
+                },
+                {
+                    "station": "Canley Vale",
+                    "stop": true
+                },
+                {
+                    "station": "Fairfield",
+                    "stop": true
+                },
+                {
+                    "station": "Yennora",
+                    "stop": true
+                },
+                {
+                    "station": "Guildford",
+                    "stop": true
+                },
+                {
+                    "station": "Merrylands",
+                    "stop": true
+                },
+                {
+                    "station": "Parramatta",
+                    "stop": true
+                },
+                {
+                    "station": "Westmead",
+                    "stop": true
+                },
+                {
+                    "station": "Seven Hills",
+                    "stop": true
+                },
+                {
+                    "station": "Blacktown",
+                    "stop": true
+                },
+                {
+                    "station": "Marayong",
+                    "stop": true
+                },
+                {
+                    "station": "Quakers Hill",
+                    "stop": true
+                },
+                {
+                    "station": "Schofields",
+                    "stop": true
+                },
+                {
+                    "station": "Riverstone",
+                    "stop": true
+                },
+                {
+                    "station": "Vineyard",
+                    "stop": true
+                },
+                {
+                    "station": "Mulgrave",
+                    "stop": true
+                },
+                {
+                    "station": "Windsor",
+                    "stop": true
+                },
+                {
+                    "station": "Clarendon",
+                    "stop": true
+                },
+                {
+                    "station": "East Richmond",
+                    "stop": true
+                },
+                {
+                    "station": "Richmond",
+                    "stop": true
+                }
+            ]
+        },
+        "6_Carlingford Line": {
+            "name": "Carlingford Line",
+            "line_color": "#ccf900",
+            "line_id": "6_Carlingford Line",
+            "length": 7,
+            "direction": 1.5707963267948966,
+            "stations": [
+                {
+                    "station": "Clyde",
+                    "stop": true
+                },
+                {
+                    "station": "Rosehill",
+                    "stop": true
+                },
+                {
+                    "station": "Camellia",
+                    "stop": true
+                },
+                {
+                    "station": "Rydalmere",
+                    "stop": true
+                },
+                {
+                    "station": "Dundas",
+                    "stop": true
+                },
+                {
+                    "station": "Telopea",
+                    "stop": true
+                },
+                {
+                    "station": "Carlingford",
+                    "stop": true
+                }
+            ]
+        },
+        "7_Airport & South Line": {
+            "name": "Airport & South Line",
+            "line_color": "#ffad00",
+            "line_id": "7_Airport & South Line",
+            "length": 30,
+            "direction": -1.5707963267948966,
+            "stations": [
+                {
+                    "station": "Macarthur",
+                    "stop": true
+                },
+                {
+                    "station": "Campbelltown",
+                    "stop": true
+                },
+                {
+                    "station": "Leumeah",
+                    "stop": true
+                },
+                {
+                    "station": "Minto",
+                    "stop": true
+                },
+                {
+                    "station": "Ingleburn",
+                    "stop": true
+                },
+                {
+                    "station": "Macquarie Fields",
+                    "stop": true
+                },
+                {
+                    "station": "Glenfield",
+                    "stop": true
+                },
+                {
+                    "station": "Holsworthy",
+                    "stop": true
+                },
+                {
+                    "station": "East Hills",
+                    "stop": true
+                },
+                {
+                    "station": "Panania",
+                    "stop": true
+                },
+                {
+                    "station": "Revesby",
+                    "stop": true
+                },
+                {
+                    "station": "Padstow",
+                    "stop": true
+                },
+                {
+                    "station": "Riverwood",
+                    "stop": true
+                },
+                {
+                    "station": "Narwee",
+                    "stop": true
+                },
+                {
+                    "station": "Beverly Hills",
+                    "stop": true
+                },
+                {
+                    "station": "Kingsgrove",
+                    "stop": true
+                },
+                {
+                    "station": "Bexley North",
+                    "stop": true
+                },
+                {
+                    "station": "Bardwell Park",
+                    "stop": true
+                },
+                {
+                    "station": "Turrella",
+                    "stop": true
+                },
+                {
+                    "station": "Wolli Creek",
+                    "stop": true
+                },
+                {
+                    "station": "International Airport",
+                    "stop": true
+                },
+                {
+                    "station": "Domestic Airport",
+                    "stop": true
+                },
+                {
+                    "station": "Mascot",
+                    "stop": true
+                },
+                {
+                    "station": "Green Square",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Museum",
+                    "stop": true
+                },
+                {
+                    "station": "St James",
+                    "stop": true
+                },
+                {
+                    "station": "Circular Quay",
+                    "stop": true
+                },
+                {
+                    "station": "Wynyard",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                }
+            ]
+        },
+        "8_Northern Line": {
+            "name": "Northern Line",
+            "line_color": "#e40000",
+            "line_id": "8_Northern Line",
+            "length": 30,
+            "direction": 1.5707963267948966,
+            "stations": [
+                {
+                    "station": "Gordon",
+                    "stop": true
+                },
+                {
+                    "station": "Killara",
+                    "stop": true
+                },
+                {
+                    "station": "Lindfield",
+                    "stop": true
+                },
+                {
+                    "station": "Roseville",
+                    "stop": true
+                },
+                {
+                    "station": "Chatswood",
+                    "stop": true
+                },
+                {
+                    "station": "Artarmon",
+                    "stop": true
+                },
+                {
+                    "station": "St Leonards",
+                    "stop": true
+                },
+                {
+                    "station": "Wollstonecraft",
+                    "stop": true
+                },
+                {
+                    "station": "Waverton",
+                    "stop": true
+                },
+                {
+                    "station": "North Sydney",
+                    "stop": true
+                },
+                {
+                    "station": "Milsons Point",
+                    "stop": true
+                },
+                {
+                    "station": "Wynyard",
+                    "stop": true
+                },
+                {
+                    "station": "Town Hall",
+                    "stop": true
+                },
+                {
+                    "station": "Central",
+                    "stop": true
+                },
+                {
+                    "station": "Redfern",
+                    "stop": true
+                },
+                {
+                    "station": "Strathfield",
+                    "stop": true
+                },
+                {
+                    "station": "North Strathfield",
+                    "stop": true
+                },
+                {
+                    "station": "Concord West",
+                    "stop": true
+                },
+                {
+                    "station": "Rhodes",
+                    "stop": true
+                },
+                {
+                    "station": "Meadowbank",
+                    "stop": true
+                },
+                {
+                    "station": "West Ryde",
+                    "stop": true
+                },
+                {
+                    "station": "Denistone",
+                    "stop": true
+                },
+                {
+                    "station": "Eastwood",
+                    "stop": true
+                },
+                {
+                    "station": "Epping",
+                    "stop": true
+                },
+                {
+                    "station": "Cheltenham",
+                    "stop": true
+                },
+                {
+                    "station": "Beecroft",
+                    "stop": true
+                },
+                {
+                    "station": "Pennant Hills",
+                    "stop": true
+                },
+                {
+                    "station": "Thornleigh",
+                    "stop": true
+                },
+                {
+                    "station": "Normanhurst",
+                    "stop": true
+                },
+                {
+                    "station": "Hornsby",
+                    "stop": true
+                }
+            ]
+        }
+    }
+}

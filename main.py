@@ -352,7 +352,7 @@ if __name__ == "__main__":
                     
                     # Do it for the other line
                     left_split, right_split = line_vectors[j].split(intersection, offset)
-                    
+
                     if left_split is not None:
                         new_vectors.append(left_split)
                         map_line_vector_stations(left_split)
@@ -386,6 +386,8 @@ if __name__ == "__main__":
     with open("C:\code\web-ui\src\data\sample_network.json", "w") as outfile:
         outfile.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
 
+    for station in stations.values():
+        print(station.name)
 
 """
 #TODO:

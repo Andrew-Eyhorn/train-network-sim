@@ -46,7 +46,6 @@
                     "St James"
                 ],
                 "3_Bankstown Line": [
-                    "",
                     "St James"
                 ],
                 "7_Airport & South Line": [
@@ -1867,20 +1866,6 @@
             "is_loop_station": false
         },
         {
-            "name": "",
-            "connections": {
-                "3_Bankstown Line": [
-                    "Museum"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
             "name": "Bondi Junction",
             "connections": {
                 "4_T4 Eastern Suburbs & Illawarra Line": [
@@ -3424,7 +3409,7 @@
             "name": "Bankstown Line",
             "line_color": "#00a4bb",
             "line_id": "3_Bankstown Line",
-            "length": 26,
+            "length": 25,
             "direction": -2.356194490192345,
             "stations": [
                 {
@@ -3525,10 +3510,6 @@
                 },
                 {
                     "station": "Museum",
-                    "stop": true
-                },
-                {
-                    "station": "",
                     "stop": true
                 }
             ]

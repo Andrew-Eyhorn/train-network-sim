@@ -20,7 +20,8 @@ def read_train_line(filepath: str, stations: dict[Station], color: str) -> Train
         name = line_data[0].strip()
         direction = Direction[line_data[1].upper().strip()]
         for row in line_data[2:]:
-            station_name_list.append(row.strip())
+            if row.strip() != "":
+                station_name_list.append(row.strip())
 
     train_line = TrainLine(name = name, line_color = color, direction = direction)
     for i, station_name in enumerate(station_name_list):

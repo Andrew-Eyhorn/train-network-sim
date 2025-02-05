@@ -214,6 +214,7 @@ def is_anchor_point(station: Station, stations: dict[str, Station]) -> bool:
 def update_anchor_points_coordinates(stations: dict[str, Station], offset: tuple[float, float]) -> None:
     for station in stations.values():
         if is_anchor_point(station, stations):
+            print(station)
             set_station_coords(station, offset)
 
             
@@ -320,6 +321,8 @@ if __name__ == "__main__":
                 section_start = section_end
                 section_end = None
 
+                #temp
+                print(current_line_vector)
 
 
     #Check for vector crossovers and adjust stations positions
@@ -333,21 +336,29 @@ if __name__ == "__main__":
                     intersection_found = True
                     new_vectors = []
                     # Do it for one line
-                    left_split, right_split = line_vectors[i].split(intersection, offset)
-                    new_vectors.extend([left_split, right_split])
-
-                    map_line_vector_stations(left_split)
-                    map_line_vector_stations(right_split)
+                    split = line_vectors[i].split(intersection, offset)
+                    if split is None:
+                        raise Exception(f"Error splitting line vector{line_vectors[i]}")
+                    left_split, right_split = split
+                    if left_split is not None:
+                        new_vectors.append(left_split)
+                        map_line_vector_stations(left_split)
+                    if right_split is not None:
+                        new_vectors.append(right_split)
+                        map_line_vector_stations(right_split)
 
                     #recalculate station positions for this vector, need to somehow get the line's vector correct before knowing the station's position
 
                     
                     # Do it for the other line
                     left_split, right_split = line_vectors[j].split(intersection, offset)
-                    new_vectors.extend([left_split, right_split])
-
-                    map_line_vector_stations(left_split)
-                    map_line_vector_stations(right_split)
+                    
+                    if left_split is not None:
+                        new_vectors.append(left_split)
+                        map_line_vector_stations(left_split)
+                    if right_split is not None:
+                        new_vectors.append(right_split)
+                        map_line_vector_stations(right_split)
 
                     line_vectors.remove(line_vectors[i])
                     line_vectors.remove(line_vectors[j - 1])

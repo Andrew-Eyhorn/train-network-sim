@@ -23,17 +23,22 @@ class LineVector:
         try:
             return (self.y2 - self.y1) / (self.x2 - self.x1)
         except ZeroDivisionError:
-            print(f"Zero division error in slope calculation for line vector from {self.stations[0].name} to {self.stations[-1].name}")
-            print(f"Station coords: ({self.x1},{self.y1}) to ({self.x2},{self.y2})")
-            print(f"Vector: ({self.vector_x},{self.vector_y})")
-            raise ZeroDivisionError
+            # print(f"Zero division error in slope calculation for line vector from {self.stations[0].name} to {self.stations[-1].name}")
+            # print(f"Stations: {self.stations}")
+            # print(f"Station coords: ({self.x1},{self.y1}) to ({self.x2},{self.y2})")
+            # print(f"Vector: ({self.vector_x},{self.vector_y})")
+            # raise ZeroDivisionError
+            return float("inf")
 
     def parallel(self, other: LineVector):
         return math.isclose(self.slope(),other.slope())
 
     def intersect(self, other: LineVector):
+        if len(self.stations) <= 1 or len(other.stations) <= 1:
+            return None
         if self.parallel(other):
             return None
+
         x = (self.slope() * self.x1 - other.slope() * other.x1 + other.y1 - self.y1) / (self.slope() - other.slope())
         y = self.slope() * (x - self.x1) + self.y1
         
@@ -81,25 +86,29 @@ class LineVector:
         else:
             left_station = self.stations[second_closest_station_index]
             right_station = self.stations[closest_station_index]
-        try:
+        if self.stations.index(left_station) == 0:
+            #length of 1 means its not a vector
+            left_split = None
+        else:
             left_split = LineVector(
                 self.x1, self.y1, left_station.map_x, left_station.map_y,
                 (left_station.map_x - self.x1) / self.stations.index(left_station), (left_station.map_y - self.y1) / self.stations.index(left_station)
             )
-        except ZeroDivisionError:
-            #print error info about the number involed in the zero error and return None
-            print(len(self))
-            
-            return None
-        for station in self.stations[:self.stations.index(left_station)+1]:
-            left_split.add_station(station)
+            for station in self.stations[:self.stations.index(left_station)+1]:
+                left_split.add_station(station)
+        
+        
 
-        right_split = LineVector(
-            right_station.map_x, right_station.map_y, self.x2, self.y2,
-            (self.x2 - right_station.map_x) / (len(self.stations) - self.stations.index(right_station)), (self.y2 - right_station.map_y) / (len(self.stations) - self.stations.index(right_station))
-        )
-        for station in self.stations[self.stations.index(right_station):]:
-            right_split.add_station(station)
+        if self.stations.index(right_station) == len(self.stations) - 1:
+            right_split = None
+        else:
+            right_split = LineVector(
+                right_station.map_x, right_station.map_y, self.x2, self.y2,
+                (self.x2 - right_station.map_x) / (len(self.stations) - self.stations.index(right_station)), (self.y2 - right_station.map_y) / (len(self.stations) - self.stations.index(right_station))
+            )
+        
+            for station in self.stations[self.stations.index(right_station):]:
+                right_split.add_station(station)
         
         return left_split, right_split
         

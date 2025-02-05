@@ -815,8 +815,90 @@
             "name": "Harris Park",
             "connections": {
                 "1_North Shore & Western Line": [
-                    "Strathfield",
+                    "Granville",
                     "Parramatta"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Granville",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Clyde",
+                    "Harris Park"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Clyde",
+                    "Merrylands"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Clyde",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Auburn",
+                    "Granville"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Auburn",
+                    "Granville"
+                ],
+                "6_Carlingford Line": [
+                    "Rosehill"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Auburn",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Lidcombe",
+                    "Clyde"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Lidcombe",
+                    "Clyde"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Lidcombe",
+            "connections": {
+                "1_North Shore & Western Line": [
+                    "Strathfield",
+                    "Auburn"
+                ],
+                "2_Inner West & Leppington Line": [
+                    "Flemington",
+                    "Auburn"
+                ],
+                "3_Bankstown Line": [
+                    "Berala"
                 ]
             },
             "map_x": null,
@@ -830,8 +912,8 @@
             "name": "Strathfield",
             "connections": {
                 "1_North Shore & Western Line": [
-                    "Burwood",
-                    "Harris Park"
+                    "Redfern",
+                    "Lidcombe"
                 ],
                 "2_Inner West & Leppington Line": [
                     "Burwood",
@@ -850,30 +932,11 @@
             "is_loop_station": false
         },
         {
-            "name": "Burwood",
-            "connections": {
-                "1_North Shore & Western Line": [
-                    "Redfern",
-                    "Strathfield"
-                ],
-                "2_Inner West & Leppington Line": [
-                    "Croydon",
-                    "Strathfield"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
             "name": "Redfern",
             "connections": {
                 "1_North Shore & Western Line": [
                     "Central",
-                    "Burwood"
+                    "Strathfield"
                 ],
                 "2_Inner West & Leppington Line": [
                     "Central",
@@ -1429,77 +1492,26 @@
             "is_loop_station": false
         },
         {
-            "name": "Granville",
-            "connections": {
-                "2_Inner West & Leppington Line": [
-                    "Clyde",
-                    "Merrylands"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
-            "name": "Clyde",
-            "connections": {
-                "2_Inner West & Leppington Line": [
-                    "Auburn",
-                    "Granville"
-                ],
-                "6_Carlingford Line": [
-                    "Rosehill"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
-            "name": "Auburn",
-            "connections": {
-                "2_Inner West & Leppington Line": [
-                    "Lidcombe",
-                    "Clyde"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
-            "name": "Lidcombe",
-            "connections": {
-                "2_Inner West & Leppington Line": [
-                    "Flemington",
-                    "Auburn"
-                ],
-                "3_Bankstown Line": [
-                    "Berala"
-                ]
-            },
-            "map_x": null,
-            "map_y": null,
-            "latitude": null,
-            "longitude": null,
-            "map_angle": 0,
-            "is_loop_station": false
-        },
-        {
             "name": "Flemington",
             "connections": {
                 "2_Inner West & Leppington Line": [
                     "Strathfield",
                     "Lidcombe"
+                ]
+            },
+            "map_x": null,
+            "map_y": null,
+            "latitude": null,
+            "longitude": null,
+            "map_angle": 0,
+            "is_loop_station": false
+        },
+        {
+            "name": "Burwood",
+            "connections": {
+                "2_Inner West & Leppington Line": [
+                    "Croydon",
+                    "Strathfield"
                 ]
             },
             "map_x": null,
@@ -3026,7 +3038,7 @@
             "name": "North Shore & Western Line",
             "line_color": "#6d009c",
             "line_id": "1_North Shore & Western Line",
-            "length": 52,
+            "length": 57,
             "direction": 3.141592653589793,
             "stations": [
                 {
@@ -3102,12 +3114,32 @@
                     "stop": true
                 },
                 {
+                    "station": "Granville",
+                    "stop": true
+                },
+                {
+                    "station": "Clyde",
+                    "stop": true
+                },
+                {
+                    "station": "Auburn",
+                    "stop": true
+                },
+                {
+                    "station": "Lidcombe",
+                    "stop": true
+                },
+                {
+                    "station": "Flemington",
+                    "stop": false
+                },
+                {
                     "station": "Strathfield",
                     "stop": true
                 },
                 {
                     "station": "Burwood",
-                    "stop": true
+                    "stop": false
                 },
                 {
                     "station": "Croydon",
